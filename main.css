@@ -6,16 +6,16 @@ mobile screen
 laptop screen
 @media only screen and (max-width: 1920px) {
 */
-body {
+.thebody {
   background-color: #222222;
 }
-body section h2 {
+.thebody section h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 44px;
   color: #fefefe;
   text-align: center;
 }
-body section a {
+.thebody section a {
   font-family: "Hind", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -23,7 +23,10 @@ body section a {
   text-align: center;
   color: #F60B0E;
 }
-body section .test {
+.thebody section a:hover {
+  color: #fefefe;
+}
+.thebody section .test {
   display: flex;
   flex-direction: row;
   gap: 80px;
@@ -35,11 +38,11 @@ body section .test {
   margin: 0 25%;
   width: 900px;
 }
-body section figcaption {
+.thebody section figcaption {
   text-transform: uppercase;
   font-weight: 700;
 }
-body section button {
+.thebody section button {
   text-align: center;
 }
 

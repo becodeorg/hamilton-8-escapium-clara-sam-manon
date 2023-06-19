@@ -7,12 +7,10 @@ mobile screen
 laptop screen
 @media only screen and (max-width: 1920px) {
 */
-body{
+.thebody{
     background-color: $dark-black;
 section{  
-    hr{
-        
-    }         
+            
     h2{
         font-family: 'Montserrat', sans-serif;
         font-size: 44px;
@@ -26,6 +24,9 @@ section{
             text-decoration: underline;
             text-align: center;
             color: $red;
+                &:hover{
+                    color: $white;
+                }
         }
             .test{
                 display: flex;
