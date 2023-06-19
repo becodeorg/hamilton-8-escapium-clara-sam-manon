@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+
 .footer {
     width: 100vw;
     height: 82vh;
     background-image: url(../../resources/images/gallery/slide-3.jpg);
-    background-size: 100%;
-    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
     box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
     display: flex;
     flex-direction: column;
@@ -16,6 +20,7 @@
         align-items: center;
         justify-content: space-around;
         margin-top: 3vh;
+        margin-bottom: 5vh;
 
         &__section {
 
@@ -28,6 +33,8 @@
                 gap: 0.5rem;
                 p {
                     color: gray;
+                    font-size: 0.7rem;
+                    font-family: 'Hind', sans-serif;
                 }
 
                 div {
@@ -41,55 +48,88 @@
             &__content {
                 &__title {
                     color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    
                 }
             }
         }
     }
 
     &__foot {
-        width: 100vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-top: 1px solid rgba($color: #585656, $alpha: 0.5);
+        box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.15);
+        
+
+        img {
+            margin-top: 5vh;
+        }
 
         p {
             color: grey;
+            font-family: 'Hind', sans-serif;
         }
     }
 }
 
 .address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 29vh;
     .postal {
         color: gray;
+        font-family: 'Hind', sans-serif;
     }
 
     .mail {
         color: gray;
+        font-family: 'Hind', sans-serif;
         a {
             text-decoration: none;
             color: white;
+            font-family: 'Hind', sans-serif;
         }
     }
 
     .phone {
         color: gray;
+        font-family: 'Hind', sans-serif;
     }
 }
 
 .useful {
-    height: 25vh;
+    height: 29vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    h3 {
+        align-self: center;
+        margin-left: -4rem;
+    }
+    
     ul {
         list-style: none;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         height: 40vh;
-        gap: 1rem;
+        gap: 0.5rem;
         li {
             
             a {
                 text-decoration: none;
                 color: gray;
+                font-family: 'Hind', sans-serif;
+                transition: 0.2s;
+            }
+
+            a:hover {
+                color: white;
             }
         }
     }
@@ -99,7 +139,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.7rem;
     height: 29vh;
     div {
         display: flex;
@@ -107,6 +147,7 @@
         span {
             color: gray;
             font-size: 0.7rem;
+            font-family: 'Hind', sans-serif;
         }
 
         div:nth-last-child(-n + 1) {
@@ -116,6 +157,17 @@
 }
 
 .social {
+    height: 29vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -2rem;
+    
+    h3 {
+        align-self: center;
+        margin-left: -4rem;
+    }
+    
     ul {
         list-style: none;
         display: flex;
@@ -130,6 +182,13 @@
                 border-radius: 50%;
                 padding: 5px;
                 background-color: rgb(56, 55, 55);
+                transition: 0.2s;
+            }
+
+            i:hover {
+                color: gray;
+                background-color: white;
+                border: white 5px solid;
             }
         }
     }
