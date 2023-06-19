@@ -4,11 +4,13 @@
 /*
 mobile screen
 @media only screen and (max-width: 412px) {
+tablet screen
+@media only screen and (max-width:768px)
 laptop screen
 @media only screen and (max-width: 1920px) {
 */
 .thebody{
-    background-color: $dark-black;
+    background-color: $darkest-black;
 section{  
             
     h2{
@@ -47,6 +49,7 @@ section{
             }
             button{
                 text-align: center;
+                color: $darkest-black;
             }
     }
 }
