@@ -13,45 +13,99 @@
     background-color: $dark-black;
 
 }
-.navbar{
-    height: 5rem;
-    box-sizing: border-box;
-    @include flex_vertical_center(space-between);
-    width: 100vw;
+.navbar_container{
+    height: 80px;
     
-    &_logo{
-        height: inherit;
+    @include flex_vertical_center(flex-start);
+    width: 100vw;
+    font-size: 16px;
+    font-family: $montserrat;
+    &:hover{
+        color:white;
     }
     
-    &_book_search_sign{
-        @include flex_vertical_center(center);
-        .navbar_book{
-            font-size: 1.4rem;
-            width: 3.6rem;
-            height: 3.6rem;
-            align-items: center;
-            color: white;
-            @include flex_vertical_center(center);
-            border:2px solid $nav;
-            border-radius: 50%;
+    .navbar_logo{
+       
+    }
+    .navbar{
+        @extend .navbar_container;
+        justify-content: space-between;
+        width: 100%;
+        &_list{
+            ul{
+                display: grid;
+                grid-auto-flow: column;
+                list-style-type: none;
+                column-gap: 40px;
+                li{
+                    text-transform: lowercase;
+                    font-weight: 700;
+                    text-decoration: none;
+                    width: min-content;
+                    a{
+                        text-decoration: none;
+                        color: $nav;
+                    }
+    
+                }
+            }
+            
         }
-        .navbar_search{
-            font-size:1.6rem;
-            border: none;
-            width: 3.6rem;
-            height: 3.6rem;
-            align-items: center;
-            color: white;
-            @include flex_vertical_center(center);
+        &_book_search_sign{
+            @include flex_vertical_center(flex-end);
+            .navbar_book{
+                
+                align-items: center;
+                color: white;
+                @include flex_vertical_center(center);
+                button{
+                    background-color: transparent;
+                    border: 2px solid $nav;
+                    color:white;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    white-space: nowrap;
+                    border-radius: 2.4rem;
+                    padding: 1rem 2rem;
+                }
+                i{
+                    display: none;
+                    border:2px solid $nav;
+                    border-radius: 50%;
+                }
+            }
+            .navbar_search{
+                i{
+                    font-size:1.6rem;
+                    border: none;
+                    width: 4rem;
+                    height: 3.6rem;
+                    align-items: center;
+                    color: white;
+                    @include flex_vertical_center(center);
+                }
+                
+                /*problem with the display flex and the search icon*/
+                
+            }
+            .navbar_signIn{
+                text-decoration: none;
+                color: white;
+                i{
+                    font-size:1.6rem;
+                }
+            }
         }
     }
 }
+    
 
 @media only screen and (max-width: 600px) {
     :root{
         font-size: 10px;
     }
     .navbar{
+        height: 5rem;
         &_list{
             display: none;
         }
