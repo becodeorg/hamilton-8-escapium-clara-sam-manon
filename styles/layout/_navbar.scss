@@ -32,10 +32,17 @@
             align-items: center;
             color: white;
             @include flex_vertical_center(center);
+            border:2px solid $nav;
+            border-radius: 50%;
         }
         .navbar_search{
             font-size:1.6rem;
-            
+            border: none;
+            width: 3.6rem;
+            height: 3.6rem;
+            align-items: center;
+            color: white;
+            @include flex_vertical_center(center);
         }
     }
 }
