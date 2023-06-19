@@ -22,9 +22,7 @@
     &_logo{
         height: inherit;
     }
-    &_list{
-        
-    }
+    
     &_book_search_sign{
         @include flex_vertical_center(center);
         .navbar_book{
@@ -34,15 +32,10 @@
             align-items: center;
             color: white;
             @include flex_vertical_center(center);
-            i{
-                
-            }
         }
         .navbar_search{
-            i{
-                font-size:1.6rem;
-                
-            }
+            font-size:1.6rem;
+            
         }
     }
 }
