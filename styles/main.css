@@ -1,97 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap");
-/*
-mobile screen
-@media only screen and (max-width: 412px) {
-laptop screen
-@media only screen and (max-width: 1920px) {
-*/
-body {
-  background-color: #222222;
-}
-body section h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 44px;
-  color: #fefefe;
-  text-align: center;
-}
-body section a {
-  font-family: "Hind", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: underline;
-  text-align: center;
-  color: #F60B0E;
-}
-body section .test {
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  font-family: "Hind", sans-serif;
-  font-size: 14px;
-  color: #717171;
-  font-weight: 300;
-  text-align: center;
-  margin: 0 25%;
-  width: 900px;
-}
-body section figcaption {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-body section button {
-  text-align: center;
-}
+/* Error: Expected identifier.
+ *    ,
+ * 43 |                 @
+ *    |                  ^
+ *    '
+ *   layout\_navbar.scss 43:18  @import
+ *   main.scss 3:9              root stylesheet */
 
-:root {
-  font-size: 10px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a    \2577 \a 43 \2502                  @\d\a    \2502                   ^\a    \2575 \a   layout\\_navbar.scss 43:18  @import\a   main.scss 3:9              root stylesheet";
 }
-
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
-.navbar {
-  height: 5rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100vw;
-}
-.navbar_logo {
-  height: inherit;
-}
-.navbar_book_search_sign {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.navbar_book_search_sign .navbar_book i {
-  font-size: 1.25rem;
-  width: 3.6rem;
-}
-.navbar_book_search_sign .navbar_search i {
-  font-size: 1.6rem;
-  width: 3.6rem;
-}
-
-@media only screen and (max-width: 600px) {
-  :root {
-    font-size: 10px;
-  }
-  .navbar_list {
-    display: none;
-  }
-  .navbar_book_search_sign .navbar_book button {
-    display: none;
-  }
-  .navbar_book_search_sign .navbar_signIn {
-    display: none;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */

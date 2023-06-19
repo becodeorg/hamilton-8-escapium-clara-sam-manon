@@ -1,17 +1,17 @@
 :root{
     font-size: 10px;
 }
-
-body{
-    margin:0px;
-    padding: 0px;
-
-}
 @mixin flex_vertical_center($justifyContent){
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: $justifyContent;
+}
+.body_navbar{
+    margin:0px;
+    padding: 0px;
+    background-color: $dark-black;
+
 }
 .navbar{
     height: 5rem;
@@ -28,15 +28,20 @@ body{
     &_book_search_sign{
         @include flex_vertical_center(center);
         .navbar_book{
+            font-size: 1.4rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            align-items: center;
+            color: white;
+            @include flex_vertical_center(center);
             i{
-                font-size: 1.25rem;
-                width: 3.6rem;
+                
             }
         }
         .navbar_search{
             i{
                 font-size:1.6rem;
-                width: 3.6rem;
+                
             }
         }
     }
