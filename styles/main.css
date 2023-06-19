@@ -1,0 +1,116 @@
+.footer {
+  width: 100vw;
+  height: 82vh;
+  background-image: url(../../resources/images/gallery/slide-3.jpg);
+  background-size: 100%;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer__article {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+.footer__article__section {
+  width: 20vw;
+}
+.footer__article__section__top {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__article__section__top p {
+  color: gray;
+}
+.footer__article__section__top div {
+  min-width: 17px;
+  max-height: 15px;
+  border: 1px solid rgba(255, 0, 0, 0.63);
+}
+.footer__article__section__content__title {
+  color: white;
+}
+.footer__foot {
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__foot p {
+  color: grey;
+}
+
+.address .postal {
+  color: gray;
+}
+.address .mail {
+  color: gray;
+}
+.address .mail a {
+  text-decoration: none;
+  color: white;
+}
+.address .phone {
+  color: gray;
+}
+
+.useful {
+  height: 25vh;
+}
+.useful ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 40vh;
+  gap: 1rem;
+}
+.useful ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 29vh;
+}
+.hours div {
+  display: flex;
+  gap: 2rem;
+}
+.hours div span {
+  color: gray;
+  font-size: 0.7rem;
+}
+.hours div div:nth-last-child(-n+1) {
+  align-items: flex-end;
+}
+
+.social ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 15vw;
+}
+.social ul li i {
+  max-width: 2rem;
+  color: white;
+  border: 5px rgb(56, 55, 55) solid;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgb(56, 55, 55);
+}
+
+/*# sourceMappingURL=main.css.map */

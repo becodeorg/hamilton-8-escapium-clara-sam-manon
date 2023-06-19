@@ -1,0 +1,136 @@
+.footer {
+    width: 100vw;
+    height: 82vh;
+    background-image: url(../../resources/images/gallery/slide-3.jpg);
+    background-size: 100%;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &__article {
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 3vh;
+
+        &__section {
+
+            width: 20vw;
+            &__top {
+                color: white;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0.5rem;
+                p {
+                    color: gray;
+                }
+
+                div {
+                    min-width: 17px;
+                    max-height: 15px;
+                    border: 1px solid rgba(255, 0, 0, 0.63);
+
+                }
+            }
+
+            &__content {
+                &__title {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &__foot {
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: grey;
+        }
+    }
+}
+
+.address {
+    .postal {
+        color: gray;
+    }
+
+    .mail {
+        color: gray;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .phone {
+        color: gray;
+    }
+}
+
+.useful {
+    height: 25vh;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 40vh;
+        gap: 1rem;
+        li {
+            
+            a {
+                text-decoration: none;
+                color: gray;
+            }
+        }
+    }
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    height: 29vh;
+    div {
+        display: flex;
+        gap: 2rem;
+        span {
+            color: gray;
+            font-size: 0.7rem;
+        }
+
+        div:nth-last-child(-n + 1) {
+            align-items: flex-end;
+        }
+    }
+}
+
+.social {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        max-width: 15vw;
+        li {
+            i {
+                max-width: 2rem;
+                color: white;
+                border: 5px rgb(56, 55, 55) solid;
+                border-radius: 50%;
+                padding: 5px;
+                background-color: rgb(56, 55, 55);
+            }
+        }
+    }
+}
