@@ -1,0 +1,64 @@
+:root{
+    font-size: 10px;
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+
+}
+@mixin flex_vertical_center($justifyContent){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: $justifyContent;
+}
+.navbar{
+    height: 5rem;
+    box-sizing: border-box;
+    @include flex_vertical_center(space-between);
+    width: 100vw;
+    
+    &_logo{
+        height: inherit;
+    }
+    &_list{
+        
+    }
+    &_book_search_sign{
+        @include flex_vertical_center(center);
+        .navbar_book{
+            i{
+                font-size: 1.25rem;
+                width: 3.6rem;
+            }
+        }
+        .navbar_search{
+            i{
+                font-size:1.6rem;
+                width: 3.6rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    :root{
+        font-size: 10px;
+    }
+    .navbar{
+        &_list{
+            display: none;
+        }
+        &_book_search_sign{
+            .navbar_book{
+                button{
+                    display: none;
+                }
+            }
+            .navbar_signIn{
+                display: none;
+            }
+        }
+    }
+}
