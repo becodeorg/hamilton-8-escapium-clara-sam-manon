@@ -21,10 +21,12 @@ tablet screen
 
 .thebody{
     background-color: $darkest-black;
+    margin: 0;
+    padding: 0;
 section{  
     text-align: center;
     
-    div.line{
+    hr{
         border: 2px solid #9B9B9B;
         width: 32px;
 }
@@ -61,6 +63,16 @@ section{
                     text-transform: uppercase;
                     font-weight: 700;
         
+                }
+                .bar{
+                    display: block;
+                    background-color: $font;
+                    transform: rotate(30deg);
+                    width: 1px;
+                    height: 100px;
+                    z-index: 0;
+                    position: relative;
+                    
                 }
                         button{
                             text-align: center;
