@@ -166,17 +166,17 @@
   border: white 5px solid;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 666px) {
   .footer {
     background-size: cover;
     background-position: left;
-    height: 200vh;
+    height: 230vh;
   }
   .footer__article {
     flex-direction: column;
     margin-top: 0;
     margin-bottom: 0;
-    height: 150vh;
+    height: 190vh;
     align-items: flex-start;
     margin-left: 15vw;
     width: 100vw;
