@@ -504,4 +504,9 @@
   background-color: #F60B0E;
 }
 
+.map {
+  width: 100vw;
+  filter: hue-rotate(100%);
+}
+
 /*# sourceMappingURL=main.css.map */

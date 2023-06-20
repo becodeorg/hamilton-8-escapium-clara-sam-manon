@@ -107,3 +107,9 @@
         }
     }
 }
+
+.map {
+    width: 100vw;
+    // filter: grayscale(100%);
+    filter: hue-rotate(100%);
+}
