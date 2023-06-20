@@ -1,0 +1,109 @@
+@import '../layout/footer';
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+
+.articleContact {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    background-color: #1B1B1B;
+    justify-content: space-around;
+    
+
+    &__partOne {
+        width: 17vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+        margin-top: 10vh;
+        h2 {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+
+        p {
+            color: white;
+            font-size: 0.8rem;
+            font-family: 'Hind', sans-serif;
+        }
+
+        &__lists {
+
+            display: flex;
+            &__icones {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 3vh;
+
+                li {
+                    
+                    i{
+                        color: white;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            &__datas {
+                list-style: none;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 3.5vh;
+
+                li {
+                    font-size: 0.6rem;
+                    font-family: 'Hind', sans-serif;
+                }
+            }
+        }
+    }
+
+    &__partTwo {
+        width: 55vw;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        h2 {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            div {
+                input {
+                    width: 25vw;
+                    height: 5vh;
+                    background-color: #1B1B1B;
+                    border: #1B1B1B solid 2px;
+                    border-bottom: gray solid 2px;
+                    color: white;
+                }
+            }
+
+            .message {
+                width: 51vw;
+                height: 25vh;
+                background-color: #1B1B1B;
+                border: #1B1B1B solid 2px;
+                border-bottom: gray solid 2px;
+                color: white;
+            }
+        }
+
+        button {
+            width: 51vw;
+            height: 2rem;
+            border: #F60B0E solid 2px;
+            border-radius: 4rem;
+            color: white;
+            background-color: #F60B0E;
+        }
+    }
+}
