@@ -48,15 +48,18 @@ body section button {
   font-size: 10px;
 }
 
-.body_navbar {
-  margin: 0px;
-  padding: 0px;
-  background-color: #1B1B1B;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar_container, .navbar_container .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 80px;
-  background-color: #1c1c1c;
+  background-color: rgba(34, 34, 34, 0.4784313725);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,8 +73,10 @@ body section button {
 }
 .navbar_container .navbar_logo {
   height: inherit;
+  position: static;
 }
 .navbar_container .navbar {
+  position: static;
   justify-content: space-between;
   width: 100%;
 }
@@ -101,6 +106,10 @@ body section button {
   text-decoration: none;
   color: #777;
   padding-left: 2rem;
+}
+.navbar_container .navbar_list ul li a:hover {
+  color: white;
+  cursor: pointer;
 }
 .navbar_container .navbar_book_search_sign {
   display: flex;
@@ -158,7 +167,7 @@ body section button {
   font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 720px) {
   :root {
     font-size: 10px;
   }
@@ -212,7 +221,7 @@ body section button {
     display: none;
   }
 }
-@media only screen and (min-width: 413px) {
+@media only screen and (min-width: 721px) {
   :root {
     font-size: 10px;
   }
@@ -226,8 +235,104 @@ body section button {
     display: none;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  font-size: 4.4rem;
+  color: white;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.smallertext {
+  font-size: 11px;
+}
+
+:root {
+  font-size: 10px;
+}
+
+main {
+  background-color: transparent;
+}
+main .homepage_banner {
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/slide-4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 93rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .homepage_banner h1 {
+  margin-left: 10%;
+  width: 45%;
+}
+main .homepage_banner div {
+  margin-left: 10%;
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+}
+main .homepage_banner div .horizontalLine {
+  height: 1px;
+  background-color: white;
+  width: 5vw;
+  margin: 0 2rem;
+}
+main .homepage_banner div p {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.homepage_rooms {
+  background-color: #1B1B1B;
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .smallertext {
+    font-size: 10px;
+  }
+  .homepage_banner {
+    min-height: 260px;
+    max-height: 695px;
+    background-size: contain;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
-
-
-

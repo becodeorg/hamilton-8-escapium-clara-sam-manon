@@ -1,21 +1,24 @@
 :root{
     font-size: 10px;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @mixin flex_vertical_center($justifyContent){
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: $justifyContent;
 }
-.body_navbar{
-    margin:0px;
-    padding: 0px;
-    background-color: $darkest-black;
 
-}
 .navbar_container{
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 80px;
-    background-color: lighten($darkest-black,0.2);
+    background-color:#2222227a;
     @include flex_vertical_center(flex-start);
     width: 100vw;
     font-size: 16px;
@@ -26,9 +29,11 @@
     
     .navbar_logo{
        height: inherit;
+       position: static;
     }
     .navbar{
         @extend .navbar_container;
+        position: static;
         justify-content: space-between;
         width: 100%;
         &_list{
@@ -57,9 +62,15 @@
                         text-decoration: none;
                         color: $nav;
                         padding-left: 2rem;
+                        &:hover{
+                            color:white;
+                            cursor: pointer;
+                        }
                     }
+                    
     
                 }
+                
             }
             
         }
@@ -116,7 +127,7 @@
 }
     
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 720px) {
     :root{
         font-size: 10px;
     }
@@ -183,7 +194,7 @@
     }
 }
 
-@media only screen and (min-width:413px){
+@media only screen and (min-width:721px){
     :root{
         font-size: 10px;
     }
@@ -195,14 +206,6 @@
         ;.navbar_list{
             #burger{
                 display: none;
-            }
-        }
-        
-        &_book_search_sign{
-
-            .navbar_book{
-               
-                
             }
         }
     }

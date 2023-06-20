@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $montserrat;
+}
+h1{
+    font-family: $montserrat;
+    font-size: 120px;
+    font-weight: 600;
+    color: white;
+}
+
+
+h2{
+    font-size: 4.4rem;
+    color: white;
+}
+h3{
+    font-size: 32px;
+}
+p{
+    font-size: 16px;
+}
+.smallertext{
+    font-size: 11px;
+}
+:root{
+    font-size: 10px;
+}
+main{
+    background-color: transparent;
+    .homepage_banner{
+        background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('/resources/images/gallery/slide-4.jpg')};
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 93rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            margin-left: 10%;
+            width:45%;
+        }
+        div{
+            margin-left: 10%;
+            margin-top: 3vw;
+            display: flex;
+            align-items: center;
+            .horizontalLine{
+                height: 1px;
+                background-color: white;
+                width: 5vw;
+                margin:0 2rem;
+            }
+            p{
+                text-transform: uppercase;
+                color: white;
+                letter-spacing: 3px;
+            }
+            
+        }
+        
+    }
+}
+
+.homepage_rooms{
+    background-color: $darkest-black;
+    padding-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_container{
+
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 19px;
+    }
+    h3{
+        font-size: 21px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .smallertext{
+        font-size: 10px;
+    }
+    .homepage_banner{
+        min-height:260px;
+        max-height: 695px;
+        background-size: contain;
+    }
+}
