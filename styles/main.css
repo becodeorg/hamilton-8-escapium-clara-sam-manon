@@ -3,7 +3,7 @@
 .footer {
   width: 100vw;
   height: 82vh;
-  background-image: url(../../resources/images/gallery/slide-3.jpg);
+  background-image: url(../../resources/images/gallery/room-7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -164,6 +164,45 @@
   color: gray;
   background-color: white;
   border: white 5px solid;
+}
+
+@media (max-width: 412px) {
+  .footer {
+    background-size: cover;
+    background-position: left;
+    height: 200vh;
+  }
+  .footer__article {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 150vh;
+    align-items: flex-start;
+    margin-left: 15vw;
+    width: 100vw;
+  }
+  .footer__article__section {
+    width: 100vw;
+  }
+  .footer__foot p {
+    font-size: 0.7rem;
+  }
+  .sociallist {
+    min-width: 100vw;
+    display: block;
+  }
+  .sociallist li i {
+    max-width: 0.8rem;
+  }
+  .address .postal {
+    font-size: 0.63rem;
+  }
+  .useful h3 {
+    margin-left: -60vw;
+  }
+  .social h3 {
+    margin-left: -60vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
