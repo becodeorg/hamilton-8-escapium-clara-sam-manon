@@ -51,11 +51,12 @@ body section button {
 .body_navbar {
   margin: 0px;
   padding: 0px;
-  background-color: #222222;
+  background-color: #1B1B1B;
 }
 
 .navbar_container, .navbar_container .navbar {
   height: 80px;
+  background-color: #1c1c1c;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -67,9 +68,22 @@ body section button {
 .navbar_container:hover, .navbar_container .navbar:hover {
   color: white;
 }
+.navbar_container .navbar_logo {
+  height: inherit;
+}
 .navbar_container .navbar {
   justify-content: space-between;
   width: 100%;
+}
+.navbar_container .navbar_list #burger {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.navbar_container .navbar_list #burger i {
+  width: 3rem;
+  font-size: 2.5rem;
+  color: white;
 }
 .navbar_container .navbar_list ul {
   display: grid;
@@ -86,12 +100,15 @@ body section button {
 .navbar_container .navbar_list ul li a {
   text-decoration: none;
   color: #777;
+  padding-left: 2rem;
 }
 .navbar_container .navbar_book_search_sign {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  gap: 2rem;
+  padding: 0px 2rem;
 }
 .navbar_container .navbar_book_search_sign .navbar_book {
   align-items: center;
@@ -111,13 +128,15 @@ body section button {
   border-radius: 2.4rem;
   padding: 1rem 2rem;
 }
+.navbar_container .navbar_book_search_sign .navbar_book button:hover {
+  background-color: #777;
+}
 .navbar_container .navbar_book_search_sign .navbar_book i {
   display: none;
+  font-size: 1.4rem;
+  padding: 1rem;
   border: 2px solid #777;
   border-radius: 50%;
-}
-.navbar_container .navbar_book_search_sign .navbar_search {
-  /*problem with the display flex and the search icon*/
 }
 .navbar_container .navbar_book_search_sign .navbar_search i {
   font-size: 1.6rem;
@@ -139,20 +158,71 @@ body section button {
   font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 412px) {
   :root {
     font-size: 10px;
   }
-  .navbar {
+  .navbar_container, .navbar_container .navbar {
     height: 5rem;
   }
-  .navbar_list {
+  .navbar_container .navbar {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+  .navbar_container .navbar_list #burger {
+    display: flex;
+  }
+  .navbar_container .navbar_list ul {
+    display: block;
+    padding-left: 0;
+    margin-top: 0;
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -70%;
+    background: #222222;
+    z-index: 900;
+    transition: all;
+  }
+  .navbar_container .navbar_list ul li {
+    width: 100%;
+    border-bottom: 1px solid #717171;
+    display: grid;
+    align-items: center;
+    height: 5rem;
+  }
+  .navbar_container .navbar_list ul li a {
+    font-size: 14px;
+    padding-left: 4rem;
+    color: #717171;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+  }
+  .navbar_container .navbar_list ul.left-0 {
+    left: 0;
+  }
+  .navbar_container .navbar_book_search_sign .navbar_book button {
     display: none;
   }
-  .navbar_book_search_sign .navbar_book button {
+  .navbar_container .navbar_book_search_sign .navbar_book i {
+    display: inline;
+  }
+  .navbar_container .navbar_book_search_sign .navbar_signIn {
     display: none;
   }
-  .navbar_book_search_sign .navbar_signIn {
+}
+@media only screen and (min-width: 413px) {
+  :root {
+    font-size: 10px;
+  }
+  .navbar_container, .navbar_container .navbar {
+    height: 8rem;
+  }
+  .navbar_container .navbar_logo {
+    height: inherit;
+  }
+  .navbar_container .navbar_list #burger {
     display: none;
   }
 }
