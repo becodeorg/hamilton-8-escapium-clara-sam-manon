@@ -1,46 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap");
-/*
-mobile screen
-@media only screen and (max-width: 412px) {
-laptop screen
-@media only screen and (max-width: 1920px) {
-*/
-body {
-  background-color: #222222;
-}
-body section h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 44px;
-  color: #fefefe;
-  text-align: center;
-}
-body section a {
-  font-family: "Hind", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: underline;
-  text-align: center;
-  color: #F60B0E;
-}
-body section .test {
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  font-family: "Hind", sans-serif;
-  font-size: 14px;
-  color: #717171;
-  font-weight: 300;
-  text-align: center;
-  margin: 0 25%;
-  width: 900px;
-}
-body section figcaption {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-body section button {
-  text-align: center;
-}
+/* Error: expected ";".
+ *   ,
+ * 3 | @import "../styles/pages/_aboutpage.scss"
+ *   |                                          ^
+ *   '
+ *   styles/main.scss 3:42  root stylesheet */
 
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a   \2577 \a 3 \2502  @import "../styles/pages/_aboutpage.scss"\a   \2502                                           ^\a   \2575 \a   styles/main.scss 3:42  root stylesheet';
+}

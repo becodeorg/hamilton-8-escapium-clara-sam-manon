@@ -3,49 +3,85 @@
 
 /*
 mobile screen
-@media only screen and (max-width: 412px) {
-laptop screen
-@media only screen and (max-width: 1920px) {
+
+
+tablet screen
+@media (max-width:768px){
+    h2{
+            font-size: 31px;
+        }
+        a{
+        font-size: 14px;
+    }
+    .test{
+        flex-direction: column;
+        gap: 80px;
+    }
 */
-body{
-    background-color: $dark-black;
+
+.thebody{
+    background-color: $darkest-black;
 section{  
-    hr{
-        
-    }         
+    text-align: center;
+    
+    div.line{
+        border: 2px solid #9B9B9B;
+        width: 32px;
+}
+            
     h2{
         font-family: 'Montserrat', sans-serif;
         font-size: 44px;
         color: $white;
-        text-align: center;
+        margin-bottom: 5%;
     }
-        a{
-            font-family: 'Hind', sans-serif;
-            font-weight: 700;
-            font-size: 14px;
-            text-decoration: underline;
-            text-align: center;
-            color: $red;
-        }
+    a{
+        font-family: 'Hind', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: underline;
+        color: $red;
+
+        &:hover{
+        color: $white;
+            }
+    }
             .test{
                 display: flex;
                 flex-direction: row;
                 gap: 80px;
                 font-family:'Hind', sans-serif;
-                font-size: 14px ;
+                font-size: 16px ;
                 color: $font;
                 font-weight: 300;
-                text-align: center;
                 margin: 0 25%;
                 width: 900px;
             }
-                figcaption{
-                text-transform: uppercase;
-                font-weight: 700;
-    
-            }
-            button{
-                text-align: center;
-            }
+                    figcaption{
+                    text-transform: uppercase;
+                    font-weight: 700;
+        
+                }
+                        button{
+                            text-align: center;
+                            color: $darkest-black;
+                        }
+    }
+
+
+}
+
+@media(max-width: 412px) {
+    h2{
+        font-size: 19px;
+    }
+    a{
+        font-size: 11px;
+    }
+    .test{
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        width : 0;
     }
 }
