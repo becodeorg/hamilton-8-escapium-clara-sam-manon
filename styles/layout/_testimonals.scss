@@ -6,7 +6,7 @@ mobile screen
 
 
 tablet screen
-@media only screen and (max-width:768px){
+@media (max-width:768px){
     h2{
             font-size: 31px;
         }
@@ -18,11 +18,16 @@ tablet screen
         gap: 80px;
     }
 */
-@media only screen and (max-width: 1920px) {
+
 .thebody{
     background-color: $darkest-black;
 section{  
     text-align: center;
+    
+    div.line{
+        border: 2px solid #9B9B9B;
+        width: 32px;
+}
             
     h2{
         font-family: 'Montserrat', sans-serif;
@@ -30,16 +35,17 @@ section{
         color: $white;
         margin-bottom: 5%;
     }
-        a{
-            font-family: 'Hind', sans-serif;
-            font-weight: 700;
-            font-size: 16px;
-            text-decoration: underline;
-            color: $red;
-                &:hover{
-                    color: $white;
-                }
-        }
+    a{
+        font-family: 'Hind', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: underline;
+        color: $red;
+
+        &:hover{
+        color: $white;
+            }
+    }
             .test{
                 display: flex;
                 flex-direction: row;
@@ -51,18 +57,21 @@ section{
                 margin: 0 25%;
                 width: 900px;
             }
-                figcaption{
-                text-transform: uppercase;
-                font-weight: 700;
-    
-            }
-            button{
-                text-align: center;
-                color: $darkest-black;
-            }
+                    figcaption{
+                    text-transform: uppercase;
+                    font-weight: 700;
+        
+                }
+                        button{
+                            text-align: center;
+                            color: $darkest-black;
+                        }
     }
 
-@media only screen and (max-width: 412px) {
+
+}
+
+@media(max-width: 412px) {
     h2{
         font-size: 19px;
     }
@@ -75,6 +84,4 @@ section{
         margin: 0;
         width : 0;
     }
-}
-}
 }

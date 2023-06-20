@@ -5,7 +5,7 @@ mobile screen
 
 
 tablet screen
-@media only screen and (max-width:768px){
+@media (max-width:768px){
     h2{
             font-size: 31px;
         }
@@ -19,57 +19,60 @@ tablet screen
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap");
-@media only screen and (max-width: 1920px) {
-  .thebody {
-    background-color: #1B1B1B;
-  }
-  .thebody section {
-    text-align: center;
-  }
-  .thebody section h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 44px;
-    color: #fefefe;
-    margin-bottom: 5%;
-  }
-  .thebody section a {
-    font-family: "Hind", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    text-decoration: underline;
-    color: #F60B0E;
-  }
-  .thebody section a:hover {
-    color: #fefefe;
-  }
-  .thebody section .test {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    font-family: "Hind", sans-serif;
-    font-size: 16px;
-    color: #717171;
-    font-weight: 300;
-    margin: 0 25%;
-    width: 900px;
-  }
-  .thebody section figcaption {
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  .thebody section button {
-    text-align: center;
-    color: #1B1B1B;
-  }
+.thebody {
+  background-color: #1B1B1B;
 }
-@media only screen and (max-width: 1920px) and (max-width: 412px) {
-  .thebody h2 {
+.thebody section {
+  text-align: center;
+}
+.thebody section div.line {
+  border: 2px solid #9B9B9B;
+  width: 32px;
+}
+.thebody section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #fefefe;
+  margin-bottom: 5%;
+}
+.thebody section a {
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #F60B0E;
+}
+.thebody section a:hover {
+  color: #fefefe;
+}
+.thebody section .test {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  font-weight: 300;
+  margin: 0 25%;
+  width: 900px;
+}
+.thebody section figcaption {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.thebody section button {
+  text-align: center;
+  color: #1B1B1B;
+}
+
+@media (max-width: 412px) {
+  h2 {
     font-size: 19px;
   }
-  .thebody a {
+  a {
     font-size: 11px;
   }
-  .thebody .test {
+  .test {
     flex-direction: column;
     gap: 10px;
     margin: 0;
