@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
 
 .footer {
+    margin: 0;
     width: 100vw;
     height: 82vh;
     background-image: url(../../resources/images/gallery/room-7.jpg);
@@ -13,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    overflow-x: hidden;
 
     &__article {
         display: flex;
