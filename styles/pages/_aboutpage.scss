@@ -84,14 +84,6 @@ body{
             border-radius: 50%;
             padding: 1.5%;
         }
-            & i{
-                font-size: 4rem;
-                color: $white;
-                border: 1px solid $font;
-                padding: 5%;
-                border-radius: 50%;
-
-            }
             & h3{
                 font-family: 'Montserrat', sans-serif;
                 font-size: 32px;
@@ -242,6 +234,130 @@ body{
          
 }
 
-@media(max-width: 412px) {
+/*MOBILE*/
+@media(min-width: 412px) and (max-width: 768px) {
+    .header{
+        
+        padding: 1px ;
+        
+            & h2{
+                font-size: 20px;
+                
+            }
+            .point{
+                font-size: 25px;
+        }
+                .home{
+                    font-size: 11px;
+
+                }
+            }
+.rules{
+    padding: 40px;      
+}
+    hr{
+        border: 1px solid #9B9B9B;
+        width: 12px;
+    }
+        h2{
+            font-size: 21px;
+    }
+    .bar{
+        width: 1px;
+        height: 50px;
+    }
+    .container {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 60px;
+
+        & img{
+            width: 25px;
+            padding: 1%;
+        }
+            & h3{
+                font-size: 19px;
+
+            }
+            & p{
+                font-size: 14px;
+            }
+
+    }  
+.video{
+        padding: 50px;
+        & img{
+            width: 25px;
+            margin: 0;
+            padding:0;
+        }
+}
+
+.certificates{
+    padding: 70px;
+
+    hr{
+        border: 1px solid #9B9B9B;
+        width: 12px;
+    }
+
+        h2{
+            font-size: 21px;
+        }
+            .certif{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+            }
+    }
+.team{
+    background-color: $dark-black;
+    padding: 70px;
+
+    hr{
+        border: 1px solid #9B9B9B;
+        width: 12px;
+    }
+            
+            & h2{
+                font-size: 21px;
+
+            }
+                & div{
+                    flex-direction: column;
+                    gap: 30px;
+                
+                        & h3{
+                            font-size: 19px;
+                            text-align: center;
+                        }
+                            & p{
+                                font-size: 14px;
+                                text-align: center;
+                            }
+            }
+        }
+.faq{
+    padding: 40px;
+
+    hr{
+        border: 1px solid #9B9B9B;
+        width: 12px;
+    }
     
+        & h2{
+            font-size: 21px;
+        }
+                & p.contact{
+                    font-size: 12px;
+                }
+                    & h3{
+                        font-size: 16px;
+                    }
+                        & p{
+                            font-size: 14px;
+                        }
+    }
 }

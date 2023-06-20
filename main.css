@@ -171,13 +171,6 @@ body .rules .container img {
   border-radius: 50%;
   padding: 1.5%;
 }
-body .rules .container i {
-  font-size: 4rem;
-  color: #fefefe;
-  border: 1px solid #717171;
-  padding: 5%;
-  border-radius: 50%;
-}
 body .rules .container h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
@@ -312,6 +305,117 @@ body .faq p {
   text-align: left;
 }
 
+/*MOBILE*/
+@media (min-width: 412px) and (max-width: 768px) {
+  .header {
+    padding: 1px;
+  }
+  .header h2 {
+    font-size: 20px;
+  }
+  .header .point {
+    font-size: 25px;
+  }
+  .header .home {
+    font-size: 11px;
+  }
+  .rules {
+    padding: 40px;
+  }
+  hr {
+    border: 1px solid #9B9B9B;
+    width: 12px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .bar {
+    width: 1px;
+    height: 50px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 60px;
+  }
+  .container img {
+    width: 25px;
+    padding: 1%;
+  }
+  .container h3 {
+    font-size: 19px;
+  }
+  .container p {
+    font-size: 14px;
+  }
+  .video {
+    padding: 50px;
+  }
+  .video img {
+    width: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  .certificates {
+    padding: 70px;
+  }
+  .certificates hr {
+    border: 1px solid #9B9B9B;
+    width: 12px;
+  }
+  .certificates h2 {
+    font-size: 21px;
+  }
+  .certificates .certif {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .team {
+    background-color: #222222;
+    padding: 70px;
+  }
+  .team hr {
+    border: 1px solid #9B9B9B;
+    width: 12px;
+  }
+  .team h2 {
+    font-size: 21px;
+  }
+  .team div {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .team div h3 {
+    font-size: 19px;
+    text-align: center;
+  }
+  .team div p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .faq {
+    padding: 40px;
+  }
+  .faq hr {
+    border: 1px solid #9B9B9B;
+    width: 12px;
+  }
+  .faq h2 {
+    font-size: 21px;
+  }
+  .faq p.contact {
+    font-size: 12px;
+  }
+  .faq h3 {
+    font-size: 16px;
+  }
+  .faq p {
+    font-size: 14px;
+  }
+}
 :root {
   font-size: 10px;
 }
