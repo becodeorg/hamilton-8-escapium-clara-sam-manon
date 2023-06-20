@@ -3,17 +3,7 @@
 
 /*
 mobile screen
-@media only screen and (max-width: 412px) {
-    h2{
-        font-size: 19px;
-    }
-    a{
-        font-size: 14px;
-    }
-    .test{
-        flex-direction: column;
-        gap: 50px;
-    }
+
 
 tablet screen
 @media only screen and (max-width:768px){
@@ -27,26 +17,24 @@ tablet screen
         flex-direction: column;
         gap: 80px;
     }
-
-laptop screen
-@media only screen and (max-width: 1920px) {
 */
+@media only screen and (max-width: 1920px) {
 .thebody{
     background-color: $darkest-black;
 section{  
+    text-align: center;
             
     h2{
         font-family: 'Montserrat', sans-serif;
         font-size: 44px;
         color: $white;
-        text-align: center;
+        margin-bottom: 5%;
     }
         a{
             font-family: 'Hind', sans-serif;
             font-weight: 700;
             font-size: 16px;
             text-decoration: underline;
-            text-align: center;
             color: $red;
                 &:hover{
                     color: $white;
@@ -60,7 +48,6 @@ section{
                 font-size: 16px ;
                 color: $font;
                 font-weight: 300;
-                text-align: center;
                 margin: 0 25%;
                 width: 900px;
             }
@@ -74,4 +61,20 @@ section{
                 color: $darkest-black;
             }
     }
+
+@media only screen and (max-width: 412px) {
+    h2{
+        font-size: 19px;
+    }
+    a{
+        font-size: 11px;
+    }
+    .test{
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        width : 0;
+    }
+}
+}
 }

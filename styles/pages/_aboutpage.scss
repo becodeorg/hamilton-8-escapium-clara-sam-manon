@@ -7,13 +7,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: 160px ;
-        box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.5);
+        box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.4);
         
             & h2{
                 font-family: 'Montserrat', sans-serif;
                 font-size: 50px;
                 color: $white;
                 text-align: center;
+                    &::after{
+                        color:$red;
+                    }
             }
                 .home{
                     font-family: 'Hind', sans-serif;
@@ -25,11 +28,17 @@
 .rules{
     background-color: $darkest-black;
     padding: 160px;
+
+    & div.line{
+        border: 2px solid $font;
+        width: 32px;
+}
         h2{
             font-family: 'Montserrat', sans-serif;
             font-size: 44px;
             color: $white;
             text-align: center;
+            margin-bottom: 5%;
     }
     .container {  
         display: grid;
@@ -67,11 +76,11 @@
         background-size: cover;
         height: 500px;
         box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.5);
+        text-align: center;
 
         & i{
             font-size: 30px;
             color: $white;
-            text-align: center;
             margin: 10% 50%;
             padding:1% 1%;
             border: 2px solid $red;
@@ -79,6 +88,7 @@
             border-radius: 50%;
             width: 36px;
             height: 36px;
+            padding: 1.2%;
 
             &:hover{
                 box-shadow: 0 0 0 5px rgba(255, 248, 248, 0.212);
@@ -90,20 +100,110 @@
     background-color: $darkest-black;
     padding: 160px;
 
-    h2{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 44px;
-        color: $white;
-        text-align: center;
-    }
-    .certif{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 30px;
-    }
+    & div.line{
+        border: 2px solid $font;
+        width: 32px;
 }
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 44px;
+            color: $white;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+            .certif{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 30px;
+            }
+                img:hover {
+                    opacity: 0.6;
+                    transition: opacity 0.9s;
+                }
+    }
+.team{
+    background-color: $dark-black;
+    padding: 160px;
 
+        & div.line{
+            border: 2px solid $font;
+            width: 32px;
+        }
+            
+            & h2{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 44px;
+                color: $white;
+                text-align: center;
+                margin-bottom: 5%;
 
+            }
+                & div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    justify-content: center;
+                    
+                    & img {
+                        opacity: 0.6;
+                        height: auto;
+                        max-width: 100%;
+                        border: solid 8px $dark-black;
+
+                        &:hover{
+                            opacity:1;
+                            border: solid 8px $red;
+                        }
+                    }
+                
+                        & h3{
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 32px;
+                            color: $white;
+                            text-align: left;
+                        }
+                            & p{
+                                font-family: 'Hind', sans-serif;
+                                font-size: 16px;
+                                color: $font;
+                                text-align: left;
+                            }
+            }
+        }
+.faq{
+    background-color: $white;
+    padding: 160px;
+
+    div.line{
+            border: 2px solid #9B9B9B;
+            width: 32px;
+    }
+    
+        & h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 44px;
+            color: $dark-black;
+            text-align: center;
+        }
+                & p.contact{
+                    font-family: 'Hind', sans-serif;
+                    font-size: 20px;
+                    color: $font;
+                    text-align: center;
+                }
+                    & h3{
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 32px;
+                        color: $dark-black;
+                        text-align: left;
+                    }
+                        & p{
+                            font-family: 'Hind', sans-serif;
+                            font-size: 16px;
+                            color: $font;
+                            text-align: left;
+                        }
+    }
          
     
