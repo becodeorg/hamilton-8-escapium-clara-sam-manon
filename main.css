@@ -1193,5 +1193,43 @@ main .homepage_banner div p {
 .roomsGlobal .imageRooms__secLine__gridcols {
   color: gray;
 }
+.roomsGlobal .roomsMain {
+  background-color: #1B1B1B;
+  width: 100vw;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.roomsGlobal .roomsMain__filter {
+  width: 35vw;
+  display: flex;
+  justify-content: space-around;
+}
+.roomsGlobal .roomsMain__filter__btn {
+  width: 100px;
+  height: 40px;
+  border: gray solid 2px;
+  border-radius: 250px;
+  background-color: #1B1B1B;
+  color: white;
+}
+.roomsGlobal .roomsMain__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 5vh;
+  width: 85vw;
+  height: 100vh;
+}
+.roomsGlobal .roomsMain__grid__item {
+  display: flex;
+  flex-direction: column;
+}
+.roomsGlobal .roomsMain__grid__item__locker {
+  display: flex;
+}
+.roomsGlobal .roomsMain__grid__item__icons {
+  display: flex;
+}
 
 /*# sourceMappingURL=main.css.map */

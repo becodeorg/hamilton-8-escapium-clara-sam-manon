@@ -43,15 +43,79 @@
 }
 
 .roomsMain {
+    background-color: #1B1B1B;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__filter {
+        width: 35vw;
+        display: flex;
+        justify-content: space-around;
         &__btn {
-
+            width: 100px;
+            height: 40px;
+            border: gray solid 2px;
+            border-radius: 250px;
+            background-color: #1B1B1B;
+            color: white;
         }
     }
 
     &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        column-gap: 5vh;
+        width: 85vw;
+        height: 100vh;
         &__item {
+            display: flex;
+            flex-direction: column;
 
+            &__locker {
+                display: flex;
+            }
+
+            &__icons {
+                display: flex;
+            }
+        }
+
+        .imporium {
+
+        }
+
+        .cure {
+
+        }
+
+        .burlesque {
+
+        }
+
+        .prison {
+
+        }
+
+        .hospital {
+
+        }
+
+        .factory {
+
+        }
+
+        .bunker {
+
+        }
+
+        .mystical {
+
+        }
+
+        .future {
+            
         }
     }
 
