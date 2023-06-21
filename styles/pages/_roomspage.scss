@@ -72,18 +72,47 @@
         &__item {
             display: flex;
             flex-direction: column;
+            width: 20vw;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            gap: 1vh;
+            
 
             &__locker {
+                padding-left: 1vw;
                 display: flex;
+
+                .red {
+                    color: red;
+                }
+            }
+
+            h3 {
+                color: white;
+                width: 20vw;
+                font-size: 2.5rem;
+                padding-left: 1vw;
             }
 
             &__icons {
                 display: flex;
+                padding-left: 1vw;
+                align-items: center;
+                gap: 0.5rem;
+                color: white;
             }
         }
 
         .imporium {
-
+            background-image: url(../../resources/images/gallery/slide-2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            background-position-x: -20vw;
+            box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
         }
 
         .cure {
@@ -115,7 +144,7 @@
         }
 
         .future {
-            
+
         }
     }
 
