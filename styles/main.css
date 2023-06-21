@@ -509,14 +509,16 @@ main .homepage_banner {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 93rem;
+  height: 75vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 main .homepage_banner h1 {
   margin-left: 10%;
-  width: 45%;
+}
+main .homepage_banner h1 span {
+  display: block;
 }
 main .homepage_banner div {
   margin-left: 10%;
@@ -560,9 +562,15 @@ main .homepage_banner div p {
     font-size: 10px;
   }
   .homepage_banner {
-    min-height: 260px;
-    max-height: 695px;
-    background-size: contain;
+    display: flex;
+    align-items: center;
+  }
+  .homepage_banner h1 {
+    text-justify: center;
+    text-align: center;
+  }
+  .homepage_banner div .horizontalLine {
+    display: none;
   }
 }
 .footer {

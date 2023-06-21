@@ -35,13 +35,15 @@ main{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 93rem;
+        height: 75vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         h1{
             margin-left: 10%;
-            width:45%;
+            span{
+                display: block;
+            }
         }
         div{
             margin-left: 10%;
@@ -93,8 +95,17 @@ main{
         font-size: 10px;
     }
     .homepage_banner{
-        min-height:260px;
-        max-height: 695px;
-        background-size: contain;
+        display: flex;
+        align-items: center;
+        
+        h1{
+            text-justify: center;
+            text-align: center;
+        }
+        div{
+            .horizontalLine{
+                display: none;
+            }
+        }
     }
 }
