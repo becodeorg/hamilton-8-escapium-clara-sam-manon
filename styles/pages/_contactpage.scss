@@ -2,6 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
 
+.imageTopContacts {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../../resources/images/gallery/slide-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        color: white;
+        &__dot {
+            color: #F60B0E;
+        }
+    }
+
+    &__secLine {
+        &__home {
+            color: white;
+        }
+
+        &__spaceLine {
+            // border: 1px white solid;
+            max-height: 1px;
+            min-width: 7px;
+            color: white;
+        }
+
+        &__contacts {
+            color: gray;
+        }
+    }
+}
+
 .articleContact {
     display: flex;
     height: 90vh;
@@ -111,13 +148,90 @@
     }
 }
 
-// .map {
-//     width: 100vw;
-//     filter: grayscale(100%);
-//     filter: hue-rotate(100%);
-// }
-
 #map {
-    height: 75vh; /* The height is 400 pixels */
-    width: 100%; /* The width is the width of the web page */
+    height: 70vh;
+    width: 100%; 
   }
+
+@media (max-width: 520px) {
+    .articleContact {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100vh;
+
+
+        &__partOne {
+            margin-left: 3vw;
+            margin-top: 1vh;
+            width: 100vw;
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            &__lists {
+                &__icones {
+                    gap: 3.5vh;
+
+                    li {
+                        i {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                
+            }
+        }
+
+        &__partTwo {
+            margin-top: 0;
+            margin-left: 3vw;
+            width: 100vw;
+
+            &__form {
+                div {
+                    input {
+                        width: 40vw;
+                    }
+                }
+
+                .message {
+                    width: 81vw;
+                }
+            }
+
+            button {
+                width: 81vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    .imageTopContacts {
+        height: 25vh;
+        &__title {
+            
+            &__dot {
+                color: #F60B0E;
+            }
+        }
+    
+        &__secLine {
+            &__home {
+                color: white;
+            }
+    
+            &__spaceLine {
+                
+                color: white;
+            }
+    
+            &__contacts {
+                color: gray;
+            }
+        }
+    }
+}
