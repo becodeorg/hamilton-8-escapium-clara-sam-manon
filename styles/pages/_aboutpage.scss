@@ -9,7 +9,7 @@ body{
         background-image: url("/resources/images/gallery/slide-1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 160px ;
+        padding: 60px ;
         box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.4);
         
             & h2{
@@ -45,7 +45,7 @@ body{
             }
 .rules{
     background-color: $darkest-black;
-    padding: 160px;
+    padding:100px;
 
     & hr{
         border: 2px solid $font;
@@ -57,25 +57,26 @@ body{
             font-size: 44px;
             color: $white;
             text-align: center;
-            margin-bottom: 5%;
+
     }
     .bar{
-        display: block;
         background-color: $font;
-        transform: rotate(30deg);
+        transform: rotate(30deg)translateY(30px)translateX(220px);
         width: 1px;
-        height: 100px;
+        height: 160px;
         z-index: 0;
         position: relative;
     }
     .container {  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 60px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0px 100px;
 
         & article{
             text-align: center;
+            width: 350px;
+            
         }
 
         & img{
@@ -83,6 +84,10 @@ body{
             border: solid 1px $font;
             border-radius: 50%;
             padding: 1.5%;
+            z-index: 1;
+            position: relative;
+            background-color: $darkest-black;
+            
         }
             & h3{
                 font-family: 'Montserrat', sans-serif;
@@ -121,6 +126,7 @@ body{
 .certificates{
     background-color: $darkest-black;
     padding: 160px;
+    text-align: center;
 
     & hr{
         border: 2px solid $font;
@@ -135,8 +141,9 @@ body{
         }
             .certif{
                 display: flex;
-                flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: center;
+                align-items: center;
                 gap: 50px;
             }
                 img:hover {
@@ -163,9 +170,9 @@ body{
             }
                 & div{
                     display: flex;
-                    flex-direction: row;
-                    gap: 50px;
+                    flex-wrap: wrap;
                     justify-content: center;
+                    gap: 50px;
                     
                     & img {
                         opacity: 0.6;
@@ -215,27 +222,221 @@ body{
                     color: $font;
                     text-align: center;
                 }
-                    & h3{
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 32px;
-                        color: $dark-black;
-                        text-align: left;
-                        &:hover{
-                            color: $red;
-                        }
+                .accordion {
+                    .accordion-item {
+                      border-bottom: 1px solid $red;
+                      button[aria-expanded='true'] {
+                        border-bottom: 1px solid $red;
+                      }
                     }
-                        & p{
-                            font-family: 'Hind', sans-serif;
-                            font-size: 16px;
-                            color: $font;
-                            text-align: left;
+                    button {
+                      position: relative;
+                      display: block;
+                      text-align: left;
+                      width: 100%;
+                      padding: 1em 0;
+                      font-size: 1.15rem;
+                      font-weight: 400;
+                      border: none;
+                      background: none;
+                      outline: none;
+                      &:hover, &:focus {
+                        cursor: pointer;
+                        color: $red;
+                        &::after {
+                          cursor: pointer;
+                          color: $red;
+                          border: 1px solid $red;
                         }
+                      }
+                      .accordion-title {
+                        padding: 1em 1.5em 1em 0;
+                      }
+                      .icon {
+                        display: inline-block;
+                        position: absolute;
+                        top: 18px;
+                        right: 0;
+                        width: 22px;
+                        height: 22px;
+                        border: 1px solid;
+                        border-radius: 22px;
+                        &::before {
+                          display: block;
+                          position: absolute;
+                          content: '';
+                          top: 9px;
+                          left: 5px;
+                          width: 10px;
+                          height: 2px;
+                          background: currentColor;
+                        }
+                        &::after {
+                          display: block;
+                          position: absolute;
+                          content: '';
+                          top: 5px;
+                          left: 9px;
+                          width: 2px;
+                          height: 10px;
+                          background: currentColor;
+                        }
+                      }
+                    }
+                    button[aria-expanded='true'] {
+                      color: $red;
+                      .icon {
+                        &::after {
+                          width: 0;
+                        }
+                      }
+                      + .accordion-content {
+                        opacity: 1;
+                        max-height: 9em;
+                        transition: all 200ms linear;
+                        will-change: opacity, max-height;
+                      }
+                    }
+                    .accordion-content {
+                      opacity: 0;
+                      max-height: 0;
+                      overflow: hidden;
+                      transition: opacity 200ms linear, max-height 200ms linear;
+                      will-change: opacity, max-height;
+                      p {
+                        font-size: 1rem;
+                        font-weight: 300;
+                        margin: 2em 0;
+                      }
+                    }
+                  }
+                    
+                            & p{
+                                font-family: 'Hind', sans-serif;
+                                font-size: 16px;
+                                color: $font;
+                                text-align: left;
+                            }
+        }
     }
-         
+//tablet
+@media screen and (max-width:768px){
+    .header{
+        padding: 6px ;
+            & h2{
+                font-size: 60px;
+            }
+            .point{
+                font-size: 65px;
+            }
+                .home{
+                    font-size: 16px;
+                }
+        }
+.rules{
+    padding: 100px;   
+    .container {  
+
+        & img{
+            width: 100px;
+            padding: 1.5%;
+        }
+            & h3{
+                font-size: 32px;
+
+            }
+            & p{
+                font-size: 16px;
+            }
+    }    
+}
+    hr{
+        border: 2px solid #9B9B9B;
+        width: 32px;
+    }
+        h2{
+            font-size: 44px;
+    }
+    .bar{
+        width: 1px;
+        height: 100px;
+    }
+ 
+.video{
+        padding: 100px;
+        & img{
+            width: 50px;
+            margin: 10% 50%;
+            padding:1%;
+        }
 }
 
+.certificates{
+    padding: 160px;
+
+    hr{
+        border: 2px solid #9B9B9B;
+        width: 32px;
+    }
+
+        h2{
+            font-size: 44px;
+        }
+            .certif{
+                gap: 50px;
+            }
+    }
+.team{
+    background-color: $dark-black;
+    padding: 160px;
+
+    hr{
+        border: 2px solid #9B9B9B;
+        width: 32px;
+    }
+            
+            & h2{
+                font-size: 44px;
+
+            }
+                & div{
+                    flex-direction: row;
+                    gap: 50px;
+                
+                        & h3{
+                            font-size: 19px;
+                            text-align: left;
+                        }
+                            & p{
+                                font-size: 14px;
+                                text-align: left;
+                            }
+            }
+        }
+.faq{
+    padding: 160px;
+
+    hr{
+        border: 2px solid #9B9B9B;
+        width: 32px;
+    }
+    
+        & h2{
+            font-size: 44px;
+        }
+                & p.contact{
+                    font-size: 20px;
+                }
+                    & h3{
+                        font-size: 32px;
+                    }
+                        & p{
+                            font-size: 16px;
+                        }
+    }
+}
 /*MOBILE*/
-@media(min-width: 412px) and (max-width: 768px) {
+@media screen and (max-width:412px){
     .header{
         
         padding: 1px ;
@@ -267,9 +468,6 @@ body{
         height: 50px;
     }
     .container {  
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         gap: 0px 60px;
 
         & img{
@@ -295,7 +493,7 @@ body{
 }
 
 .certificates{
-    padding: 70px;
+    padding: 40px;
 
     hr{
         border: 1px solid #9B9B9B;
@@ -346,7 +544,6 @@ body{
         border: 1px solid #9B9B9B;
         width: 12px;
     }
-    
         & h2{
             font-size: 21px;
         }

@@ -99,7 +99,7 @@ body .header {
   background-image: url("/resources/images/gallery/slide-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 160px;
+  padding: 60px;
   box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.4);
 }
 body .header h2 {
@@ -134,7 +134,7 @@ body .header a.esc:hover {
 }
 body .rules {
   background-color: #1B1B1B;
-  padding: 160px;
+  padding: 100px;
 }
 body .rules hr {
   border: 2px solid #717171;
@@ -145,31 +145,33 @@ body .rules h2 {
   font-size: 44px;
   color: #fefefe;
   text-align: center;
-  margin-bottom: 5%;
 }
 body .rules .bar {
-  display: block;
   background-color: #717171;
-  transform: rotate(30deg);
+  transform: rotate(30deg) translateY(30px) translateX(220px);
   width: 1px;
-  height: 100px;
+  height: 160px;
   z-index: 0;
   position: relative;
 }
 body .rules .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px 100px;
 }
 body .rules .container article {
   text-align: center;
+  width: 350px;
 }
 body .rules .container img {
   width: 100px;
   border: solid 1px #717171;
   border-radius: 50%;
   padding: 1.5%;
+  z-index: 1;
+  position: relative;
+  background-color: #1B1B1B;
 }
 body .rules .container h3 {
   font-family: "Montserrat", sans-serif;
@@ -204,6 +206,7 @@ body .video img:hover {
 body .certificates {
   background-color: #1B1B1B;
   padding: 160px;
+  text-align: center;
 }
 body .certificates hr {
   border: 2px solid #717171;
@@ -218,8 +221,9 @@ body .certificates h2 {
 }
 body .certificates .certif {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 body .certificates img:hover {
@@ -243,9 +247,9 @@ body .team h2 {
 }
 body .team div {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 50px;
 }
 body .team div img {
   opacity: 0.6;
@@ -289,14 +293,89 @@ body .faq p.contact {
   color: #717171;
   text-align: center;
 }
-body .faq h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  color: #222222;
-  text-align: left;
+body .faq .accordion .accordion-item {
+  border-bottom: 1px solid #F60B0E;
 }
-body .faq h3:hover {
+body .faq .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #F60B0E;
+}
+body .faq .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+body .faq .accordion button:hover, body .faq .accordion button:focus {
+  cursor: pointer;
   color: #F60B0E;
+}
+body .faq .accordion button:hover::after, body .faq .accordion button:focus::after {
+  cursor: pointer;
+  color: #F60B0E;
+  border: 1px solid #F60B0E;
+}
+body .faq .accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+body .faq .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+body .faq .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+body .faq .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+body .faq .accordion button[aria-expanded=true] {
+  color: #F60B0E;
+}
+body .faq .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+body .faq .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+body .faq .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+body .faq .accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
 }
 body .faq p {
   font-family: "Hind", sans-serif;
@@ -305,8 +384,109 @@ body .faq p {
   text-align: left;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 6px;
+  }
+  .header h2 {
+    font-size: 60px;
+  }
+  .header .point {
+    font-size: 65px;
+  }
+  .header .home {
+    font-size: 16px;
+  }
+  .rules {
+    padding: 100px;
+  }
+  .rules .container img {
+    width: 100px;
+    padding: 1.5%;
+  }
+  .rules .container h3 {
+    font-size: 32px;
+  }
+  .rules .container p {
+    font-size: 16px;
+  }
+  hr {
+    border: 2px solid #9B9B9B;
+    width: 32px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .bar {
+    width: 1px;
+    height: 100px;
+  }
+  .video {
+    padding: 100px;
+  }
+  .video img {
+    width: 50px;
+    margin: 10% 50%;
+    padding: 1%;
+  }
+  .certificates {
+    padding: 160px;
+  }
+  .certificates hr {
+    border: 2px solid #9B9B9B;
+    width: 32px;
+  }
+  .certificates h2 {
+    font-size: 44px;
+  }
+  .certificates .certif {
+    gap: 50px;
+  }
+  .team {
+    background-color: #222222;
+    padding: 160px;
+  }
+  .team hr {
+    border: 2px solid #9B9B9B;
+    width: 32px;
+  }
+  .team h2 {
+    font-size: 44px;
+  }
+  .team div {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .team div h3 {
+    font-size: 19px;
+    text-align: left;
+  }
+  .team div p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .faq {
+    padding: 160px;
+  }
+  .faq hr {
+    border: 2px solid #9B9B9B;
+    width: 32px;
+  }
+  .faq h2 {
+    font-size: 44px;
+  }
+  .faq p.contact {
+    font-size: 20px;
+  }
+  .faq h3 {
+    font-size: 32px;
+  }
+  .faq p {
+    font-size: 16px;
+  }
+}
 /*MOBILE*/
-@media (min-width: 412px) and (max-width: 768px) {
+@media screen and (max-width: 412px) {
   .header {
     padding: 1px;
   }
@@ -334,9 +514,6 @@ body .faq p {
     height: 50px;
   }
   .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 60px;
   }
   .container img {
@@ -358,7 +535,7 @@ body .faq p {
     padding: 0;
   }
   .certificates {
-    padding: 70px;
+    padding: 40px;
   }
   .certificates hr {
     border: 1px solid #9B9B9B;
