@@ -398,7 +398,7 @@ tablet screen
   font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 999px) {
   :root {
     font-size: 10px;
   }
@@ -452,7 +452,7 @@ tablet screen
     display: none;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1000px) {
   :root {
     font-size: 10px;
   }
@@ -489,12 +489,12 @@ h3 {
   color: white;
 }
 
-p {
+p, .normalsizetext {
   font-size: 16px;
 }
 
 .smallertext {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 :root {
@@ -598,13 +598,125 @@ main .homepage_banner div p {
   border-radius: 2rem;
   padding: 1.1rem 2.5rem;
   border: none;
+  margin: 0;
 }
 .homepage_rooms_container .homepage_rooms_container_magicImporium section button:hover, .homepage_rooms_container .homepage_rooms_container_burlesque section button:hover, .homepage_rooms_container .homepage_rooms_container_cure section button:hover {
   background-color: transparent;
   color: #F60B0E;
   border: 2px solid #F60B0E;
 }
-@media only screen and (max-width: 768px) {
+.homepage_rooms button {
+  background-color: transparent;
+  border: 1px solid #777;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  border-radius: 2.4rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  margin: 10vw 0;
+}
+.homepage_rooms button:hover {
+  background-color: #777;
+}
+
+.homepage_blog {
+  background-color: #1B1B1B;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.homepage_blog_header {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+.homepage_blog_header h2 {
+  padding: 4rem 0;
+}
+.homepage_blog_header_link {
+  color: #F60B0E;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-bottom: 1px solid #F60B0E;
+}
+.homepage_blog_header_link:hover {
+  color: #F60B0E;
+}
+.homepage_blog_main {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px;
+  gap: 20px;
+}
+.homepage_blog_main .homepage_blog_article {
+  max-width: 380px;
+}
+.homepage_blog_main .homepage_blog_article_image, .homepage_blog_main .exit {
+  height: 240px;
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/room-9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.homepage_blog_main .homepage_blog_article_image div, .homepage_blog_main .exit div {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  margin: 20px;
+}
+.homepage_blog_main .homepage_blog_article_image div img, .homepage_blog_main .exit div img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.homepage_blog_main .homepage_blog_article_image div span, .homepage_blog_main .exit div span {
+  color: white;
+  font-weight: 500;
+}
+.homepage_blog_main .homepage_blog_article_text {
+  color: #717171;
+  padding-left: 18px;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+.homepage_blog_main .homepage_blog_article_text span {
+  letter-spacing: 0.2em;
+  margin: 24px 0;
+}
+.homepage_blog_main .homepage_blog_article_text div {
+  background-color: #717171;
+  height: 4px;
+  width: 30px;
+  margin-bottom: 30px;
+}
+.homepage_blog_main .homepage_blog_article_text h3 {
+  margin-bottom: 30px;
+}
+.homepage_blog_main .homepage_blog_article_text p {
+  font-family: "Hind", sans-serif;
+  margin-bottom: 50px;
+}
+.homepage_blog_main .exit {
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/room-7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.homepage_blog_main .room {
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/post-img-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 999px) {
   .bodyHomepage {
     width: 100vw;
   }
@@ -617,7 +729,7 @@ main .homepage_banner div p {
   h3 {
     font-size: 21px;
   }
-  p {
+  p, .normalsizetext {
     font-size: 14px;
   }
   .smallertext {
@@ -640,6 +752,11 @@ main .homepage_banner div p {
   .homepage_rooms h2 {
     padding: 4rem 0;
   }
+  .homepage_blog_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+  }
 }
 @media only screen and (min-width: 720px) {
   h1 {
@@ -648,19 +765,44 @@ main .homepage_banner div p {
   .horizontalLine {
     display: inline;
   }
+  .homepage_blog_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1000px) {
   .homepage_rooms {
     padding: 0;
   }
   .homepage_rooms h2 {
     padding: 4rem 0;
   }
+  .homepage_rooms_container .homepage_rooms_container_magicImporium, .homepage_rooms_container .homepage_rooms_container_cure, .homepage_rooms_container .homepage_rooms_container_burlesque {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+  }
   .homepage_rooms_container .homepage_rooms_container_magicImporium img, .homepage_rooms_container .homepage_rooms_container_cure img, .homepage_rooms_container .homepage_rooms_container_burlesque img {
     max-width: 600px;
+    max-height: 400px;
   }
   .homepage_rooms_container .homepage_rooms_container_magicImporium section, .homepage_rooms_container .homepage_rooms_container_cure section, .homepage_rooms_container .homepage_rooms_container_burlesque section {
-    max-width: 600px;
+    height: 500px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .homepage_rooms_container .homepage_rooms_container_cure {
+    flex-direction: row;
+  }
+  .homepage_blog_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .homepage_blog h3 {
+    font-size: 24px;
   }
 }
 .footer {
