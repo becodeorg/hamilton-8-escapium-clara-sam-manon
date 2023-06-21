@@ -989,29 +989,32 @@ main .homepage_banner div p {
   justify-content: space-around;
 }
 .articleContact__partOne {
-  width: 17vw;
+  width: 20vw;
   display: flex;
   flex-direction: column;
-  margin-left: 10vw;
+  margin-left: 12vw;
   margin-top: 10vh;
+  gap: 5vh;
 }
 .articleContact__partOne h2 {
   color: white;
   font-family: "Montserrat", sans-serif;
+  width: 25vw;
 }
 .articleContact__partOne p {
   color: white;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-family: "Hind", sans-serif;
 }
 .articleContact__partOne__lists {
   display: flex;
+  gap: 2vw;
 }
 .articleContact__partOne__lists__icones {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  gap: 6vh;
 }
 .articleContact__partOne__lists__icones li i {
   color: white;
@@ -1025,7 +1028,7 @@ main .homepage_banner div p {
   gap: 3.5vh;
 }
 .articleContact__partOne__lists__datas li {
-  font-size: 0.6rem;
+  font-size: 1.2rem;
   font-family: "Hind", sans-serif;
 }
 .articleContact__partTwo {
@@ -1045,7 +1048,7 @@ main .homepage_banner div p {
   gap: 2vh;
 }
 .articleContact__partTwo__form div input {
-  width: 25vw;
+  width: 20vw;
   height: 5vh;
   background-color: #1B1B1B;
   border: #1B1B1B solid 2px;
@@ -1053,7 +1056,7 @@ main .homepage_banner div p {
   color: white;
 }
 .articleContact__partTwo__form .message {
-  width: 51vw;
+  width: 41vw;
   height: 25vh;
   background-color: #1B1B1B;
   border: #1B1B1B solid 2px;
@@ -1061,17 +1064,17 @@ main .homepage_banner div p {
   color: white;
 }
 .articleContact__partTwo button {
-  width: 51vw;
-  height: 2rem;
+  width: 41vw;
+  height: 4rem;
   border: #F60B0E solid 2px;
   border-radius: 4rem;
   color: white;
   background-color: #F60B0E;
 }
 
-.map {
-  width: 100vw;
-  filter: hue-rotate(100%);
+#map {
+  height: 75vh; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
 }
 
 /*# sourceMappingURL=main.css.map */

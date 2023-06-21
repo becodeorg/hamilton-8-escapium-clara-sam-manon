@@ -11,31 +11,34 @@
     
 
     &__partOne {
-        width: 17vw;
+        width: 20vw;
         display: flex;
         flex-direction: column;
-        margin-left: 10vw;
+        margin-left: 12vw;
         margin-top: 10vh;
+        gap: 5vh;
         h2 {
             color: white;
             font-family: 'Montserrat', sans-serif;
+            width: 25vw;
             
         }
 
         p {
             color: white;
-            font-size: 0.8rem;
+            font-size: 1.5rem;
             font-family: 'Hind', sans-serif;
         }
 
         &__lists {
 
             display: flex;
+            gap: 2vw;
             &__icones {
                 list-style: none;
                 display: flex;
                 flex-direction: column;
-                gap: 3vh;
+                gap: 6vh;
 
                 li {
                     
@@ -54,7 +57,7 @@
                 gap: 3.5vh;
 
                 li {
-                    font-size: 0.6rem;
+                    font-size: 1.2rem;
                     font-family: 'Hind', sans-serif;
                 }
             }
@@ -78,7 +81,7 @@
             gap: 2vh;
             div {
                 input {
-                    width: 25vw;
+                    width: 20vw;
                     height: 5vh;
                     background-color: #1B1B1B;
                     border: #1B1B1B solid 2px;
@@ -88,7 +91,7 @@
             }
 
             .message {
-                width: 51vw;
+                width: 41vw;
                 height: 25vh;
                 background-color: #1B1B1B;
                 border: #1B1B1B solid 2px;
@@ -98,8 +101,8 @@
         }
 
         button {
-            width: 51vw;
-            height: 2rem;
+            width: 41vw;
+            height: 4rem;
             border: #F60B0E solid 2px;
             border-radius: 4rem;
             color: white;
@@ -108,8 +111,13 @@
     }
 }
 
-.map {
-    width: 100vw;
-    // filter: grayscale(100%);
-    filter: hue-rotate(100%);
-}
+// .map {
+//     width: 100vw;
+//     filter: grayscale(100%);
+//     filter: hue-rotate(100%);
+// }
+
+#map {
+    height: 75vh; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+  }
