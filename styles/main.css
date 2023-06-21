@@ -716,6 +716,36 @@ main .homepage_banner div p {
   background-repeat: no-repeat;
 }
 
+.homepage_forwho {
+  background: linear-gradient(to right, #1B1B1B, rgba(0, 0, 0, 0.5)), url("/resources/images/gallery/slide-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+  display: flex;
+  align-items: center;
+  min-height: 240px;
+}
+.homepage_forwho_list {
+  list-style: none;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+.homepage_forwho_list li i {
+  color: #F60B0E;
+  font-size: 25px;
+  padding-right: 20px;
+}
+.homepage_forwho_list li span {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 999px) {
   .bodyHomepage {
     width: 100vw;

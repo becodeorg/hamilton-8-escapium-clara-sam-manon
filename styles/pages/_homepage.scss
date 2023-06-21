@@ -248,7 +248,44 @@ main{
     }
 }
 
+//FOR WHOM
+.homepage_forwho{
+    background:linear-gradient(to right,$darkest-black, rgba(0, 0, 0, 0.5)), #{url('/resources/images/gallery/slide-3.jpg')};
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    min-height: 240px;
+    //ADD PADDING TO UL WHEN DESKTOP!!!!!!!!!!!!!!!!!
+    &_list{
+        list-style: none;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
+        margin-left: 10%;
+
+        li{
+            i{
+                color: $red;
+                font-size: 25px;
+                padding-right: 20px;
+            }
+            span{
+                text-transform: uppercase;
+                color: white;
+                font-size: 14px;
+                letter-spacing: 0.08em;
+                font-weight: 600;
+                
+            }
+            
+
+        }
+    }
+}
 
 
 //responsive
@@ -301,6 +338,8 @@ main{
         }
     }
 }
+
+
 
 @media only screen and (min-width:720px){
     h1{
