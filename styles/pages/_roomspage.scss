@@ -1,0 +1,64 @@
+.roomsGlobal {
+
+
+.imageRooms {
+    height: 65vh;
+    width: 100vw;
+    background-image: url(../../resources/images/gallery/slide-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    background-position-y: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+
+    &__title {
+        color: white;
+
+        &__dot {
+            color: red;
+        }
+    }
+
+    &__secLine {
+        &__home {
+            color: white;
+        }
+
+        &__spaceLine {
+            color: white;
+        }
+
+        &__rooms {
+            color: white;
+        }
+
+        &__gridcols {
+            color: gray;
+        }
+    }
+}
+
+.roomsMain {
+    &__filter {
+        &__btn {
+
+        }
+    }
+
+    &__grid {
+        &__item {
+
+        }
+    }
+
+    &__pageSelect {
+        &__number {
+
+        }
+    }
+}
+}
