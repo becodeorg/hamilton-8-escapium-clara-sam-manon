@@ -1,9 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cinzel:wght@400;500;600;700;800;900&family=Forum&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Fraunces:wght@700;800;900&family=League+Spartan&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Poppins&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap");
+/*
+mobile screen
+
+
+tablet screen
+@media (max-width:768px){
+    h2{
+            font-size: 31px;
+        }
+        a{
+        font-size: 14px;
+    }
+    .test{
+        flex-direction: column;
+        gap: 80px;
+    }
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap");
+.thebody {
+  background-color: #1B1B1B;
+}
+.thebody section {
+  text-align: center;
+}
+.thebody section div.line {
+  border: 2px solid #9B9B9B;
+  width: 32px;
+}
+.thebody section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #fefefe;
+  margin-bottom: 5%;
+}
+.thebody section a {
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #F60B0E;
+}
+.thebody section a:hover {
+  color: #fefefe;
+}
+.thebody section .test {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  font-weight: 300;
+  margin: 0 25%;
+  width: 900px;
+}
+.thebody section figcaption {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.thebody section button {
+  text-align: center;
+  color: #1B1B1B;
+}
+
+@media (max-width: 412px) {
+  h2 {
+    font-size: 19px;
+  }
+  a {
+    font-size: 11px;
+  }
+  .test {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    width: 0;
+  }
+}
+.header {
+  background-image: url("/resources/images/gallery/slide-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 160px;
+  box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.4);
+}
+.header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #fefefe;
+  text-align: center;
+}
+.header h2::after {
+  color: #F60B0E;
+}
+.header .home {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #fefefe;
+}
+
+.rules {
+  background-color: #1B1B1B;
+  padding: 160px;
+}
+.rules div.line {
+  border: 2px solid #717171;
+  width: 32px;
+}
+.rules h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #fefefe;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.rules .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 50px;
+}
+.rules .container article {
+  text-align: center;
+}
+.rules .container i {
+  font-size: 4rem;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+  padding: 5%;
+  border-radius: 50%;
+}
+.rules .container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: #fefefe;
+}
+.rules .container p {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  color: #fefefe;
+}
+
+.video {
+  background-image: url("/resources/images/gallery/video-placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.5);
+  text-align: center;
+}
+.video i {
+  font-size: 30px;
+  color: #fefefe;
+  margin: 10% 50%;
+  padding: 1% 1%;
+  border: 2px solid #F60B0E;
+  background-color: #F60B0E;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 1.2%;
+}
+.video i:hover {
+  box-shadow: 0 0 0 5px rgba(255, 248, 248, 0.212);
+  cursor: pointer;
+}
+
+.certificates {
+  background-color: #1B1B1B;
+  padding: 160px;
+}
+.certificates div.line {
+  border: 2px solid #717171;
+  width: 32px;
+}
+.certificates h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #fefefe;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.certificates .certif {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.certificates img:hover {
+  opacity: 0.6;
+  transition: opacity 0.9s;
+}
+
+.team {
+  background-color: #222222;
+  padding: 160px;
+}
+.team div.line {
+  border: 2px solid #717171;
+  width: 32px;
+}
+.team h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #fefefe;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.team div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+.team div img {
+  opacity: 0.6;
+  height: auto;
+  max-width: 100%;
+  border: solid 8px #222222;
+}
+.team div img:hover {
+  opacity: 1;
+  border: solid 8px #F60B0E;
+}
+.team div h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: #fefefe;
+  text-align: left;
+}
+.team div p {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: left;
+}
+
+.faq {
+  background-color: #fefefe;
+  padding: 160px;
+}
+.faq div.line {
+  border: 2px solid #9B9B9B;
+  width: 32px;
+}
+.faq h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #222222;
+  text-align: center;
+}
+.faq p.contact {
+  font-family: "Hind", sans-serif;
+  font-size: 20px;
+  color: #717171;
+  text-align: center;
+}
+.faq h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: #222222;
+  text-align: left;
+}
+.faq p {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: left;
+}
+
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar_container, .navbar_container .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background-color: rgba(34, 34, 34, 0.4784313725);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar_container:hover, .navbar_container .navbar:hover {
+  color: white;
+}
+.navbar_container .navbar_logo {
+  height: inherit;
+  position: static;
+}
+.navbar_container .navbar {
+  position: static;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar_container .navbar_list #burger {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.navbar_container .navbar_list #burger i {
+  width: 3rem;
+  font-size: 2.5rem;
+  color: white;
+}
+.navbar_container .navbar_list ul {
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+  column-gap: 40px;
+}
+.navbar_container .navbar_list ul li {
+  text-transform: lowercase;
+  font-weight: 700;
+  text-decoration: none;
+  width: min-content;
+}
+.navbar_container .navbar_list ul li a {
+  text-decoration: none;
+  color: #777;
+  padding-left: 2rem;
+}
+.navbar_container .navbar_list ul li a:hover {
+  color: white;
+  cursor: pointer;
+}
+.navbar_container .navbar_book_search_sign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 0px 2rem;
+}
+.navbar_container .navbar_book_search_sign .navbar_book {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_container .navbar_book_search_sign .navbar_book button {
+  background-color: transparent;
+  border: 2px solid #777;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  border-radius: 2.4rem;
+  padding: 1rem 2rem;
+}
+.navbar_container .navbar_book_search_sign .navbar_book button:hover {
+  background-color: #777;
+}
+.navbar_container .navbar_book_search_sign .navbar_book i {
+  display: none;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border: 2px solid #777;
+  border-radius: 50%;
+}
+.navbar_container .navbar_book_search_sign .navbar_search i {
+  font-size: 1.6rem;
+  border: none;
+  width: 4rem;
+  height: 3.6rem;
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_container .navbar_book_search_sign .navbar_signIn {
+  text-decoration: none;
+  color: white;
+}
+.navbar_container .navbar_book_search_sign .navbar_signIn i {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 720px) {
+  :root {
+    font-size: 10px;
+  }
+  .navbar_container, .navbar_container .navbar {
+    height: 5rem;
+  }
+  .navbar_container .navbar {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+  .navbar_container .navbar_list #burger {
+    display: flex;
+  }
+  .navbar_container .navbar_list ul {
+    display: block;
+    padding-left: 0;
+    margin-top: 0;
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -70%;
+    background: #222222;
+    z-index: 900;
+    transition: all;
+  }
+  .navbar_container .navbar_list ul li {
+    width: 100%;
+    border-bottom: 1px solid #717171;
+    display: grid;
+    align-items: center;
+    height: 5rem;
+  }
+  .navbar_container .navbar_list ul li a {
+    font-size: 14px;
+    padding-left: 4rem;
+    color: #717171;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+  }
+  .navbar_container .navbar_list ul.left-0 {
+    left: 0;
+  }
+  .navbar_container .navbar_book_search_sign .navbar_book button {
+    display: none;
+  }
+  .navbar_container .navbar_book_search_sign .navbar_book i {
+    display: inline;
+  }
+  .navbar_container .navbar_book_search_sign .navbar_signIn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 721px) {
+  :root {
+    font-size: 10px;
+  }
+  .navbar_container, .navbar_container .navbar {
+    height: 8rem;
+  }
+  .navbar_container .navbar_logo {
+    height: inherit;
+  }
+  .navbar_container .navbar_list #burger {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  font-size: 4.4rem;
+  color: white;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.smallertext {
+  font-size: 11px;
+}
+
+:root {
+  font-size: 10px;
+}
+
+main {
+  background-color: transparent;
+}
+main .homepage_banner {
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/slide-4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 93rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .homepage_banner h1 {
+  margin-left: 10%;
+  width: 45%;
+}
+main .homepage_banner div {
+  margin-left: 10%;
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+}
+main .homepage_banner div .horizontalLine {
+  height: 1px;
+  background-color: white;
+  width: 5vw;
+  margin: 0 2rem;
+}
+main .homepage_banner div p {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.homepage_rooms {
+  background-color: #1B1B1B;
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .smallertext {
+    font-size: 10px;
+  }
+  .homepage_banner {
+    min-height: 260px;
+    max-height: 695px;
+    background-size: contain;
+  }
+}
 .footer {
   margin: 0;
   width: 100vw;

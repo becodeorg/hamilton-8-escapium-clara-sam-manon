@@ -1,0 +1,212 @@
+:root{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin flex_vertical_center($justifyContent){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: $justifyContent;
+}
+
+.navbar_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color:#2222227a;
+    @include flex_vertical_center(flex-start);
+    width: 100vw;
+    font-size: 16px;
+    font-family: $montserrat;
+    &:hover{
+        color:white;
+    }
+    
+    .navbar_logo{
+       height: inherit;
+       position: static;
+    }
+    .navbar{
+        @extend .navbar_container;
+        position: static;
+        justify-content: space-between;
+        width: 100%;
+        &_list{
+            #burger{
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                i{
+                    width: 3rem;
+                    font-size:2.5rem;
+                    color: white;
+                }
+            }
+            ul{
+                
+                display: grid;
+                grid-auto-flow: column;
+                list-style-type: none;
+                column-gap: 40px;
+                li{
+                    text-transform: lowercase;
+                    font-weight: 700;
+                    text-decoration: none;
+                    width: min-content;
+                    a{
+                        text-decoration: none;
+                        color: $nav;
+                        padding-left: 2rem;
+                        &:hover{
+                            color:white;
+                            cursor: pointer;
+                        }
+                    }
+                    
+    
+                }
+                
+            }
+            
+        }
+        &_book_search_sign{
+            @include flex_vertical_center(flex-end);
+            gap:2rem;
+            padding:0px 2rem;
+            .navbar_book{
+                
+                align-items: center;
+                color: white;
+                @include flex_vertical_center(center);
+                button{
+                    background-color: transparent;
+                    border: 2px solid $nav;
+                    color:white;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    white-space: nowrap;
+                    border-radius: 2.4rem;
+                    padding: 1rem 2rem;
+                    &:hover{
+                        background-color: $nav;
+                    }
+                }
+                i{
+                    display: none;
+                    font-size:1.4rem ;
+                    padding:1rem;
+                    border:2px solid $nav;
+                    border-radius: 50%;
+                }
+            }
+            .navbar_search{
+                i{
+                    font-size:1.6rem;
+                    border: none;
+                    width: 4rem;
+                    height: 3.6rem;
+                    align-items: center;
+                    color: white;
+                    @include flex_vertical_center(center);
+                }                
+            }
+            .navbar_signIn{
+                text-decoration: none;
+                color: white;
+                i{
+                    font-size:1.6rem;
+                }
+            }
+        }
+    }
+}
+    
+
+@media only screen and (max-width: 720px) {
+    :root{
+        font-size: 10px;
+    }
+    .navbar_container{
+        height: 5rem;
+        .navbar{
+            justify-content: flex-start;
+            flex-direction: row-reverse;
+            &_list{
+                #burger{
+                    display:flex;
+                }
+                ul{
+                    display: block;
+                    padding-left: 0;
+                    margin-top: 0;
+                    li{
+                        width: 100%;
+                        border-bottom: 1px solid $font;
+                        display: grid;
+                        align-items: center;
+                        height: 5rem;
+                        a{
+                            font-size: 14px;
+                            padding-left: 4rem;
+                            color: $font;
+                            text-transform: capitalize;
+                            color: rgb(255, 255, 255);
+                        }
+                        
+                    }
+                    
+                    //start burger css
+                    width: 60%;
+                    height: 100vh;
+                    position: absolute;
+                    top: 0;
+                    left: -70%;
+                    background: $dark-black;
+                    z-index: 900;
+                    transition:all;
+                    
+                    &.left-0 {
+                        left: 0;
+                    }
+                //                   
+                }
+            }
+            &_book_search_sign{
+                .navbar_book{
+                    button{
+                        display: none;
+                    }
+                    i{
+                        display: inline;
+                    }
+                }
+                .navbar_signIn{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width:721px){
+    :root{
+        font-size: 10px;
+    }
+    .navbar_container{
+        height: 8rem;
+        .navbar_logo{
+            height:inherit;
+        }
+        ;.navbar_list{
+            #burger{
+                display: none;
+            }
+        }
+    }
+}
