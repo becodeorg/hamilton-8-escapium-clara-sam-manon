@@ -778,18 +778,19 @@ body .faq p {
 body {
   margin: 0;
   padding: 0;
+  background-color: #1B1B1B;
 }
 body .header {
   background-image: url("/resources/images/gallery/slide-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px;
+  padding: 100px;
   box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.4);
   text-align: center;
 }
 body h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 44px;
+  font-size: 60px;
   color: #fefefe;
 }
 body .icons {
@@ -797,6 +798,11 @@ body .icons {
   font-family: "Hind", sans-serif;
   font-size: 11px;
   text-transform: uppercase;
+}
+body .content .side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
