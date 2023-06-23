@@ -1,106 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap');
 
+body{
+    padding: 0;
+    margin: 0;
 
 .header{
         background-image: url("/resources/images/gallery/slide-1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 160px ;
+        padding: 60px ;
         box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.4);
         
-            & h2{
+            & h1{
                 font-family: 'Montserrat', sans-serif;
-                font-size: 50px;
+                font-size: 60px;
                 color: $white;
                 text-align: center;
                     &::after{
                         color:$red;
                     }
             }
+            .point{
+                text-decoration: none;
+                color: $red;
+                font-size: 65px;
+                cursor: unset;
+        }
                 .home{
                     font-family: 'Hind', sans-serif;
                     font-size: 16px;
                     text-align: center;
                     color: $white;
+                    opacity: 0.6;
+                }
+                a.esc{
+                    color: $white;
+                    text-decoration: none;
+                    font-weight: 700;
+                    &:hover{
+                        color: $red;
+                    }
                 }
             }
 .rules{
     background-color: $darkest-black;
-    padding: 160px;
+    padding:100px;
 
-    & div.line{
+    & hr{
         border: 2px solid $font;
         width: 32px;
+        
 }
         h2{
             font-family: 'Montserrat', sans-serif;
             font-size: 44px;
             color: $white;
             text-align: center;
-            margin-bottom: 5%;
+
     }
-    .container {  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 50px;
+            .bar{
+                background-color: $font;
+                transform: rotate(30deg)translateY(25px)translateX(230px);
+                width: 1px;
+                height: 160px;
+                z-index: 0;
+                position: relative;
+            }
+            .container {  
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 0px 100px;
 
-        & article{
-            text-align: center;
+                & article{
+                    text-align: center;
+                    width: 380px;
+                    
+                    
+                }
+
+                & img{
+                    width: 100px;
+                    border: solid 1px $font;
+                    border-radius: 50%;
+                    padding: 1.5%;
+                    z-index: 1;
+                    position: relative;
+                    background-color: $darkest-black;
+                    margin-bottom: 5%;
+                    
+                    
+                }
+                    & h3{
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 30px;
+                        color: $white;
+                    }
+                    & p{
+                        font-family: 'Hind', sans-serif;
+                        font-size: 19px;
+                        color: $font;
+                    }
+
+            }  
         }
-            & i{
-                font-size: 4rem;
-                color: $white;
-                border: 1px solid $white;
-                padding: 5%;
-                border-radius: 50%;
-
-            }
-            & h3{
-                font-family: 'Montserrat', sans-serif;
-                font-size: 32px;
-                color: $white;
-            }
-            & p{
-                font-family: 'Hind', sans-serif;
-                font-size: 16px;
-                color: $white;
-            }
-
-    }  
-}
 .video{
         background-image: url("/resources/images/gallery/video-placeholder.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
+        padding: 100px;
         box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.5);
         text-align: center;
-
-        & i{
-            font-size: 30px;
-            color: $white;
+        & img{
+            width: 50px;
             margin: 10% 50%;
-            padding:1% 1%;
+            padding:1%;
             border: 2px solid $red;
             background-color: $red;
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            padding: 1.2%;
-
+            box-shadow: 0 0 0 5px rgba(255, 248, 248, 0.212);
             &:hover{
-                box-shadow: 0 0 0 5px rgba(255, 248, 248, 0.212);
-                cursor: pointer;
+                transform: scale(1.2);
             }
         }
 }
+
 .certificates{
     background-color: $darkest-black;
-    padding: 160px;
+    padding: 100px;
+    text-align: center;
 
-    & div.line{
+    & hr{
         border: 2px solid $font;
         width: 32px;
 }
@@ -113,9 +144,10 @@
         }
             .certif{
                 display: flex;
-                flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: center;
-                gap: 30px;
+                align-items: center;
+                gap: 20px;
             }
                 img:hover {
                     opacity: 0.6;
@@ -124,9 +156,9 @@
     }
 .team{
     background-color: $dark-black;
-    padding: 160px;
+    padding: 100px;
 
-        & div.line{
+        & hr{
             border: 2px solid $font;
             width: 32px;
         }
@@ -141,9 +173,9 @@
             }
                 & div{
                     display: flex;
-                    flex-direction: row;
-                    gap: 30px;
+                    flex-wrap: wrap;
                     justify-content: center;
+                    gap: 20px;
                     
                     & img {
                         opacity: 0.6;
@@ -173,37 +205,300 @@
         }
 .faq{
     background-color: $white;
-    padding: 160px;
+    padding: 100px;
+    margin: 0 15%;
 
-    div.line{
+    hr{
             border: 2px solid #9B9B9B;
             width: 32px;
     }
     
-        & h2{
+         h2{
             font-family: 'Montserrat', sans-serif;
             font-size: 44px;
             color: $dark-black;
             text-align: center;
+            
         }
-                & p.contact{
+                 p.contact{
                     font-family: 'Hind', sans-serif;
                     font-size: 20px;
                     color: $font;
                     text-align: center;
                 }
-                    & h3{
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 32px;
-                        color: $dark-black;
-                        text-align: left;
+                    .icon img{
+                        width: 6vh;
+                        background-color: #e6e0e081;
+                        border-radius: 50%;
+                        padding: 18%;
                     }
-                        & p{
-                            font-family: 'Hind', sans-serif;
-                            font-size: 16px;
-                            color: $font;
+                        .accordion-title{
+                            margin-left: 3%;
+                            margin-top: 2%;
+                        }
+                            button {
+                            border: none;
+                            background-color: $white;
+                            position: relative;
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            text-align: left;
+                            color: $dark-black;
+                            font-size: 28px;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            cursor: pointer;
+
+                            &:hover{
+                                color: $red;
+                            }
+                        }
+                                & p{
+                                    font-family: 'Hind', sans-serif;
+                                    font-size: 16px;
+                                    color: $font;
+                                    text-align: left;
+                                    margin-left: 8.5%;
+                                }
+            }
+        }
+//tablet
+@media screen and (max-width:768px){
+    .header{
+        padding: 6px ;
+            & h2{
+                font-size: 60px;
+            }
+            .point{
+                font-size: 65px;
+            }
+                .home{
+                    font-size: 16px;
+                }
+        }
+.rules{
+    padding: 100px;   
+    .container {  
+
+        & img{
+            width: 100px;
+            padding: 1.5%;
+        }
+            & h3{
+                font-size: 32px;
+
+            }
+            & p{
+                font-size: 16px;
+            }
+    }    
+}
+                hr{
+                    border: 2px solid #9B9B9B;
+                    width: 32px;
+                }
+                    h2{
+                        font-size: 44px;
+                }
+                .bar{
+                    width: 1px;
+                    height: 100px;
+                }
+ 
+.video{
+        padding: 100px;
+        & img{
+            width: 50px;
+            margin: 10% 50%;
+            padding:1%;
+        }
+}
+
+.certificates{
+    padding: 100px;
+
+    hr{
+        border: 2px solid #9B9B9B;
+        width: 32px;
+    }
+
+        h2{
+            font-size: 44px;
+        }
+            .certif{
+                gap: 20px;
+            }
+    }
+.team{
+    background-color: $dark-black;
+    padding: 100px;
+
+    hr{
+        border: 2px solid #9B9B9B;
+        width: 32px;
+    }
+            
+            & h2{
+                font-size: 44px;
+
+            }
+                & div{
+                    flex-direction: row;
+                    gap: 20px;
+                
+                        & h3{
+                            font-size: 19px;
                             text-align: left;
                         }
+                            & p{
+                                font-size: 14px;
+                                text-align: left;
+                            }
+            }
+        }
+.faq{
+    padding: 100px;
+
+    hr{
+        border: 2px solid #9B9B9B;
+        width: 32px;
     }
-         
     
+        & h2{
+            font-size: 44px;
+        }
+                & p.contact{
+                    font-size: 20px;
+                }
+                    & h3{
+                        font-size: 32px;
+                    }
+                        & p{
+                            font-size: 16px;
+                        }
+    }
+}
+/*MOBILE*/
+@media screen and (max-width:480px){
+    .header{
+        
+        padding: 1px ;
+        
+            & h2{
+                font-size: 20px;
+                
+            }
+            .point{
+                font-size: 25px;
+        }
+                .home{
+                    font-size: 11px;
+
+                }
+            }
+.rules{
+    padding: 40px;      
+}
+    hr{
+        border: 1px solid #9B9B9B;
+        width: 12px;
+    }
+        h2{
+            font-size: 21px;
+    }
+    .bar{
+        width: 1px;
+        height: 50px;
+    }
+    .container {  
+        gap: 0px 60px;
+
+        & img{
+            width: 25px;
+            padding: 1%;
+        }
+            & h3{
+                font-size: 19px;
+
+            }
+            & p{
+                font-size: 14px;
+            }
+
+    }  
+.video{
+        padding: 50px;
+        & img{
+            width: 25px;
+            margin: 0;
+            padding:0;
+        }
+}
+
+.certificates{
+    padding: 40px;
+
+    hr{
+        border: 1px solid #9B9B9B;
+        width: 12px;
+    }
+
+        h2{
+            font-size: 21px;
+        }
+            .certif{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+            }
+    }
+.team{
+    background-color: $dark-black;
+    padding: 40px;
+
+    hr{
+        border: 1px solid #9B9B9B;
+        width: 12px;
+    }
+            
+            & h2{
+                font-size: 21px;
+
+            }
+                & div{
+                    flex-direction: column;
+                    gap: 10px;
+                
+                        & h3{
+                            font-size: 19px;
+                            text-align: center;
+                        }
+                            & p{
+                                font-size: 14px;
+                                text-align: center;
+                            }
+            }
+        }
+.faq{
+    padding: 40px;
+
+    hr{
+        border: 1px solid #9B9B9B;
+        width: 12px;
+    }
+        & h2{
+            font-size: 21px;
+        }
+                & p.contact{
+                    font-size: 12px;
+                }
+                    & h3{
+                        font-size: 16px;
+                    }
+                        & p{
+                            font-size: 14px;
+                        }
+    }
+}
