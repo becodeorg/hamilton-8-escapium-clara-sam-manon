@@ -67,13 +67,14 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         column-gap: 5vh;
+        row-gap: 5vh;
         width: 85vw;
         height: 100vh;
         &__item {
             display: flex;
             flex-direction: column;
-            width: 20vw;
-            height: 60vh;
+            width: 19vw;
+            height: 50vh;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -84,6 +85,10 @@
             &__locker {
                 padding-left: 1vw;
                 display: flex;
+
+                i {
+                    color: white;
+                }
 
                 .red {
                     color: red;
@@ -116,35 +121,63 @@
         }
 
         .cure {
-
+            background-image: url(../../resources/images/gallery/room-2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
         }
 
         .burlesque {
-
+            background-image: url(../../resources/images/gallery/room-3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
         }
 
         .prison {
-
+            
         }
 
         .hospital {
-
+            background-image: url(../../resources/images/gallery/room-5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
         }
 
         .factory {
-
+            background-image: url(../../resources/images/gallery/gallery-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
         }
 
         .bunker {
-
+            background-image: url(../../resources/images/gallery/room-7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
         }
 
         .mystical {
-
+            background-image: url(../../resources/images/gallery/room-8.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
         }
 
         .future {
-
+            background-image: url(../../resources/images/gallery/room-9.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
         }
     }
 
