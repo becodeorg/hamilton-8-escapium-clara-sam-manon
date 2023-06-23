@@ -32,7 +32,7 @@ p, .normalsizetext{
 main{
     background-color: transparent;
     .homepage_banner{
-        background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('/resources/images/gallery/slide-4.jpg')};
+        background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('./resources/images/gallery/slide-4.jpg')};
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
