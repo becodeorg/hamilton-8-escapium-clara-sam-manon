@@ -1,7 +1,7 @@
 async function addHeader() {
-    const resp = await fetch("./Html/header.html")
+    const resp = await fetch("/Html/header.html")
     const html = await resp.text();
-    const respjs = await fetch("./Javascript/hamburger.js")
+    const respjs = await fetch("/Javascript/hamburger.js")
     document.body.insertAdjacentHTML("afterbegin", html);
     //I added manually the jscode for the burger menu as we haven't seen another way to do this more efficiently yet
     let burgerBtn = document.getElementById("burger")

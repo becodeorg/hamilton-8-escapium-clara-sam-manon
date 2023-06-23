@@ -378,6 +378,9 @@ tablet screen
   border: 2px solid #777;
   border-radius: 50%;
 }
+.navbar_container .navbar_book_search_sign .navbar_search {
+  text-decoration: none;
+}
 .navbar_container .navbar_book_search_sign .navbar_search i {
   font-size: 1.6rem;
   border: none;
@@ -1166,6 +1169,137 @@ main .homepage_banner div p {
   }
   .social h3 {
     margin-left: -60vw;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  font-size: 4.4rem;
+  color: white;
+}
+
+h3 {
+  font-size: 32px;
+  color: white;
+}
+
+p, .normalsizetext {
+  font-size: 16px;
+}
+
+.smallertext {
+  font-size: 12px;
+}
+
+:root {
+  font-size: 10px;
+}
+
+.room_cure header {
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/slide-3.jpg");
+  background-size: cover;
+  height: 70vw;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 5vw;
+}
+.room_cure main {
+  background-color: #1B1B1B;
+}
+.room_cure main .room_cure_details {
+  display: flex;
+  justify-content: space-evenly;
+}
+.room_cure main .room_cure_details div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+}
+.room_cure main .room_cure_details div.container .room_cure_details_icons {
+  color: #717171;
+  font-size: 16px;
+}
+.room_cure main .room_cure_details div.container .room_cure_details_icons .red {
+  color: #F60B0E;
+}
+.room_cure main .room_cure_details div.container .room_cure_details_text {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.room_cure main .room_cure_details div.room_cure_details_verticalLine {
+  width: 1px;
+  background-color: #717171;
+}
+.room_cure main .room_cure_textContact {
+  padding: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.room_cure main .room_cure_textContact .room_cure_paragraph {
+  color: #717171;
+}
+.room_cure main .room_cure_textContact .room_cure_paragraph p {
+  font-family: "Hind", sans-serif;
+}
+.room_cure main .room_cure_textContact .room_cure_address div {
+  color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #717171;
+}
+.room_cure main .room_cure_textContact .room_cure_address div i {
+  font-size: 16px;
+}
+.room_cure main .room_cure_textContact .room_cure_address div a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0 10px 10px;
+}
+.room_cure main .room_cure_textContact .room_cure_address button {
+  background-color: transparent;
+  border: 1px solid #F60B0E;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  border-radius: 2.4rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  background-color: #F60B0E;
+  color: white;
+  margin: 30px 0;
+}
+.room_cure main .room_cure_textContact .room_cure_address button:hover {
+  background-color: #777;
+}
+
+@media only screen and (max-width: 999px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  p, .normalsizetext {
+    font-size: 14px;
+  }
+  .smallertext {
+    font-size: 10px;
   }
 }
 
