@@ -10,15 +10,6 @@ const roomsGrid = document.querySelector('.roomsMain__grid');
 
 const roomsGridItems = roomsGrid.childNodes;
 
-const btnHard = document.querySelector('.hard');
-
-const btnEasy = document.querySelector('.easy');
-
-const btnNormal = document.querySelector('.normal');
-
-const btnAll = document.querySelector('.all');
-
-
 
 selectors.map(button => {
     button.addEventListener('click', (e) => {
@@ -88,13 +79,3 @@ selectors.map(button => {
 })
 
 
-// function filterHard() {
-    
-    
-// };
-
-// btnHard.addEventListener("click", () => {
-//     hardRooms.hidden = false;
-//     easyRooms.hidden = true;
-//     normalRooms.hidden = true;
-// });

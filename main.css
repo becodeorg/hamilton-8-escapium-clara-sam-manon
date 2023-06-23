@@ -1182,9 +1182,13 @@ main .homepage_banner div p {
 }
 .roomsGlobal .imageRooms__title {
   color: white;
+  font-size: 7rem;
 }
 .roomsGlobal .imageRooms__title__dot {
   color: red;
+}
+.roomsGlobal .imageRooms__secLine {
+  font-size: 1.2rem;
 }
 .roomsGlobal .imageRooms__secLine__home {
   color: white;
@@ -1345,7 +1349,8 @@ main .homepage_banner div p {
 .roomsGlobal .roomsMain__pageSelect {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-self: center;
+  justify-self: end;
 }
 .roomsGlobal .roomsMain__pageSelect__number {
   color: white;
