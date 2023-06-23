@@ -1356,4 +1356,350 @@ main .homepage_banner div p {
   color: white;
 }
 
+@media (max-width: 1060px) {
+  .roomsGlobal .imageRooms {
+    height: 25vh;
+  }
+  .roomsGlobal .imageRooms__title {
+    color: white;
+    font-size: 5rem;
+  }
+  .roomsGlobal .imageRooms__title__dot {
+    color: red;
+  }
+  .roomsGlobal .imageRooms__secLine {
+    font-size: 1.2rem;
+  }
+  .roomsGlobal .imageRooms__secLine__home {
+    color: white;
+  }
+  .roomsGlobal .imageRooms__secLine__spaceLine {
+    color: white;
+  }
+  .roomsGlobal .imageRooms__secLine__rooms {
+    color: white;
+  }
+  .roomsGlobal .imageRooms__secLine__gridcols {
+    color: gray;
+  }
+  .roomsGlobal .roomsMain {
+    background-color: #1B1B1B;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+  }
+  .roomsGlobal .roomsMain__filter {
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    gap: 2vw;
+  }
+  .roomsGlobal .roomsMain__filter__btn {
+    width: 100px;
+    height: 40px;
+    border: gray solid 2px;
+    border-radius: 250px;
+    background-color: #1B1B1B;
+    color: white;
+    transition: 0.2s;
+  }
+  .roomsGlobal .roomsMain__filter__btn:hover {
+    background-color: gray;
+  }
+  .roomsGlobal .roomsMain__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 4fr));
+    column-gap: 1vh;
+    row-gap: 1vh;
+    width: 85vw;
+    height: 100vh;
+  }
+  .roomsGlobal .roomsMain__grid__item {
+    display: flex;
+    flex-direction: column;
+    width: 19vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1.5vh;
+  }
+  .roomsGlobal .roomsMain__grid__item__locker {
+    padding-left: 1.5vw;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .roomsGlobal .roomsMain__grid__item__locker i {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .roomsGlobal .roomsMain__grid__item__locker .red {
+    color: red;
+  }
+  .roomsGlobal .roomsMain__grid__item h3 {
+    color: white;
+    width: 20vw;
+    font-size: 1.9rem;
+    padding-left: 1.5vw;
+  }
+  .roomsGlobal .roomsMain__grid__item__icons {
+    display: flex;
+    padding-left: 1.5vw;
+    padding-bottom: 1.5vw;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+  .roomsGlobal .roomsMain__grid__item__icons i {
+    font-size: 1.4rem;
+  }
+  .roomsGlobal .roomsMain__grid__item__icons p {
+    font-size: 1.4rem;
+    color: gray;
+  }
+  .roomsGlobal .roomsMain__grid .imporium {
+    background-image: url(../../resources/images/gallery/slide-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-position-x: -20vw;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .cure {
+    background-image: url(../../resources/images/gallery/room-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .burlesque {
+    background-image: url(../../resources/images/gallery/room-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .prison {
+    background-image: url(../../resources/images/gallery/room-grid-4-img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .hospital {
+    background-image: url(../../resources/images/gallery/room-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .factory {
+    background-image: url(../../resources/images/gallery/gallery-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .bunker {
+    background-image: url(../../resources/images/gallery/room-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .mystical {
+    background-image: url(../../resources/images/gallery/room-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .future {
+    background-image: url(../../resources/images/gallery/room-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+}
+@media (max-width: 650px) {
+  .roomsGlobal {
+    height: 300vh;
+  }
+  .roomsGlobal .imageRooms {
+    height: 25vh;
+  }
+  .roomsGlobal .imageRooms__title {
+    color: white;
+    font-size: 5rem;
+  }
+  .roomsGlobal .imageRooms__title__dot {
+    color: red;
+  }
+  .roomsGlobal .imageRooms__secLine {
+    font-size: 1.2rem;
+  }
+  .roomsGlobal .imageRooms__secLine__home {
+    color: white;
+  }
+  .roomsGlobal .imageRooms__secLine__spaceLine {
+    color: white;
+  }
+  .roomsGlobal .imageRooms__secLine__rooms {
+    color: white;
+  }
+  .roomsGlobal .imageRooms__secLine__gridcols {
+    color: gray;
+  }
+  .roomsGlobal .roomsMain {
+    background-color: #1B1B1B;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+  }
+  .roomsGlobal .roomsMain__filter {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    gap: 2vw;
+  }
+  .roomsGlobal .roomsMain__filter__btn {
+    width: 70vw;
+    height: 40px;
+    border: gray solid 2px;
+    border-radius: 250px;
+    background-color: #1B1B1B;
+    color: white;
+    transition: 0.2s;
+  }
+  .roomsGlobal .roomsMain__filter__btn:hover {
+    background-color: gray;
+  }
+  .roomsGlobal .roomsMain__grid {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 150vh;
+  }
+  .roomsGlobal .roomsMain__grid__item {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1.5vh;
+  }
+  .roomsGlobal .roomsMain__grid__item__locker {
+    padding-left: 1.5vw;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .roomsGlobal .roomsMain__grid__item__locker i {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .roomsGlobal .roomsMain__grid__item__locker .red {
+    color: red;
+  }
+  .roomsGlobal .roomsMain__grid__item h3 {
+    color: white;
+    width: 20vw;
+    font-size: 1.9rem;
+    padding-left: 1.5vw;
+  }
+  .roomsGlobal .roomsMain__grid__item__icons {
+    display: flex;
+    padding-left: 1.5vw;
+    padding-bottom: 1.5vw;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+  .roomsGlobal .roomsMain__grid__item__icons i {
+    font-size: 1.4rem;
+  }
+  .roomsGlobal .roomsMain__grid__item__icons p {
+    font-size: 1.4rem;
+    color: gray;
+  }
+  .roomsGlobal .roomsMain__grid .imporium {
+    background-image: url(../../resources/images/gallery/slide-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-position-x: -20vw;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .cure {
+    background-image: url(../../resources/images/gallery/room-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .burlesque {
+    background-image: url(../../resources/images/gallery/room-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .prison {
+    background-image: url(../../resources/images/gallery/room-grid-4-img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .hospital {
+    background-image: url(../../resources/images/gallery/room-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .factory {
+    background-image: url(../../resources/images/gallery/gallery-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .bunker {
+    background-image: url(../../resources/images/gallery/room-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .mystical {
+    background-image: url(../../resources/images/gallery/room-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+  .roomsGlobal .roomsMain__grid .future {
+    background-image: url(../../resources/images/gallery/room-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
