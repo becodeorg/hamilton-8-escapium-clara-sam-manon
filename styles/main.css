@@ -724,6 +724,24 @@ main .homepage_banner div p {
   display: flex;
   align-items: center;
   min-height: 240px;
+  width: 100vw;
+}
+.homepage_forwho_side {
+  rotate: 270deg;
+  margin-right: -140px;
+}
+.homepage_forwho_side .empty_horizontalLine {
+  background-color: #717171;
+  height: 2px;
+  width: 170px;
+  display: inline-block;
+}
+.homepage_forwho_side .homepage_forwho_sidetext {
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: #717171;
+  letter-spacing: 0.4em;
+  font-weight: 600;
 }
 .homepage_forwho_list {
   list-style: none;
@@ -731,7 +749,6 @@ main .homepage_banner div p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 10%;
 }
 .homepage_forwho_list li i {
   color: #F60B0E;
@@ -741,9 +758,88 @@ main .homepage_banner div p {
 .homepage_forwho_list li span {
   text-transform: uppercase;
   color: white;
-  font-size: 14px;
   letter-spacing: 0.08em;
   font-weight: 600;
+}
+
+.homepage_photos {
+  background-color: #1B1B1B;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.homepage_photos_header {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+.homepage_photos_header h2 {
+  padding: 4rem 0 2rem;
+}
+.homepage_photos_header_link {
+  color: #F60B0E;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-bottom: 1px solid #F60B0E;
+}
+.homepage_photos_header_link:hover {
+  color: #F60B0E;
+}
+.homepage_photos_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 10px;
+}
+.homepage_photos_main img {
+  max-width: 100%;
+}
+.homepage_photos button {
+  background-color: transparent;
+  border: 1px solid #717171;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  border-radius: 2.4rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  margin: 10vw 0;
+}
+.homepage_photos button:hover {
+  background-color: #777;
+}
+
+.homepage_ready {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homepage_ready h2 {
+  color: black;
+  margin-top: 10vw;
+}
+.homepage_ready p {
+  font-family: "Hind", sans-serif;
+  margin-top: 5vw;
+  color: #717171;
+}
+.homepage_ready button {
+  background-color: transparent;
+  border: 1px solid #F60B0E;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  border-radius: 2.4rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  background-color: #F60B0E;
+  color: white;
+  margin: 10vw 0 5vw;
+}
+.homepage_ready button:hover {
+  background-color: #777;
 }
 
 @media only screen and (max-width: 999px) {
@@ -786,6 +882,18 @@ main .homepage_banner div p {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 30px;
+  }
+  .homepage_forwho_side {
+    display: none;
+  }
+  .homepage_forwho_list {
+    margin-left: 10%;
+  }
+  .homepage_photos header .photos {
+    display: none;
+  }
+  .homepage_photos button .feed {
+    display: none;
   }
 }
 @media only screen and (min-width: 720px) {
@@ -833,6 +941,25 @@ main .homepage_banner div p {
   }
   .homepage_blog h3 {
     font-size: 24px;
+  }
+  .homepage_photos header .instagram_shots {
+    display: none;
+  }
+  .homepage_photos main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .homepage_photos button .instagram {
+    display: none;
+  }
+  .homepage_ready h2 {
+    margin-top: 120px;
+  }
+  .homepage_ready p {
+    margin-top: 30px;
+  }
+  .homepage_ready button {
+    margin: 80px 0 100px;
+    padding: 1.5rem 3rem;
   }
 }
 .footer {
