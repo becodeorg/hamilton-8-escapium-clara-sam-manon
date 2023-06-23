@@ -19,12 +19,13 @@ tablet screen
     }
 */
 
-.thebody{
+.testimonials{
     background-color: $darkest-black;
-section{  
+    margin: 0;
+    padding: 100px;  
     text-align: center;
     
-    div.line{
+    hr{
         border: 2px solid #9B9B9B;
         width: 32px;
 }
@@ -33,14 +34,16 @@ section{
         font-family: 'Montserrat', sans-serif;
         font-size: 44px;
         color: $white;
-        margin-bottom: 5%;
     }
     a{
-        font-family: 'Hind', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 12px;
         text-decoration: underline;
         color: $red;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 50px;
 
         &:hover{
         color: $white;
@@ -48,28 +51,55 @@ section{
     }
             .test{
                 display: flex;
-                flex-direction: row;
                 gap: 80px;
                 font-family:'Hind', sans-serif;
-                font-size: 16px ;
+                font-size: 18px ;
                 color: $font;
-                font-weight: 300;
-                margin: 0 25%;
-                width: 900px;
+                margin: 0 20%;
             }
                     figcaption{
+                    font-family:'Hind', sans-serif;
+                    font-size: 14px;
                     text-transform: uppercase;
+                    letter-spacing: 0.16em;
                     font-weight: 700;
+                    margin-top: 5%;
         
                 }
-                        button{
-                            text-align: center;
-                            color: $darkest-black;
-                        }
+                .bar{
+                    background-color: $font;
+                    transform: rotate(30deg);
+                    width: 1px;
+                    height: 100px;
+                    position: relative;
+                    align-items: center;
+                    
+                }
+
+                    .carousel{
+                       display: flex;
+                       flex-wrap: wrap;
+                        justify-content: center;
+                    }
+
+                    .fa-solid{
+                        font-size: 30px;
+                    }
+                            button{
+                                color: $white;
+                                background-color: $darkest-black;
+                                width: 100px;
+                                height: 100px;
+                                display: block;
+                                border: none;
+                                margin: 0 30px;
+                                cursor: pointer;
+
+                                &:hover{
+                                    color: $red;
+                                }
+                            }
     }
-
-
-}
 
 @media(max-width: 412px) {
     h2{

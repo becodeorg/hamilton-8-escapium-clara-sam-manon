@@ -1,7 +1,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/main.css">
+    <link rel="shortcut icon" href="/resources/images/logo/gmap-logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/80333a5599.js" crossorigin="anonymous"></script>
+    <script src="about-script.js"></script>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>About</title>
@@ -10,30 +12,34 @@
     <!--HEADER-->
     <section class="header">
     
-        <h2>about.</h2>
-            <p class="home">HOME — ABOUT</p>
+        <h2>about<a href="#" class="point">.</a></h2>
+
+            <p class="home"><a href="#home" class="esc">ESCAPIUM</a> > ABOUT</p>
     </section>
 
 <!--HOW TO PLAY-->    
     <section class="rules">
-        <div class="line"></div>
+        <hr>
 
         <h2>How to play</h2>
         <div class="container">
         <article>
-            <i class="fa-solid fa-user-check"></i>
+            <div class="bar"></div>
+            <img src="/resources/images/gallery/user-check-svgrepo-com.svg" alt="user icon">
             <h3>Who Should Play?</h3>
             <p>Escapium is perfect for everyone. There are no special skills needed to have a great time. Bring your friends, family, co-workers, just a bunch of random people and get fun.</p>
         </article>
 
         <article>
-            <i class="fa-solid fa-flask-vial"></i>
+            <div class="bar"></div>
+            <img src="/resources/images/gallery/chemistry-svgrepo-com.svg" alt="">
             <h3>For Team Building</h3>
             <p>Our escape rooms are designed for intense participation from the group trying to escape. It's perfect for team building experience in your city.</p>
         </article>
 
         <article>
-            <i class="fa-solid fa-award"></i>
+            <div class="bar"></div>
+            <img src="/resources/images/gallery/title-medal-svgrepo-com.svg" alt="">
             <h3>For Special Events</h3>
             <p>Whatever the celebration Escapium is here to take it to another level. Book your room and contact us to see how we can help make any special occasion even better.</p>
         </article>
@@ -42,12 +48,12 @@
 
 <!--VIDEO-->
     <section class="video">
-           <a href=""><i class="fa-solid fa-play"></i></a> 
+      <a href="https://www.youtube.com/watch?v=hvL1339luv0" target="_blank"><img src="/resources/images/gallery/play-svgrepo-com.svg" alt=""></a>
     </section>
 
 <!--CERTIFICATES-->
     <section class="certificates">
-        <div class="line"></div>
+        <hr>
             <h2>Certificates</h2>
             <div class="certif">
                 <img src="/resources/images/gallery/certificate-1.jpg" alt="One of our certificates">
@@ -59,7 +65,7 @@
 
 <!--OUR TEAM-->
     <section class="team">
-        <div class="line"></div>
+        <hr>
             <h2>Our Team</h2>
             <div class="flex">
             <article>
@@ -83,48 +89,86 @@
     </section>
 
 <!--TESTIMONIALS-->
+<section class="testimonials">
+    <hr>
+    
+    <h2 class="title">What People Say</h2> 
+    <a href="#">Read All Testimonials</a>
+
+    <div class="test">
+        <div class="test1">
+            <blockquote>"This place is a blast, especially for groups! I loved seeing how group members of different personalities approached the puzzles."</blockquote>
+                <figure>
+                    <img src="/resources/images/avatars/comment-avatar-2.png" alt="Picture of the author of the testimonials">
+                    <figcaption>Tiffany</figcaption>
+                </figure>
+                
+        </div>
+
+        <div class="test2">
+            <blockquote>"My family and I had a spectacular experience here and they are above and beyond in customer service and entertainment."</blockquote>
+                <figure>
+                    <img src="/resources/images/avatars/comment-avatar-1.png" alt="Picture of the author of the testimonials">
+                    <figcaption>Aaron</figcaption>
+                </figure>
+            
+        </div>
+    </div>
+    <div class="carousel">
+        <button type="button" class="arrow-left"><i class="fa-solid fa-arrow-left-long"></i></button>
+        <div class="bar"></div>
+        <button type="button" class="arrow-right"><i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
+    </section>
 
 <!--FAQ-->
         <section class="faq">
-            <div class="line"></div>
-            <div>
+            <hr>
+        <div>
             <h2>FAQs</h2>
             <p class="contact">If your question isn't answered here, feel free to contact us.</p>
         </div>
+        <div class="accordion">
 
-        <div>
-            <h3>What is an Escape Room?</h3>
-            <p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p>
+            <button id="accordion-button-1"><span class="icon"><img src="/resources/images/gallery/plus-svgrepo-com.svg" alt="Icon plus"></span><span class="accordion-title">What is an Escape Room?</span></button>
+            
+            <div class="accordion-content"><p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p></div>
         </div>
 
-        <div>
-            <h3>Will I be locked in a room?</h3>
-            <p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p>
+        <div class="accordion">
+            <button id="accordion-button-2"><span class="icon"><img src="/resources/images/gallery/plus-svgrepo-com.svg" alt="Icon plus"></span><span class="accordion-title">Will I be locked in a room?</span></button>
+
+            <div class="accordion-content"><p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p></div>
         </div>
 
-        <div>
-            <h3>How long does the whole experience take?</h3>
-            <p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p>
+        <div class="accordion">
+            <button id="accordion-button-3"><span class="icon"><img src="/resources/images/gallery/plus-svgrepo-com.svg" alt="Icon plus"></span><span class="accordion-title">How long does the whole experience take?</span></button>
+
+            <div class="accordion-content"><p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p></div>
         </div>
 
-        <div>
-            <h3>Can I play more than one game?</h3>
-            <p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p>
+        <div class="accordion">
+            <button id="accordion-button-4"><span class="icon"><img src="/resources/images/gallery/plus-svgrepo-com.svg" alt="Icon plus"></span><span class="accordion-title">Can I play more than one game?</span></button>
+
+            <div class="accordion-content"><p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p></div>
         </div>
 
-        <div>
-            <h3>Will other people be in the room with us?</h3>
-            <p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p>
+        <div class="accordion">
+            <button id="accordion-button-5"><span class="icon"><img src="/resources/images/gallery/plus-svgrepo-com.svg" alt="Icon plus"></span><span class="accordion-title">Will other people be in the room with us?</span></button>
+
+            <div class="accordion-content"><p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p></div>
         </div>
 
-        <div>
-            <h3>Do I need to bring anything?</h3>
-            <p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p>
+        <div class="accordion">
+            <button id="accordion-button-6"><span class="icon"><img src="/resources/images/gallery/plus-svgrepo-com.svg" alt="Icon plus"></span><span class="accordion-title">Do I need to bring anything?</span></button>
+
+            <div class="accordion-content"><p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p></div>
         </div>
 
-        <div>
-            <h3>Is there an age limit?</h3>
-            <p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p>
+        <div class="accordion">
+            <button id="accordion-button-7"><span class="icon"><img src="/resources/images/gallery/plus-svgrepo-com.svg" alt="Icon plus"></span><span class="accordion-title">Is there an age limit?</span></button>
+            <div class="accordion-content"><p>An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time.</p></div>
+        </div>
         </div>
     </section>
 </body>
