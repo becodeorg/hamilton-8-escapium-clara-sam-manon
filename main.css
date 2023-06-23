@@ -841,7 +841,7 @@ body .author {
   padding: 50px;
   width: 750px;
   position: relative;
-  border: 2px solid #717171;
+  border: 2px solid rgba(211, 211, 211, 0.105);
   background-color: transparent;
   margin: 3% 16% 3% 16%;
 }
@@ -862,7 +862,137 @@ body .author-username {
   font-size: 11px;
   font-family: "Hind", sans-serif;
   text-align: justify;
+  margin-bottom: 20px;
+}
+body .author-mail {
+  position: absolute;
+  width: 20px;
+  transform: translateX(560px) translateY(-80px);
+  border: 2px solid rgba(211, 211, 211, 0.105);
+  border-radius: 50%;
+  padding: 8px;
+}
+body .author-mail:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.105);
+}
+body .author-web {
+  position: absolute;
+  width: 20px;
+  transform: translateX(610px) translateY(-80px);
+  border: 2px solid rgba(211, 211, 211, 0.105);
+  border-radius: 50%;
+  padding: 8px;
+}
+body .author-web:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.105);
+}
+body .author-paragraph {
+  color: #717171;
+  font-size: 16px;
+  font-family: "Hind", sans-serif;
+  text-align: justify;
   margin: 0;
+}
+body .comments {
+  box-sizing: border-box;
+  display: block;
+  padding: 50px;
+  width: 875px;
+  position: relative;
+  margin: 3% 16% 3% 11%;
+}
+body h3 {
+  margin: 0;
+}
+body hr {
+  border: 2px solid rgba(155, 155, 155, 0.2392156863);
+  width: 32px;
+  margin: 10px 0 50px 0;
+}
+body #com-1, body #com-2, body #com-4 {
+  position: absolute;
+  transform: translateY(-5px);
+  border-radius: 100%;
+}
+body #com-3 {
+  position: absolute;
+  border-radius: 50%;
+}
+body #answer {
+  position: absolute;
+  border-radius: 50%;
+}
+body .comment-in {
+  margin-left: 45px;
+  padding-left: 15px;
+}
+body .comment-in h4 {
+  color: #fefefe;
+  margin-left: 90px;
+}
+body .comment-in time {
+  color: #717171;
+  margin-left: 90px;
+  font-size: 11px;
+  font-family: "Hind", sans-serif;
+}
+body .comment-in p {
+  margin: 40px 0 20px 0;
+}
+body .comment-in .reply-btn {
+  margin-bottom: 50px;
+}
+body .response {
+  border-left: 3px solid #F60B0E;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  padding-left: 15px;
+}
+body .response h4 {
+  color: #fefefe;
+  margin-left: 90px;
+}
+body .response time {
+  color: #717171;
+  margin-left: 90px;
+  font-size: 11px;
+  font-family: "Hind", sans-serif;
+}
+body .response p {
+  margin: 40px 0 20px 0;
+}
+body .response .reply-btn {
+  margin-bottom: 0;
+}
+body .comment h4 {
+  color: #fefefe;
+  margin-left: 90px;
+}
+body .comment time {
+  color: #717171;
+  margin-left: 90px;
+  font-size: 11px;
+  font-family: "Hind", sans-serif;
+}
+body .comment p {
+  margin: 40px 0 20px 0;
+}
+body .reply-btn {
+  padding: 0;
+  margin-bottom: 50px;
+  border: none;
+  background-color: transparent;
+  color: #fefefe;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+body .reply-btn:hover {
+  cursor: pointer;
+  color: #F60B0E;
 }
 
 /*# sourceMappingURL=main.css.map */
