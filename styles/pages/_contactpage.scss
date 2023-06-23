@@ -1,0 +1,237 @@
+@import '../layout/footer';
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+
+.imageTopContacts {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../../resources/images/gallery/slide-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        color: white;
+        &__dot {
+            color: #F60B0E;
+        }
+    }
+
+    &__secLine {
+        &__home {
+            color: white;
+        }
+
+        &__spaceLine {
+            // border: 1px white solid;
+            max-height: 1px;
+            min-width: 7px;
+            color: white;
+        }
+
+        &__contacts {
+            color: gray;
+        }
+    }
+}
+
+.articleContact {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    background-color: #1B1B1B;
+    justify-content: space-around;
+    
+
+    &__partOne {
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 12vw;
+        margin-top: 10vh;
+        gap: 5vh;
+        h2 {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            width: 25vw;
+            
+        }
+
+        p {
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'Hind', sans-serif;
+        }
+
+        &__lists {
+
+            display: flex;
+            gap: 2vw;
+            &__icones {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 6vh;
+
+                li {
+                    
+                    i{
+                        color: white;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            &__datas {
+                list-style: none;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 3.5vh;
+
+                li {
+                    font-size: 1.2rem;
+                    font-family: 'Hind', sans-serif;
+                }
+            }
+        }
+    }
+
+    &__partTwo {
+        width: 55vw;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        h2 {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            div {
+                input {
+                    width: 20vw;
+                    height: 5vh;
+                    background-color: #1B1B1B;
+                    border: #1B1B1B solid 2px;
+                    border-bottom: gray solid 2px;
+                    color: white;
+                }
+            }
+
+            .message {
+                width: 41vw;
+                height: 25vh;
+                background-color: #1B1B1B;
+                border: #1B1B1B solid 2px;
+                border-bottom: gray solid 2px;
+                color: white;
+            }
+        }
+
+        button {
+            width: 41vw;
+            height: 4rem;
+            border: #F60B0E solid 2px;
+            border-radius: 4rem;
+            color: white;
+            background-color: #F60B0E;
+        }
+    }
+}
+
+#map {
+    height: 70vh;
+    width: 100%; 
+  }
+
+@media (max-width: 520px) {
+    .articleContact {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100vh;
+
+
+        &__partOne {
+            margin-left: 3vw;
+            margin-top: 1vh;
+            width: 100vw;
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            &__lists {
+                &__icones {
+                    gap: 3.5vh;
+
+                    li {
+                        i {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                
+            }
+        }
+
+        &__partTwo {
+            margin-top: 0;
+            margin-left: 3vw;
+            width: 100vw;
+
+            &__form {
+                div {
+                    input {
+                        width: 40vw;
+                    }
+                }
+
+                .message {
+                    width: 81vw;
+                }
+            }
+
+            button {
+                width: 81vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    .imageTopContacts {
+        height: 25vh;
+        &__title {
+            
+            &__dot {
+                color: #F60B0E;
+            }
+        }
+    
+        &__secLine {
+            &__home {
+                color: white;
+            }
+    
+            &__spaceLine {
+                
+                color: white;
+            }
+    
+            &__contacts {
+                color: gray;
+            }
+        }
+    }
+}

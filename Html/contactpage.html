@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <script
+      src="https://kit.fontawesome.com/c41b90616e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="imageTopContacts">
+      <h2 class="imageTopContacts__title">
+        Contacts<span class="imageTopContacts__title__dot">.</span>
+      </h2>
+      <div class="imageTopContacts__secLine">
+        <span class="imageTopContacts__secLine__home">HOME</span>
+        <span class="imageTopContacts__secLine__spaceLine">-</span>
+        <span class="imageTopContacts__secLine__contacts">CONTACTS</span>
+      </div>
+    </div>
+    <article class="articleContact">
+      <section class="articleContact__partOne">
+        <h2>Get in Touch</h2>
+        <p>if you are interested in working with us, please get in touch</p>
+        <div class="articleContact__partOne__lists">
+          <ul class="articleContact__partOne__lists__icones">
+            <li><i class="fa-regular fa-map"></i></li>
+            <li><i class="fa-solid fa-phone"></i></li>
+            <li><i class="fa-sharp fa-regular fa-envelope"></i></li>
+          </ul>
+          <ul class="articleContact__partOne__lists__datas">
+            <li>2390 RoadHill St., Suite 100 North Downtown, NY 82153</li>
+            <li>+1800 900 1248</li>
+            <li>info@escapium.com</li>
+          </ul>
+        </div>
+      </section>
+      <section class="articleContact__partTwo">
+        <h2>Contact Form</h2>
+        <form action="" class="articleContact__partTwo__form">
+          <div>
+            <input type="text" placeholder="Name" class="name" />
+            <input type="text" placeholder="Email Address" class="email" />
+          </div>
+          <input type="text" placeholder="Your Message..." class="message" />
+        </form>
+        <button>Send Message</button>
+      </section>
+    </article>
+    <div id="map"></div>
+    <!-- <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d683648.69916526!2d5.828386508613133!3d50.81969417486145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbe!4v1687272179317!5m2!1sfr!2sbe"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="map"
+    ></iframe> -->
+  </body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQuOnSosNmrH1RdYH6dmzpqK-IsBsmi6A&callback=initMap&v=weekly"
+    defer
+  ></script>
+  <script src="../Javascript/mapembed.js"></script>
+</html>
