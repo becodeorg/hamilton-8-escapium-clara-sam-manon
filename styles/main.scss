@@ -1,5 +1,6 @@
 
 @import "../styles/abstract/_variables.scss";
+@import '../styles/abstract/_mixins.scss';
 @import "../styles/layout/_testimonals.scss";
 @import "../styles/pages/_aboutpage.scss";;
 @import './layout/navbar';
@@ -9,4 +10,3 @@
 @import './layout/footer';
 @import './pages/contactpage';
 @import '../styles/pages/roomspage';
-@import '../styles/abstract/_mixins.scss';

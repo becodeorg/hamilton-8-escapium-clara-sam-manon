@@ -806,10 +806,16 @@ body .faq p {
   position: relative;
   z-index: 1;
   margin: 8% 0 0 15%;
-  width: 750px;
-  height: 552px;
+  width: 740px;
+  height: 500px;
   transform: scale(1.1);
   transition: transform 0.4s;
+  z-index: 0;
+  opacity: 0.8;
+}
+* .bg-img:hover {
+  transform: scale(1);
+  opacity: 1;
 }
 * .description {
   box-sizing: border-box;
@@ -819,7 +825,7 @@ body .faq p {
   position: relative;
   z-index: 1;
   background-color: #222222;
-  margin: -3% 16% 3% 16%;
+  margin: -8% 16% 3% 16%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
 }
 * .description h3 {
@@ -1093,8 +1099,8 @@ body .faq p {
   color: #fefefe;
 }
 
-.popular-posts h3 {
-  margin-top: 8%;
+.popular-posts {
+  margin-top: 10%;
 }
 .popular-posts .posts, .popular-posts a, .popular-posts time {
   color: #717171;
@@ -1104,6 +1110,7 @@ body .faq p {
   line-height: 60px;
 }
 .popular-posts a {
+  padding: 0 120px 50px 0;
   color: #fefefe;
   font-family: "Hind", sans-serif;
   font-size: 16px;
@@ -1118,44 +1125,64 @@ body .faq p {
 }
 .popular-posts #post-1:hover {
   background-image: url("/resources/images/gallery/room-3.jpg");
-  background-size: 70%;
+  background-size: 60%;
   background-repeat: no-repeat;
+  opacity: 0.8;
   cursor: pointer;
 }
 .popular-posts #post-2:hover {
   background-image: url("/resources/images/gallery/post-img-2.jpg");
+  background-size: 60%;
   background-repeat: no-repeat;
-  background-size: 70%;
+  opacity: 0.8;
   cursor: pointer;
 }
 .popular-posts #post-3:hover {
   background-image: url("/resources/images/gallery/room-7.jpg");
+  background-size: 60%;
   background-repeat: no-repeat;
-  background-size: 70%;
+  opacity: 0.8;
   cursor: pointer;
 }
 
-.all-tags {
-  margin: 20px 0;
-  padding-right: 280px;
+#all-tags {
+  margin-top: 10%;
 }
-.all-tags .tags {
-  max-width: 100%;
-  margin-bottom: 220px;
+#all-tags #tags {
+  padding: 0 250px 0 0;
+}
+#all-tags .tags {
+  display: inline-block;
+  text-align: left;
 }
 
+.photos {
+  margin-top: 10%;
+}
 .photos img {
-  width: 120px;
+  width: 130px;
   height: auto;
-  margin: 8px;
+  margin: 1px;
+  border: 5px solid #1B1B1B;
+}
+.photos img:hover {
+  border: 5px solid #F60B0E;
+  transition: 0.5s;
+  opacity: 0.6;
+  cursor: pointer;
 }
 .photos #pics {
   width: 100%;
-  float: left;
-  box-sizing: border-box;
   padding: 0 150px 50px 0;
 }
+.photos a {
+  margin: 17%;
+  text-transform: none;
+}
 
+.archive {
+  margin-top: 10%;
+}
 .archive li {
   list-style: none;
   font-size: 18px;

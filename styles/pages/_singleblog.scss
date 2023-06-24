@@ -54,10 +54,16 @@
         position: relative;
         z-index: 1;
         margin: 8% 0 0 15%;
-        width: 750px;
-        height: 552px;
+        width: 740px;
+        height: 500px;
         transform: scale(1.1);
         transition: transform 0.4s;
+        z-index: 0;
+        opacity: 0.8;
+        &:hover{
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 
             .description{
@@ -68,7 +74,7 @@
                 position: relative;
                 z-index: 1;
                 background-color: $dark-black;
-                margin: -3% 16% 3% 16%;
+                margin: -8% 16% 3% 16%;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
                     & h3{
                         color: $white;
@@ -323,7 +329,7 @@
 
 //RIGHT SIDE
 .right{
-    padding: 120px;
+    padding:120px;
     background-color: $darkest-black;
     float: right;
     width: 45%;
@@ -355,9 +361,7 @@
     }
 }
 .popular-posts{
-     h3{
-        margin-top: 8%;
-    }
+margin-top: 10%;
         .posts, a, time{
             
             color: $font;
@@ -367,6 +371,7 @@
             line-height: 60px;
             }
                & a{
+                padding: 0 120px 50px 0;
                 color: $white;
                 font-family: 'Hind', sans-serif;
                 font-size: 16px;
@@ -382,58 +387,62 @@
                     #post-1{
                         &:hover{
                         background-image: url("/resources/images/gallery/room-3.jpg");
-                        background-size: 70%;
-                        background-repeat: no-repeat;
-                        cursor: pointer;
+                        @include postBg;
                         }
                     }
                     #post-2{
                         &:hover{
                         background-image: url("/resources/images/gallery/post-img-2.jpg");
-                        background-repeat: no-repeat;
-                        background-size: 70%;
-                        cursor: pointer;
+                        @include postBg;
                         }
                     }
                     #post-3{
                         &:hover{
                         background-image: url("/resources/images/gallery/room-7.jpg");
-                        background-repeat: no-repeat;
-                        background-size: 70%;
-                        cursor: pointer;
+                        @include postBg;
                         }
                     }
 }
-.all-tags{
-    margin: 20px 0;
-    padding-right: 280px;
-    
-    & .tags{
-    max-width: 100%;
-    margin-bottom: 220px;
+#all-tags{
+margin-top:10%;  
+    & #tags{
+        padding: 0 250px 0 0;
+    }
+
+   & .tags{
+    display:inline-block;
+    text-align: left;
     }
 }
 
 .photos {
-    
+    margin-top:10%;
     img{
-        
-        width: 120px;
+        width: 130px;
         height: auto;
-        margin: 8px;
+        margin: 1px;
+        border: 5px solid $darkest-black;
+        &:hover{
+            border: 5px solid $red;
+            transition: 0.5s;
+            opacity: 0.6;
+            cursor: pointer;
+        }
     }
     #pics{
-        
         width: 100%;
-        float: left;
-        box-sizing: border-box;
+        
         padding: 0 150px 50px 0;
-    
+    }
+    a{
+        margin: 17%;
+        text-transform: none;
     }
 
 }
 
 .archive{
+    margin-top:10%;
      li{
         list-style: none;
         font-size: 18px;

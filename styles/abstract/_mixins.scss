@@ -1,22 +1,29 @@
+
+@mixin postBg{
+    background-size: 60%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
 @mixin listStyle{
-    li{
-        list-style: none;
-        font-size: 18px;
-        margin: 4% 0;
-        &:hover{
-            color: $red;
-            list-style: disc;
-        }
-           a{
-                text-decoration: none;
-                color: $font;
-                font-family: 'Hind', sans-serif;
-                font-size: 14px;
-                text-transform: uppercase;
-                &:hover{
-                    color: $white;
-                    font-weight: 700;
-                }
-            }
+    list-style: none;
+    font-size: 18px;
+    margin: 4% 0;
+    &:hover{
+        color: $red;
+        list-style: disc;
+    }
+}
+
+@mixin aStyle{
+    text-decoration: none;
+    color: $font;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    &:hover{
+        color: $white;
     }
 }
