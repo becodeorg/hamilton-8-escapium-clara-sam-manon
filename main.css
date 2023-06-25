@@ -705,6 +705,7 @@ main .homepage_banner div p {
 .homepage_blog_main .homepage_blog_article_text p {
   font-family: "Hind", sans-serif;
   margin-bottom: 50px;
+  color: #717171;
 }
 .homepage_blog_main .exit {
   background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("./resources/images/gallery/room-7.jpg");
@@ -1219,19 +1220,27 @@ p, .normalsizetext {
 .room_cure main .room_cure_details {
   display: flex;
   justify-content: space-evenly;
+  margin: 0 30px 30px;
 }
 .room_cure main .room_cure_details div.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5vw;
+  gap: 20px;
 }
 .room_cure main .room_cure_details div.container .room_cure_details_icons {
-  color: #717171;
+  color: rgb(216, 216, 216);
   font-size: 16px;
 }
 .room_cure main .room_cure_details div.container .room_cure_details_icons .red {
   color: #F60B0E;
+}
+.room_cure main .room_cure_details div.container .room_cure_details_icons .grey {
+  color: #717171;
+}
+.room_cure main .room_cure_details div.container .room_cure_details_icons span {
+  font-weight: 600;
+  color: #717171;
 }
 .room_cure main .room_cure_details div.container .room_cure_details_text {
   color: white;
@@ -1245,7 +1254,6 @@ p, .normalsizetext {
 .room_cure main .room_cure_textContact {
   padding: 5vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 .room_cure main .room_cure_textContact .room_cure_paragraph {
   color: #717171;
@@ -1284,6 +1292,78 @@ p, .normalsizetext {
 .room_cure main .room_cure_textContact .room_cure_address button:hover {
   background-color: #777;
 }
+.room_cure main .room_cure_textContact .room_cure_address button:hover {
+  background-color: rgb(172, 2, 2);
+  border: none;
+}
+
+.room_bookingForm {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 100px;
+}
+
+.room_otherRooms {
+  background-color: #1B1B1B;
+  padding: 120px 0px;
+}
+.room_otherRooms main.room_otherRooms_container {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_cure, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_cure, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_burlesque, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_burlesque {
+  height: 350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium.hospital, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .hospital.homepage_rooms_container_cure, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .hospital.homepage_rooms_container_cure, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .hospital.homepage_rooms_container_burlesque, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .hospital.homepage_rooms_container_burlesque {
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/room-5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium.factory, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .factory.homepage_rooms_container_cure, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .factory.homepage_rooms_container_cure, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .factory.homepage_rooms_container_burlesque, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .factory.homepage_rooms_container_burlesque {
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/gallery-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium.future, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .future.homepage_rooms_container_cure, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .future.homepage_rooms_container_cure, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .future.homepage_rooms_container_burlesque, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .future.homepage_rooms_container_burlesque {
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/room-9.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium section, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_cure section, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_cure section, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_burlesque section, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_burlesque section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium section .homepage_rooms_difficulty, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_cure section .homepage_rooms_difficulty, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_cure section .homepage_rooms_difficulty, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_burlesque section .homepage_rooms_difficulty, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_burlesque section .homepage_rooms_difficulty {
+  font-size: 16px;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium section .homepage_rooms_difficulty .red, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_cure section .homepage_rooms_difficulty .red, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_cure section .homepage_rooms_difficulty .red, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_burlesque section .homepage_rooms_difficulty .red, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_burlesque section .homepage_rooms_difficulty .red {
+  color: #F60B0E;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium section .homepage_rooms_difficulty .grey, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_cure section .homepage_rooms_difficulty .grey, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_cure section .homepage_rooms_difficulty .grey, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_burlesque section .homepage_rooms_difficulty .grey, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_burlesque section .homepage_rooms_difficulty .grey {
+  color: #717171;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium section h3, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_cure section h3, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_cure section h3, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_burlesque section h3, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_burlesque section h3 {
+  font-size: 20px;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium section .homepage_rooms_details i, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_cure section .homepage_rooms_details i, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_cure section .homepage_rooms_details i, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_burlesque section .homepage_rooms_details i, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_burlesque section .homepage_rooms_details i {
+  color: #777;
+}
+.room_otherRooms main.room_otherRooms_container .homepage_rooms_container_magicImporium section .homepage_rooms_details span, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_cure section .homepage_rooms_details span, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_cure section .homepage_rooms_details span, .room_otherRooms main.room_otherRooms_container .homepage_rooms_container .homepage_rooms_container_burlesque section .homepage_rooms_details span, .homepage_rooms_container .room_otherRooms main.room_otherRooms_container .homepage_rooms_container_burlesque section .homepage_rooms_details span {
+  color: #717171;
+  text-transform: uppercase;
+  padding: 0 10px 0 7px;
+}
 
 @media only screen and (max-width: 999px) {
   h1 {
@@ -1300,6 +1380,26 @@ p, .normalsizetext {
   }
   .smallertext {
     font-size: 10px;
+  }
+  .room_cure_textContact {
+    grid-template-columns: 1fr;
+  }
+  .room_otherRooms {
+    grid-template-columns: 350px;
+    grid-template-rows: 350px 350px 350px 350px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .room_cure_textContact {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .room_otherRooms {
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 100px 350px;
+  }
+  .room_otherRooms h3 {
+    grid-column: span 3;
   }
 }
 
