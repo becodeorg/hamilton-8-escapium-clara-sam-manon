@@ -51,6 +51,7 @@ tablet screen
     }
             .test{
                 display: flex;
+                flex-wrap: wrap;
                 gap: 80px;
                 font-family:'Hind', sans-serif;
                 font-size: 18px ;
@@ -76,11 +77,6 @@ tablet screen
                     
                 }
 
-                    .carousel{
-                       display: flex;
-                       flex-wrap: wrap;
-                        justify-content: center;
-                    }
 
                     .fa-solid{
                         font-size: 30px;
@@ -101,7 +97,7 @@ tablet screen
                             }
     }
 
-@media(max-width: 412px) {
+@media (max-width: 520px) {
     h2{
         font-size: 19px;
     }

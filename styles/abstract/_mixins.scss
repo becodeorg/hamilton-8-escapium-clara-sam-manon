@@ -1,12 +1,24 @@
 
+//ABOUT PAGE
+@mixin h2Style{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 44px;
+    color: $white;
+    text-align: center;
+}
+@mixin hrStyle{
+    border: 2px solid $font;
+    width: 32px;
+}
+
+
+//SINGLE BLOG PAGE
 @mixin postBg{
     background-size: 60%;
     background-repeat: no-repeat;
     opacity: 0.8;
     cursor: pointer;
 }
-
-
 @mixin listStyle{
     list-style: none;
     font-size: 18px;
@@ -16,7 +28,6 @@
         list-style: disc;
     }
 }
-
 @mixin aStyle{
     text-decoration: none;
     color: $font;
