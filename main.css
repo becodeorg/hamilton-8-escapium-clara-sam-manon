@@ -326,19 +326,32 @@ tablet screen
   grid-auto-flow: column;
   list-style-type: none;
   column-gap: 40px;
-}
-.navbar_container .navbar_list ul li {
   text-transform: lowercase;
   font-weight: 700;
   text-decoration: none;
   width: min-content;
 }
-.navbar_container .navbar_list ul li a {
+.navbar_container .navbar_list ul li:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  bottom: 15px;
+  margin-left: 43px;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+.navbar_container .navbar_list ul li:hover::before {
+  background-color: #F60B0E;
+}
+.navbar_container .navbar_list ul a {
+  position: relative;
+  z-index: 1;
   text-decoration: none;
   color: #777;
   padding-left: 2rem;
 }
-.navbar_container .navbar_list ul li a:hover {
+.navbar_container .navbar_list ul a:hover {
   color: white;
   cursor: pointer;
 }
