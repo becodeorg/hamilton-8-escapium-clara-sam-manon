@@ -36,9 +36,32 @@
     &__content {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
         width: 100vw;
+        height: 600vh;
+        background-color: #1B1B1B;
         &__firstCol {
             width: 50vw;
+
+            img {
+                width: 40vw;
+                height: 45vh;
+            }
+
+            .txt {
+                width: 40vw;
+
+                &__ensIcons {
+                    display: flex;
+                    width: 40vw;
+                    
+                    div {
+                        display: flex;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
         }
 
         &__secondCol {

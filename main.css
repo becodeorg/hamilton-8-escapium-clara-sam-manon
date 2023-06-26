@@ -2676,10 +2676,29 @@ main .homepage_banner div p {
 .blogspage__content {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   width: 100vw;
+  height: 600vh;
+  background-color: #1B1B1B;
 }
 .blogspage__content__firstCol {
   width: 50vw;
+}
+.blogspage__content__firstCol img {
+  width: 40vw;
+  height: 45vh;
+}
+.blogspage__content__firstCol .txt {
+  width: 40vw;
+}
+.blogspage__content__firstCol .txt__ensIcons {
+  display: flex;
+  width: 40vw;
+}
+.blogspage__content__firstCol .txt__ensIcons div {
+  display: flex;
+  font-size: 0.7rem;
 }
 .blogspage__content__secondCol {
   width: 25vw;
