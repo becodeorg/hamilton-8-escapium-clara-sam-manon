@@ -6,19 +6,19 @@
     <script src="https://kit.fontawesome.com/80333a5599.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - What is an Escape Room?</title>
+    <title>What is an Escape Room?(Blog)</title>
 </head>
 <body>
     <section class="single-blog">
     <section class="header">
 
-        <h2>What is an Escape Room?</h2>
+        <h2>What is an Escape <br> Room?</h2>
         
         <div class="icons">
             <i class="fa-solid fa-calendar"></i> 
             <span class="txt">February 25, 2017</span>
             <i class="fa-solid fa-user"></i> 
-            <span class="txt">Dan Fisher</span>
+            <span class="txt">Emmy Howard</span>
             <i class="fa-solid fa-comment-dots"></i> 
             <span class="txt">4 comments</span>
     </div>
@@ -27,7 +27,7 @@
     <!--LEFT SIDE OF PAGE-->
     <div class="part left">
 
-    <img src="/resources/images/gallery/room-9.jpg" class="bg-img">
+    <img src="/resources/images/gallery/post-img-2.jpg" class="bg-img">
     <section class="description">
         <p>Aenean turpis dolor, ornare sed imperd id, pulvinar eu massa. Nulla accumsan lorem convallis tellus faucibus, eu laoreet. Sed vitae purus. Aenean euismod turpis sem, quis vehicula diam lacinia a. Nam ultrices.</p>
         <h3>Can You Escape?</h3>
@@ -109,25 +109,22 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse in id excepturi cupiditate reprehenderit aut suscipit repellendus.</p>
             <button class="reply-btn">REPLY</button>
         </div>
-
-        <div class="comment-box">
+         <div id="comment-form">
             <h3>Leave a Comment</h3>
             <hr>
-            <!--JS-->
-        <div class="infos">
-
-            <div class="your-name"><input id="author" name="author" type="text" class="form-control" placeholder="Your Name" aria-required="true">
+            <div class="your-name"><input id="author" name="author" type="text" placeholder="Your Name">
             </div>
 
-            <div class="your-email"><input id="email" name="email" type="email" class="form-control" placeholder="Email Address" aria-required="true">
+            <div class="your-email"><input id="email" name="email" type="email" placeholder="Email Address">
             </div>
         </div>
 
         <div class="your-comment">
-            <input id="email" name="email" type="email" class="form-control" placeholder="Your Comment" aria-required="true"
+            <input id="comment-box" name="comment" type="comment" placeholder="Your Comment"
         </div>
-            <button>Post Comment</button>
-        </div>
+        <form id="myForm"><input id="comment-btn" type="button" onclick="myFunction()" value="Post Comment"></form>
+            
+    </div>
     </section>
     </div>
 
@@ -152,15 +149,28 @@
             <hr>
 
             <div class="posts">
+                <div id="post-1">
+                <time>02/25/2017</time>
+                <img src ="/resources/images/gallery/line-xl-svgrepo-com.svg" class="line" width="25px">
                 <a href="#">Kidnapped game now open</a>
+                </div>
+                <div id="post-2">
+                <time>02/13/2017</time>
+                <img src ="/resources/images/gallery/line-xl-svgrepo-com.svg"  class="line" width="25px">
                 <a href="#">What is an escape room?</a>
+                </div>
+                <div id="post-3">
+                <time>01/18/2017</time>
+                <img src ="/resources/images/gallery/line-xl-svgrepo-com.svg" class="line" width="25px">
                 <a href="#">Perfect for team building</a>
+                </div>
             </div>
         </section>
 
-        <section class="all-tags">
+        <section id="all-tags">
             <h3>Tags</h3>
             <hr>
+            <div id="tags">
             <a href="#" class="tags">escape</a>
             <a href="#" class="tags">room</a>
             <a href="#" class="tags">mystery</a>
@@ -169,32 +179,38 @@
             <a href="#" class="tags">game</a>
             <a href="#" class="tags">puzzle</a>
             <a href="#" class="tags">promo</a>
+        </div>
         </section>
 
-        <section class="photo">
+        <section class="photos">
             <h3>Photo Shots</h3>
             <hr>
+            <div id="pics">
             <img src="/resources/images/gallery/gallery-7.jpg">
             <img src="/resources/images/gallery/gallery-6.jpg">
             <img src="/resources/images/gallery/gallery-2.jpg">
             <img src="/resources/images/gallery/gallery-4.jpg">
             <img src="/resources/images/gallery/gallery-5.jpg">
             <img src="/resources/images/gallery/gallery-3.jpg">
+        </div>
+        <a href="https://www.instagram.com/dan.fisher.demo/" target="_blank" class="tags"><i class="fa-brands fa-instagram"></i> Follow on Instagram</a>
         </section>
 
         <section class="archive">
             <h3>Archive</h3>
             <hr>
             <ul>
-                <li>February 2017</li>
-                <li>January 2017</li>
-                <li>December 2016</li>
-                <li>November 2016</li>
-                <li>October 2016</li>
-                <li>September 2016</li>
+                <li><a href="#">February 2017</a></li>
+                <li><a href="#">January 2017</a></li>
+                <li><a href="#">December 2016</a></li>
+                <li><a href="#">November 2016</a></li>
+                <li><a href="#">October 2016</a></li>
+                <li><a href="#">September 2016</a></li>
             </ul>
         </section>
     </div>
     </section>
+
+    <script src="/Javascript/singleBlog.js"></script>
 </body>
 </html>
