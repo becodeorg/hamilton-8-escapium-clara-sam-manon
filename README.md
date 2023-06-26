@@ -11,5 +11,13 @@ Our challenge was to build a responsive multi-pages website based on a given tem
 * HTML
 * SCSS
 * JavaScript
+
+## Work Repartition
+* Clara: Testimonials and Single blog page and About page
+* Sam: Footer and Rooms page and Map features
+* Manon: Navbar and Single Room page
+  
+Solving issues together and merging and finalising.
+
 ---
 **Take a look at our finished project [right here](link)**
