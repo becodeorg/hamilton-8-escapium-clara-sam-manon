@@ -23,4 +23,4 @@ Solving issues together and merging and finalising.
 * Linking all the pages
 * Merging and deploying on github (still needs some fixing with the paths)
 ---
-**Take a look at our finished project [right here](link)**
+**Take a look at our finished project [right here](https://becodeorg.github.io/hamilton-8-escapium-clara-sam-manon/)**
