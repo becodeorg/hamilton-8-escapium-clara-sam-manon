@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: $montserrat;
+    
 }
 h1{
     font-family: $montserrat;
@@ -27,6 +28,10 @@ p, .normalsizetext{
 }
 :root{
     font-size: 10px;
+}
+.bodyHomepage{
+    width: 100vw;
+
 }
 //BANNER
 main{
@@ -63,6 +68,7 @@ main{
                 letter-spacing: 3px;
                 margin: 0;
                 &:hover{
+                    transition-duration: 0.4s;
                     color: $red;
                     cursor: pointer;
                 }
@@ -88,16 +94,26 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            
-            img{
+            .homepage_rooms_container_image{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
                 width: 90%;
-                opacity: 0.5;
-                &:hover{
-                    transform: scale(1.1);
-                    opacity: 1;
-                    overflow: hidden;
+                img{
+                    width: 100%;
+                    opacity: 0.5;
+                    &:hover{
+                        transition-duration: 0.4s;
+                        transform: scale(1.1);
+                        opacity: 0.7;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
                 }
             }
+            
+            
             section{
                 width: 90%;
                 padding: 3rem;
@@ -113,6 +129,12 @@ main{
                 }
                 h3{
                     margin:30px 0 10px;
+                    &:hover{
+                        cursor: pointer;
+                        color: $red;
+                        transition-duration: 0.4s;
+
+                    }
                 }
                 .homepage_rooms_details{
                     i{
@@ -140,9 +162,10 @@ main{
                     border: none;
                     margin: 0;
                     &:hover{
-                        background-color: transparent;
-                        color: $red;
-                        border: 2px solid $red;
+                        cursor: pointer;
+                        background-color: $dark-red;
+                        transition-duration: 0.4s;
+
                     }
                 }
             }
@@ -179,7 +202,11 @@ main{
             text-decoration: none;
             border-bottom: 1px solid $red;
             &:hover{
-                color: $red;
+                cursor: pointer;
+                color: white;
+                border-bottom: 1px solid white;
+                transition-duration: 0.4s;
+
             }
         }
 
@@ -198,10 +225,17 @@ main{
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
+                background-size: 110%;
                 position: relative;
                 z-index:0;
                 display: flex;
                 align-items: flex-end;
+                &:hover{
+                    cursor: pointer;
+                    background-size: 100%;
+                    transition-duration: 0.4s;
+
+                }
                 div{
                     display: flex;
                     height: fit-content;
@@ -226,6 +260,11 @@ main{
                 span{
                     letter-spacing: 0.2em;
                     margin:24px 0;
+                    &:hover{
+                        color: $red;
+                        cursor: pointer;                
+                        transition-duration: 0.4s;
+                    }
                 }
                 div{
                     background-color: $font;
@@ -235,6 +274,12 @@ main{
                 }
                 h3{
                     margin-bottom: 30px;
+                    &:hover{
+                        color: $red;
+                        cursor: pointer;                
+                        transition-duration: 0.4s;
+
+                    }
 
                 }
                 p{
@@ -250,12 +295,14 @@ main{
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            background-size: 110%;
         }
         .room{
             background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('./resources/images/gallery/post-img-2.jpg')};
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            background-size: 110%;
         }
     }
 }
@@ -269,7 +316,6 @@ main{
     display: flex;
     align-items: center;
     min-height: 240px;
-    width: 100vw;
     &_side{
         rotate: 270deg;
         margin-right: -140px;
@@ -336,6 +382,8 @@ main{
             text-decoration: none;
             border-bottom: 1px solid $red;
             &:hover{
+                transition-duration: 0.4s;
+                cursor: pointer;
                 color: $red;
             }
         }
@@ -354,6 +402,9 @@ main{
     button{
         @include transparentButton($font);
         margin: 10vw 0;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
@@ -378,6 +429,11 @@ main{
         background-color: $red;
         color: white;
         margin: 10vw 0 5vw;
+        &:hover{
+            background-color: $dark-red;
+            border:$dark-red ;
+            cursor: pointer;
+        }
     }
 }
 

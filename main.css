@@ -1061,6 +1061,10 @@ p, .normalsizetext {
   font-size: 10px;
 }
 
+.bodyHomepage {
+  width: 100vw;
+}
+
 main {
   background-color: transparent;
 }
@@ -1099,6 +1103,7 @@ main .homepage_banner div p {
   margin: 0;
 }
 main .homepage_banner div p:hover {
+  transition-duration: 0.4s;
   color: #F60B0E;
   cursor: pointer;
 }
@@ -1120,14 +1125,23 @@ main .homepage_banner div p:hover {
   flex-direction: column;
   align-items: center;
 }
-.homepage_rooms_container .homepage_rooms_container_magicImporium img, .homepage_rooms_container .homepage_rooms_container_burlesque img, .homepage_rooms_container .homepage_rooms_container_cure img {
+.homepage_rooms_container .homepage_rooms_container_magicImporium .homepage_rooms_container_image, .homepage_rooms_container .homepage_rooms_container_burlesque .homepage_rooms_container_image, .homepage_rooms_container .homepage_rooms_container_cure .homepage_rooms_container_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
   width: 90%;
+}
+.homepage_rooms_container .homepage_rooms_container_magicImporium .homepage_rooms_container_image img, .homepage_rooms_container .homepage_rooms_container_burlesque .homepage_rooms_container_image img, .homepage_rooms_container .homepage_rooms_container_cure .homepage_rooms_container_image img {
+  width: 100%;
   opacity: 0.5;
 }
-.homepage_rooms_container .homepage_rooms_container_magicImporium img:hover, .homepage_rooms_container .homepage_rooms_container_burlesque img:hover, .homepage_rooms_container .homepage_rooms_container_cure img:hover {
+.homepage_rooms_container .homepage_rooms_container_magicImporium .homepage_rooms_container_image img:hover, .homepage_rooms_container .homepage_rooms_container_burlesque .homepage_rooms_container_image img:hover, .homepage_rooms_container .homepage_rooms_container_cure .homepage_rooms_container_image img:hover {
+  transition-duration: 0.4s;
   transform: scale(1.1);
-  opacity: 1;
+  opacity: 0.7;
   overflow: hidden;
+  cursor: pointer;
 }
 .homepage_rooms_container .homepage_rooms_container_magicImporium section, .homepage_rooms_container .homepage_rooms_container_burlesque section, .homepage_rooms_container .homepage_rooms_container_cure section {
   width: 90%;
@@ -1145,6 +1159,11 @@ main .homepage_banner div p:hover {
 }
 .homepage_rooms_container .homepage_rooms_container_magicImporium section h3, .homepage_rooms_container .homepage_rooms_container_burlesque section h3, .homepage_rooms_container .homepage_rooms_container_cure section h3 {
   margin: 30px 0 10px;
+}
+.homepage_rooms_container .homepage_rooms_container_magicImporium section h3:hover, .homepage_rooms_container .homepage_rooms_container_burlesque section h3:hover, .homepage_rooms_container .homepage_rooms_container_cure section h3:hover {
+  cursor: pointer;
+  color: #F60B0E;
+  transition-duration: 0.4s;
 }
 .homepage_rooms_container .homepage_rooms_container_magicImporium section .homepage_rooms_details i, .homepage_rooms_container .homepage_rooms_container_burlesque section .homepage_rooms_details i, .homepage_rooms_container .homepage_rooms_container_cure section .homepage_rooms_details i {
   color: #777;
@@ -1171,9 +1190,9 @@ main .homepage_banner div p:hover {
   margin: 0;
 }
 .homepage_rooms_container .homepage_rooms_container_magicImporium section button:hover, .homepage_rooms_container .homepage_rooms_container_burlesque section button:hover, .homepage_rooms_container .homepage_rooms_container_cure section button:hover {
-  background-color: transparent;
-  color: #F60B0E;
-  border: 2px solid #F60B0E;
+  cursor: pointer;
+  background-color: #96080b;
+  transition-duration: 0.4s;
 }
 .homepage_rooms button {
   background-color: transparent;
@@ -1212,7 +1231,10 @@ main .homepage_banner div p:hover {
   border-bottom: 1px solid #F60B0E;
 }
 .homepage_blog_header_link:hover {
-  color: #F60B0E;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid white;
+  transition-duration: 0.4s;
 }
 .homepage_blog_main {
   display: grid;
@@ -1230,10 +1252,16 @@ main .homepage_banner div p:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 110%;
   position: relative;
   z-index: 0;
   display: flex;
   align-items: flex-end;
+}
+.homepage_blog_main .homepage_blog_article_image:hover, .homepage_blog_main .exit:hover {
+  cursor: pointer;
+  background-size: 100%;
+  transition-duration: 0.4s;
 }
 .homepage_blog_main .homepage_blog_article_image div, .homepage_blog_main .exit div {
   display: flex;
@@ -1260,6 +1288,11 @@ main .homepage_banner div p:hover {
   letter-spacing: 0.2em;
   margin: 24px 0;
 }
+.homepage_blog_main .homepage_blog_article_text span:hover {
+  color: #F60B0E;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
 .homepage_blog_main .homepage_blog_article_text div {
   background-color: #717171;
   height: 4px;
@@ -1268,6 +1301,11 @@ main .homepage_banner div p:hover {
 }
 .homepage_blog_main .homepage_blog_article_text h3 {
   margin-bottom: 30px;
+}
+.homepage_blog_main .homepage_blog_article_text h3:hover {
+  color: #F60B0E;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 .homepage_blog_main .homepage_blog_article_text p {
   font-family: "Hind", sans-serif;
@@ -1279,12 +1317,14 @@ main .homepage_banner div p:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 110%;
 }
 .homepage_blog_main .room {
   background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("./resources/images/gallery/post-img-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: 110%;
 }
 
 .homepage_forwho {
@@ -1295,7 +1335,6 @@ main .homepage_banner div p:hover {
   display: flex;
   align-items: center;
   min-height: 240px;
-  width: 100vw;
 }
 .homepage_forwho_side {
   rotate: 270deg;
@@ -1354,6 +1393,8 @@ main .homepage_banner div p:hover {
   border-bottom: 1px solid #F60B0E;
 }
 .homepage_photos_header_link:hover {
+  transition-duration: 0.4s;
+  cursor: pointer;
   color: #F60B0E;
 }
 .homepage_photos_main {
@@ -1379,6 +1420,9 @@ main .homepage_banner div p:hover {
 }
 .homepage_photos button:hover {
   background-color: #777;
+}
+.homepage_photos button:hover {
+  cursor: pointer;
 }
 
 .homepage_ready {
@@ -1411,6 +1455,11 @@ main .homepage_banner div p:hover {
 }
 .homepage_ready button:hover {
   background-color: #777;
+}
+.homepage_ready button:hover {
+  background-color: #96080b;
+  border: #96080b;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 999px) {
