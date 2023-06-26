@@ -1,9 +1,13 @@
-body{
-    margin: 0;
-    padding: 0;
 
     .single-blog{
+        margin: 0;
+        padding: 0;
         background-color: $darkest-black;
+        &:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
     }
       
     .header{
@@ -18,6 +22,7 @@ body{
             font-family: 'Montserrat', sans-serif;
             font-size: 60px;
             color: $white;
+            margin-bottom: 30px;
         }
             .icons{
                     display: flex;
@@ -25,7 +30,6 @@ body{
                     gap: 10px;
                     color: $white;
                     opacity: 0.8;
-                    
                     font-size: 12px;
                     text-transform: uppercase;
                 }
@@ -36,43 +40,54 @@ body{
 
                     }
 
-.content .side-bar{
-display: flex;
-flex-wrap: wrap;
-}
+//LEFT SIDE
+.left{   
+    padding: 120px;
+    background-color: $darkest-black;
+    float: left;
+    width: 55%;
+    }
     .bg-img{
         position: relative;
         z-index: 1;
-        margin: 8% 15% 0 15%;
-        width: 780px;
-        height: 452px;
+        margin: 8% 0 0 15%;
+        width: 740px;
+        height: 500px;
         transform: scale(1.1);
         transition: transform 0.4s;
+        z-index: 0;
+        opacity: 0.8;
+        &:hover{
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 
             .description{
                 box-sizing: border-box;
                 display: block;
                 padding: 50px;
-                width: 750px;
+                width: 830px;
                 position: relative;
                 z-index: 1;
                 background-color: $dark-black;
-                margin: -3% 16% 3% 16%;
+                margin: -8% 16% 3% 16%;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+                    & h3{
+                        color: $white;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 32px;
+                        margin-bottom: 25px;
+                    }
             }
                 p{
                     color: $font;
                     font-size: 16px;
                     font-family: 'Hind', sans-serif;
-                    text-align: justify;
+                    text-align: left;
                     margin-bottom: 50px;
                 }
-                    h3{
-                        color: $white;
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 32px;
-                    }
+                    
                         .fig-img{
                             width:100%;
                         }
@@ -105,11 +120,11 @@ flex-wrap: wrap;
     box-sizing: border-box;
     display: block;
     padding: 50px;
-    width: 750px;
+    width: 830px;
     position: relative;
     border: 2px solid rgba(211, 211, 211, 0.105);
     background-color: transparent;
-    margin: 3% 16% 3% 16%;   
+    margin: 8% 16%;   
 }
     .author-img{
         position: absolute;
@@ -127,13 +142,13 @@ flex-wrap: wrap;
                 color: $font;
                 font-size: 11px;
                 font-family: 'Hind', sans-serif;
-                text-align: justify;
+                text-align: left;
                 margin-bottom: 20px;
         }
                 .author-mail{
                     position: absolute;
-                    width: 20px;
-                    transform: translateX(560px)translateY(-80px);
+                    width: 40px;
+                    transform: translateX(620px)translateY(-80px);
                     border: 2px solid rgba(211, 211, 211, 0.105);
                     border-radius: 50%;
                     padding: 8px;
@@ -144,8 +159,8 @@ flex-wrap: wrap;
                 }
                 .author-web{
                     position: absolute;
-                    width: 20px;
-                    transform: translateX(610px)translateY(-80px);
+                    width: 40px;
+                    transform: translateX(680px)translateY(-80px);
                     border: 2px solid rgba(211, 211, 211, 0.105);
                     border-radius: 50%;
                     padding: 8px;
@@ -158,10 +173,12 @@ flex-wrap: wrap;
                         color: $font;
                         font-size: 16px;
                         font-family: 'Hind', sans-serif;
-                        text-align: justify;
+                        text-align: left;
                         margin: 0;
                         }
+                
 .comments{
+    text-align: left;
     box-sizing: border-box;
     display: block;
     padding: 50px;
@@ -227,6 +244,7 @@ flex-wrap: wrap;
                 }
                 & p{
                     margin: 40px 0 20px 0;
+                    
                 }
                 & .reply-btn{
                     margin-bottom: 0;
@@ -235,7 +253,6 @@ flex-wrap: wrap;
             .comment h4{
                 color: $white;
                 margin-left: 90px;
-
             }
             .comment time{
                 color: $font;
@@ -246,6 +263,7 @@ flex-wrap: wrap;
 
                 .comment p{
                     margin: 40px 0 20px 0;
+                    
                 }
                     .reply-btn{
                         padding: 0;
@@ -262,4 +280,412 @@ flex-wrap: wrap;
                             color: $red;
                         }
                     }
+#comment-form{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        margin-top: 8%;
+}
+        #author, #email {
+            width: 20vw;
+            height: 5vh;
+            background-color: transparent;
+            border: none;
+            border-bottom: $font solid 2px;
+            color: $white;
+        }
+
+            #comment-box{
+                width: 40vw;
+                height: 20vh;
+                background-color: transparent;
+                border: none;
+                border-bottom: $font solid 2px;
+                color: $white;
+            }
+
+    #comment-btn{
+        margin: 3rem 0.75rem 0.75rem 0;
+        color: $white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 1rem 2.5rem;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.5;
+        border-radius: 2rem;
+        background-color: transparent;
+        border:1px solid $font;
+        border-radius:18px;
+        &:hover{
+        cursor: pointer;
+        background-color: $font;
+        } 
+       
+    }
+
+//RIGHT SIDE
+.right{
+    padding:120px;
+    background-color: $darkest-black;
+    float: right;
+    width: 45%;
+    }
+.categories{
+    margin-top: 5%;
+
+    & li{
+        list-style: none;
+        font-size: 18px;
+        margin: 4% 0;
+        &:hover{
+            
+            color: $red;
+            list-style: disc;
+        }
+           a{
+                text-decoration: none;
+                color: $font;
+                font-family: 'Hind', sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                &:hover{
+                    color: $white;
+                }
+            }
+    }
+}
+.popular-posts{
+margin-top: 10%;
+    .posts, a, time{
+        
+        color: $font;
+        font-family: 'Hind', sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        line-height: 60px;
+        }
+            & a{
+            padding: 0 120px 50px 0;
+            color: $white;
+            font-family: 'Hind', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.25em;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            }
+            .line{
+                margin: 0 3%;
+                transform: translateY(8px);
+            }
+                #post-1{
+                    &:hover{
+                    background-image: url("/resources/images/gallery/room-3.jpg");
+                    @include postBg;
+                    }
+                }
+                #post-2{
+                    &:hover{
+                    background-image: url("/resources/images/gallery/post-img-2.jpg");
+                    @include postBg;
+                    }
+                }
+                #post-3{
+                    &:hover{
+                    background-image: url("/resources/images/gallery/room-7.jpg");
+                    @include postBg;
+                    }
+                }
+}
+#all-tags{
+margin-top:10%;  
+    #tags{
+        padding: 0 250px 0 0;
+    }
+
+   .tags{
+    display:inline-block;
+    text-align: left;
+    }
+}
+.photos {
+    margin-top:10%;
+    img{
+        width: 130px;
+        height: auto;
+        margin: 1px;
+        border: 5px solid $darkest-black;
+        &:hover{
+            border: 5px solid $red;
+            transition: 0.5s;
+            opacity: 0.6;
+            cursor: pointer;
+        }
+    }
+        #pics{
+            width: 100%;
+            
+            padding: 0 150px 50px 0;
+        }
+            & a{
+                text-align: center;
+                text-transform: none;
+                font-size: 14px;
+            }
+}
+.archive{
+    margin-top:10%;
+     li{
+        list-style: none;
+        font-size: 18px;
+        margin: 4% 0;
+        &:hover{ 
+            color: $red;
+            list-style: disc;
+        }
+           a{
+                text-decoration: none;
+                color: $font;
+                font-family: 'Hind', sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                &:hover{
+                    color: $white;
+                }
+           }
+    }
+}
+//MOBILE
+@media screen and (max-width: 520px) {
+   .header{
+       padding: 60px;
+       }
+        h2{
+           font-size: 20px;
+       }
+           .icons{
+                   font-size: 8px;
+               }
+                   .txt{
+                       color: $font;
+                       opacity: 1;
+                       font-family: 'Montserrat', sans-serif;
+
+
+                   }
+.left{  
+   padding: 20px;
+   width: 100%;
+   }
+   .bg-img{
+       position: relative;
+       margin: 0;
+       width: 100%;
+       height: auto;
+       transform: none;
+   }
+
+
+.description{
+   padding: 20px;
+   width: 100%;
+   margin: -10px 0 0 0;
+
+
+       h3{
+       font-size: 21px;
+       margin-bottom: 15px;
+       }
+}
+       p{
+       font-size: 12px;
+       margin-bottom: 25px;
+   }
+           figcaption{
+               font-size: 10px;
+               margin-bottom: 25px;
+           }
+.tags{
+   margin: 0 2px;
+   padding: 3px 10px;
+   font-size: 8px;
+}
+.author{
+   padding: 20px;
+   width: 100%;
+   height: 100px;
+   margin: 8% 0;  
+}
+   .author-img{
+       width: 60px;
+       transform: none;
+   }
+       h4{
+           font-size: 16px;
+           position: absolute;
+           transform: translateX(80px);
+           margin: 10px 0;
+       }
+           .author-username{
+               font-size: 10px;
+               position: absolute;
+               transform: translateX(80px)translateY(-15px);
+               margin-bottom: 10px;
+       }
+               .author-mail{
+                   position: absolute;
+                   width: 35px;
+                   transform: translateX(250px) translateY(12px);
+                   border: 2px solid rgba(211, 211, 211, 0.105);
+                   border-radius: 50%;
+                   padding: 8px;
+               }
+               .author-web{
+                   position: absolute;
+                   width: 35px;
+                   transform: translateX(290px) translateY(12px);
+                   border: 2px solid rgba(211, 211, 211, 0.105);
+                   border-radius: 50%;
+                   padding: 8px;
+               }
+                   .author-paragraph{
+                       color: $darkest-black;
+                       font-size: 0;
+                       margin: 0;
+                       }
+.comments{
+   padding: 20px;
+   width: 100%;
+   margin: 0;  
+}
+   #com-1,#com-2, #com-3, #com-4, #answer{
+       width: 50px;
+       height: auto;
+   }
+   #com-3{
+       position: absolute;
+       border-radius: 50%;
+   }
+   #answer{
+       position: absolute;
+       border-radius: 50%;
+   }
+.comment-in{
+margin-left:20px;
+padding:0
+}
+       h4{
+           color: $white;
+           margin-left: 90px;
+       }
+       time{
+           color: $font;
+           margin-left: 90px;
+           font-size: 11px;
+           font-family: 'Hind', sans-serif;
+       }
+       p{
+           margin: 40px 0 20px 0;
+           font-size: 12px;
+       }
+       .reply-btn{
+           margin-bottom: 50px;
+       }
+   }   
+.response{
+   margin-left: 20px;
+   & h4{
+       color: $white;
+       margin:0
+   }
+   & time{
+       color: $font;
+       margin-left: 90px;
+       font-size: 11px;
+       font-family: 'Hind', sans-serif;
+   }
+   & p{
+       margin: 40px 0 20px 0;
+       font-size: 12px;
+   }
+}   
+.comment h4{
+   margin:0;
+}
+.comment time{
+   margin-left: 82px;
+   font-size: 9px;
+}
+
+
+.comment p{
+   font-size: 12px;
+}
+   .reply-btn{
+       font-size: 9px;
+   }
+#author, #email {
+   width: 75vw;
+}
+
+
+   #comment-box{
+       width: 75vw;
+   }
+//RIGHT
+.right{
+   padding:20px;
+   width: 100%;
+   }
+.categories{
+   hr{
+    margin: 10px 0 30px 0;  
+   }
+   li{
+   font-size: 14px;
+   margin: 2% 0;
+   }
+}
+.popular-posts{
+   .posts, a, time{
+      margin:0;
+       }
+           & a{
+           padding: 0;
+           font-size: 14px;
+           }
+}
+#all-tags{
+margin-top:10%; 
+   #tags{
+       padding: 0 50px 0 0;
+   }
+   .tags{
+       margin-bottom: 3%;
+   }
+}
+.photos {
+   margin-top:10%;
+   img{
+       width: 120px;
+   }
+       #pics{
+           width: 100%;
+           padding: 0;
+           margin-bottom: 8%;
+       }
+           & a{
+               padding: 10px;
+               font-size: 11px;
+           }
+}
+.archive{
+   margin-top:10%;
+   hr{
+       margin: 10px 0 30px 0;  
+      }
+      li{
+      font-size: 14px;
+      margin: 2% 0;
+      }
 }

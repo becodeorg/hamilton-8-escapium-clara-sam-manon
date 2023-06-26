@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap');
-
 body{
     padding: 0;
     margin: 0;
@@ -48,16 +47,10 @@ body{
     padding:100px;
 
     & hr{
-        border: 2px solid $font;
-        width: 32px;
-        
+        @include hrStyle;
 }
         h2{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 44px;
-            color: $white;
-            text-align: center;
-
+            @include h2Style;
     }
             .bar{
                 background-color: $font;
@@ -71,13 +64,11 @@ body{
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                gap: 0px 100px;
+                gap: 5%;
 
                 & article{
                     text-align: center;
                     width: 380px;
-                    
-                    
                 }
 
                 & img{
@@ -89,18 +80,19 @@ body{
                     position: relative;
                     background-color: $darkest-black;
                     margin-bottom: 5%;
-                    
-                    
+
                 }
                     & h3{
                         font-family: 'Montserrat', sans-serif;
                         font-size: 30px;
                         color: $white;
+                        margin: 10% 0 5% 0;
                     }
                     & p{
                         font-family: 'Hind', sans-serif;
                         font-size: 19px;
                         color: $font;
+                        text-align: center;
                     }
 
             }  
@@ -113,9 +105,9 @@ body{
         box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.5);
         text-align: center;
         & img{
-            width: 50px;
-            margin: 10% 50%;
-            padding:1%;
+            width: 80px;
+            margin: 10%;
+            padding:0;
             border: 2px solid $red;
             background-color: $red;
             border-radius: 50%;
@@ -130,16 +122,13 @@ body{
     background-color: $darkest-black;
     padding: 100px;
     text-align: center;
+    width: 100%;
 
     & hr{
-        border: 2px solid $font;
-        width: 32px;
+        @include hrStyle;
 }
         h2{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 44px;
-            color: $white;
-            text-align: center;
+            @include h2Style;
             margin-bottom: 5%;
         }
             .certif{
@@ -147,7 +136,7 @@ body{
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                gap: 20px;
+                gap: 40px;
             }
                 img:hover {
                     opacity: 0.6;
@@ -159,15 +148,11 @@ body{
     padding: 100px;
 
         & hr{
-            border: 2px solid $font;
-            width: 32px;
+            @include hrStyle;
         }
             
             & h2{
-                font-family: 'Montserrat', sans-serif;
-                font-size: 44px;
-                color: $white;
-                text-align: center;
+                @include h2Style;
                 margin-bottom: 5%;
 
             }
@@ -175,12 +160,12 @@ body{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
-                    gap: 20px;
+                    gap: 25px;
                     
                     & img {
                         opacity: 0.6;
                         height: auto;
-                        max-width: 100%;
+                        width: 100%;
                         border: solid 8px $dark-black;
 
                         &:hover{
@@ -188,29 +173,29 @@ body{
                             border: solid 8px $red;
                         }
                     }
-                
                         & h3{
                             font-family: 'Montserrat', sans-serif;
                             font-size: 32px;
                             color: $white;
                             text-align: left;
+                            margin: 5% 0 0 2%;
                         }
                             & p{
                                 font-family: 'Hind', sans-serif;
                                 font-size: 16px;
                                 color: $font;
+                                margin: 5% 0 0 2%;
                                 text-align: left;
                             }
             }
         }
 .faq{
     background-color: $white;
-    padding: 100px;
+    padding: 60px;
     margin: 0 15%;
 
     hr{
-            border: 2px solid #9B9B9B;
-            width: 32px;
+        @include hrStyle;
     }
     
          h2{
@@ -225,16 +210,182 @@ body{
                     font-size: 20px;
                     color: $font;
                     text-align: center;
+                    margin: 50px 0
                 }
                     .icon img{
-                        width: 6vh;
+                        width: 68px;
                         background-color: #e6e0e081;
                         border-radius: 50%;
                         padding: 18%;
                     }
+                    h3{
+                        text-align: left;
+                        color: #222222;
+                        font-size: 28px;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                        &:hover{
+                            cursor: pointer;
+                            color: $red;
+                        } 
+                    }
                         .accordion-title{
                             margin-left: 3%;
-                            margin-top: 2%;
+                            margin-top: 18px;
+                        }
+                        .accordion-content{
+                            font-family: 'Hind', sans-serif;
+                            font-size: 16px;
+                            color: $font;
+                            text-align: left;
+                            margin-left: 9%;
+                        }
+                        
+                            button {
+                            border: none;
+                            background-color: $white;
+                            position: relative;
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            text-align: left;
+                            color: $dark-black;
+                            font-size: 28px;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            cursor: pointer;
+
+                            &:hover{
+                                color: $red;
+                            }
+                        }
+            }
+        }
+//TABLET
+@media only screen and (max-width:1020px){
+    .header{
+        padding: 60px ;
+            & h1{
+                font-size: 30px;
+            }
+            .point{
+                font-size: 35px;
+        }
+                .home{
+                    font-size: 18px;
+                    margin: -10;
+                }
+        }
+.rules{
+    padding:60px;
+
+    & hr{
+        border: 1px solid $font;
+        width: 32px;
+        margin: 3% 48%;
+}
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            color: $white;
+            text-align: center;
+    }
+            .bar{
+                transform: rotate(30deg)translateY(32px)translateX(140px);
+                height: 160px;     
+            }
+                & img{
+                    width: 120px;
+                    margin-bottom: 5%;
+                }
+                    & h3{
+                        font-size: 30px;
+                        margin: 10% 0;
+                    }
+            }  
+        }
+.video{
+        padding: 60px;
+        & img{
+            width: 80px;
+            margin: 10%;
+        }
+}
+.certificates{
+    padding: 60px;
+    & hr{
+        border: 1px solid $font;
+        width: 32px;
+        margin: 3% 48%;
+}
+        h2{
+            @include h2Style;
+            font-size: 40px;
+        }
+            .certif{
+                gap: 20px;
+            }
+    }
+.team{
+    background-color: $dark-black;
+    padding: 60px;
+
+        & hr{
+            border: 1px solid $font;
+            width: 32px;
+            margin: 3% 48%;
+        }
+            
+            & h2{
+                @include h2Style;
+                font-size: 40px;
+            }
+                        & h3{
+                            font-size: 32px;
+                            text-align: center;
+                        }
+                            & p{
+                                font-size: 18px;
+                                text-align: center;
+                            }
+            }
+.faq{
+
+    padding: 60px;
+    margin: 0;
+
+    hr{
+        border: 1px solid $font;
+        width: 32px;
+        margin: 3% 48%;
+    }
+    
+         h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            color: $dark-black;
+            text-align: center;
+            
+        }
+                 p.contact{
+                    font-family: 'Hind', sans-serif;
+                    font-size: 22px;
+                    color: $font;
+                    text-align: center;
+                    margin: 50px 0
+                }
+                        .accordion-title{
+                            margin-left: 3%;
+                            margin-top: 2px;
+                        }
+                        .accordion-content{
+                            overflow: hidden;
+                            font-family: 'Hind', sans-serif;
+                            font-size: 16px;
+                            color: $font;
+                            text-align: left;
+                            margin-left: 3%;
+                            margin-top: 10px;
                         }
                             button {
                             border: none;
@@ -254,77 +405,78 @@ body{
                                 color: $red;
                             }
                         }
-                                & p{
-                                    font-family: 'Hind', sans-serif;
-                                    font-size: 16px;
-                                    color: $font;
-                                    text-align: left;
-                                    margin-left: 8.5%;
-                                }
-            }
-        }
-//tablet
-@media screen and (max-width:768px){
+}
+
+//MOBILE
+@media only screen and (max-width: 520px) {
     .header{
-        padding: 6px ;
-            & h2{
-                font-size: 60px;
+        padding: 30px ;
+            & h1{
+                font-size: 25px;
             }
             .point{
-                font-size: 65px;
-            }
+                font-size: 30px;
+        }
                 .home{
-                    font-size: 16px;
+                    font-size: 12px;
+                    margin: -10;
                 }
         }
 .rules{
-    padding: 100px;   
-    .container {  
+    padding:60px;
 
-        & img{
-            width: 100px;
-            padding: 1.5%;
-        }
-            & h3{
-                font-size: 32px;
-
-            }
-            & p{
-                font-size: 16px;
-            }
-    }    
-}
-                hr{
-                    border: 2px solid #9B9B9B;
-                    width: 32px;
-                }
-                    h2{
-                        font-size: 44px;
-                }
-                .bar{
-                    width: 1px;
-                    height: 100px;
-                }
- 
-.video{
-        padding: 100px;
-        & img{
-            width: 50px;
-            margin: 10% 50%;
-            padding:1%;
-        }
-}
-
-.certificates{
-    padding: 100px;
-
-    hr{
-        border: 2px solid #9B9B9B;
+    & hr{
+        border: 1px solid $font;
         width: 32px;
-    }
-
+        margin: 3% 45%;
+}
         h2{
-            font-size: 44px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            color: $white;
+            text-align: center;
+    }
+            .bar{
+                transform: rotate(30deg)translateY(32px)translateX(140px);
+                height: 120px;     
+            }
+            .container {  
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 5%;
+                & article{
+                    text-align: center;
+                    width: 380px;
+                }
+                & img{
+                    width: 80px;
+                    margin-bottom: 5%;
+                }
+                    & h3{
+                        font-size: 21px;
+                        margin: 10% 0;
+                    }
+            }  
+        }
+.video{
+        padding: 60px;
+        & img{
+            width: 40px;
+            margin: 0;
+        }
+}
+.certificates{
+    padding: 60px;
+
+    & hr{
+        border: 1px solid $font;
+        width: 32px;
+        margin: 3% 45%;
+}
+        h2{
+            @include h2Style;
+            font-size: 32px;
         }
             .certif{
                 gap: 20px;
@@ -332,147 +484,22 @@ body{
     }
 .team{
     background-color: $dark-black;
-    padding: 100px;
+    padding: 60px;
 
-    hr{
-        border: 2px solid #9B9B9B;
-        width: 32px;
-    }
-            
+        & hr{
+            border: 1px solid $font;
+            width: 32px;
+            margin: 3% 45%;
+        }
+            img{
+                margin:0;
+            };
             & h2{
-                font-size: 44px;
-
+                @include h2Style;
+                font-size: 32px;
             }
-                & div{
-                    flex-direction: row;
-                    gap: 20px;
-                
                         & h3{
-                            font-size: 19px;
-                            text-align: left;
-                        }
-                            & p{
-                                font-size: 14px;
-                                text-align: left;
-                            }
-            }
-        }
-.faq{
-    padding: 100px;
-
-    hr{
-        border: 2px solid #9B9B9B;
-        width: 32px;
-    }
-    
-        & h2{
-            font-size: 44px;
-        }
-                & p.contact{
-                    font-size: 20px;
-                }
-                    & h3{
-                        font-size: 32px;
-                    }
-                        & p{
-                            font-size: 16px;
-                        }
-    }
-}
-/*MOBILE*/
-@media screen and (max-width:480px){
-    .header{
-        
-        padding: 1px ;
-        
-            & h2{
-                font-size: 20px;
-                
-            }
-            .point{
-                font-size: 25px;
-        }
-                .home{
-                    font-size: 11px;
-
-                }
-            }
-.rules{
-    padding: 40px;      
-}
-    hr{
-        border: 1px solid #9B9B9B;
-        width: 12px;
-    }
-        h2{
-            font-size: 21px;
-    }
-    .bar{
-        width: 1px;
-        height: 50px;
-    }
-    .container {  
-        gap: 0px 60px;
-
-        & img{
-            width: 25px;
-            padding: 1%;
-        }
-            & h3{
-                font-size: 19px;
-
-            }
-            & p{
-                font-size: 14px;
-            }
-
-    }  
-.video{
-        padding: 50px;
-        & img{
-            width: 25px;
-            margin: 0;
-            padding:0;
-        }
-}
-
-.certificates{
-    padding: 40px;
-
-    hr{
-        border: 1px solid #9B9B9B;
-        width: 12px;
-    }
-
-        h2{
-            font-size: 21px;
-        }
-            .certif{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 10px;
-            }
-    }
-.team{
-    background-color: $dark-black;
-    padding: 40px;
-
-    hr{
-        border: 1px solid #9B9B9B;
-        width: 12px;
-    }
-            
-            & h2{
-                font-size: 21px;
-
-            }
-                & div{
-                    flex-direction: column;
-                    gap: 10px;
-                
-                        & h3{
-                            font-size: 19px;
+                            font-size: 30px;
                             text-align: center;
                         }
                             & p{
@@ -482,23 +509,64 @@ body{
             }
         }
 .faq{
-    padding: 40px;
+    background-color: $white;
+    padding: 60px;
+    margin: 0 15%;
 
     hr{
-        border: 1px solid #9B9B9B;
-        width: 12px;
+        border: 1px solid $font;
+        width: 32px;
+        margin: 3% 45%;
     }
-        & h2{
-            font-size: 21px;
+    
+         h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            color: $dark-black;
+            text-align: center;
+            
         }
-                & p.contact{
-                    font-size: 12px;
+                 p.contact{
+                    font-family: 'Hind', sans-serif;
+                    font-size: 20px;
+                    color: $font;
+                    text-align: center;
+                    margin: 50px 0
                 }
-                    & h3{
-                        font-size: 16px;
+                    .icon img{
+                        width: 68px;
+                        background-color: #e6e0e081;
+                        border-radius: 50%;
+                        padding: 18%;
                     }
-                        & p{
-                            font-size: 14px;
+                        .accordion-title{
+                            margin-left: 3%;
+                            margin-top: 18px;
                         }
-    }
+                        .accordion-content{
+                            overflow: hidden;
+                            font-family: 'Hind', sans-serif;
+                            font-size: 16px;
+                            color: $font;
+                            text-align: left;
+                            margin-left: 3%;
+                        }
+                            button {
+                            border: none;
+                            background-color: $white;
+                            position: relative;
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            text-align: left;
+                            color: $dark-black;
+                            font-size: 28px;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            cursor: pointer;
+
+                            &:hover{
+                                color: $red;
+                            }
+                        }
 }
