@@ -19,5 +19,8 @@ Our challenge was to build a responsive multi-pages website based on a given tem
   
 Solving issues together and merging and finalising.
 
+## Biggest challenge
+* Linking all the pages
+* Merging and deploying on github (still needs some fixing with the paths)
 ---
 **Take a look at our finished project [right here](link)**
