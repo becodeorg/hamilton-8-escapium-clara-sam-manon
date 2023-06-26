@@ -25,6 +25,12 @@ tablet screen
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap");
 .testimonials {
   background-color: #1B1B1B;
   margin: 0;
@@ -1471,6 +1477,12 @@ body .reply-btn {
 body .reply-btn:hover {
   cursor: pointer;
   color: #F60B0E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -3099,3 +3111,4 @@ main .homepage_banner div p {
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
+}
