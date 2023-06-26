@@ -25,7 +25,11 @@
     font-family: $montserrat;
     &:hover{
         color:white;
+        //add red bar behind when hover!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!to do 
+
     }
+   
+    
     
     .navbar_logo{
        height: inherit;
@@ -53,23 +57,38 @@
                 grid-auto-flow: column;
                 list-style-type: none;
                 column-gap: 40px;
-                li{
-                    text-transform: lowercase;
-                    font-weight: 700;
+                
+                li:before{
+                    content: '';
+                    position: absolute;
+                    width: 3px;
+                    height: 50px;
+                    bottom: 15px;
+                    margin-left: 43px;
+                    transform: rotate(45deg);
+                    z-index: 0;
+                }
+                li:hover::before{
+                    background-color: $red;
+                }
+                text-transform: lowercase;
+                font-weight: 700;
+                text-decoration: none;
+                width: min-content;
+                a{
+                    position: relative;
+                    z-index: 1;
                     text-decoration: none;
-                    width: min-content;
-                    a{
-                        text-decoration: none;
-                        color: $nav;
-                        padding-left: 2rem;
-                        &:hover{
-                            color:white;
-                            cursor: pointer;
-                        }
+                    color: $nav;
+                    padding-left: 2rem;
+                    &:hover{
+                        color:white;
+                        cursor: pointer;
                     }
+                }
                     
     
-                }
+                
                 
             }
             
