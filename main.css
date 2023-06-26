@@ -613,19 +613,32 @@ body .faq p {
   grid-auto-flow: column;
   list-style-type: none;
   column-gap: 40px;
-}
-.navbar_container .navbar_list ul li {
   text-transform: lowercase;
   font-weight: 700;
   text-decoration: none;
   width: min-content;
 }
-.navbar_container .navbar_list ul li a {
+.navbar_container .navbar_list ul li:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  bottom: 15px;
+  margin-left: 43px;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+.navbar_container .navbar_list ul li:hover::before {
+  background-color: #F60B0E;
+}
+.navbar_container .navbar_list ul a {
+  position: relative;
+  z-index: 1;
   text-decoration: none;
   color: #777;
   padding-left: 2rem;
 }
-.navbar_container .navbar_list ul li a:hover {
+.navbar_container .navbar_list ul a:hover {
   color: white;
   cursor: pointer;
 }
@@ -1052,7 +1065,7 @@ main {
   background-color: transparent;
 }
 main .homepage_banner {
-  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/slide-4.jpg");
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("./resources/images/gallery/slide-4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1203,7 +1216,7 @@ main .homepage_banner div p {
 }
 .homepage_blog_main .homepage_blog_article_image, .homepage_blog_main .exit {
   height: 240px;
-  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/room-9.jpg");
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("./resources/images/gallery/room-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1249,22 +1262,23 @@ main .homepage_banner div p {
 .homepage_blog_main .homepage_blog_article_text p {
   font-family: "Hind", sans-serif;
   margin-bottom: 50px;
+  color: #717171;
 }
 .homepage_blog_main .exit {
-  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/room-7.jpg");
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("./resources/images/gallery/room-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .homepage_blog_main .room {
-  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("/resources/images/gallery/post-img-2.jpg");
+  background: linear-gradient(to top, #1B1B1B, rgba(0, 0, 0, 0.2)), url("./resources/images/gallery/post-img-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .homepage_forwho {
-  background: linear-gradient(to right, #1B1B1B, rgba(0, 0, 0, 0.5)), url("/resources/images/gallery/slide-3.jpg");
+  background: linear-gradient(to right, #1B1B1B, rgba(0, 0, 0, 0.5)), url("../resources/images/gallery/slide-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vw;

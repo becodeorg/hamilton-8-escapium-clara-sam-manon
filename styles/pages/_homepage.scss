@@ -32,7 +32,7 @@ p, .normalsizetext{
 main{
     background-color: transparent;
     .homepage_banner{
-        background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('/resources/images/gallery/slide-4.jpg')};
+        background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('./resources/images/gallery/slide-4.jpg')};
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -183,7 +183,7 @@ main{
             max-width: 380px;
             &_image{
                 height:240px;
-                background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('/resources/images/gallery/room-9.jpg')};
+                background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('./resources/images/gallery/room-9.jpg')};
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -229,18 +229,19 @@ main{
                 p{
                     font-family: $hind;
                     margin-bottom: 50px;
+                    color:$font;
                 }
             }
         }
         .exit{
             @extend .homepage_blog_article_image;
-            background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('/resources/images/gallery/room-7.jpg')};
+            background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('./resources/images/gallery/room-7.jpg')};
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
         .room{
-            background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('/resources/images/gallery/post-img-2.jpg')};
+            background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('./resources/images/gallery/post-img-2.jpg')};
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -250,7 +251,7 @@ main{
 
 //FOR WHOM
 .homepage_forwho{
-    background:linear-gradient(to right,$darkest-black, rgba(0, 0, 0, 0.5)), #{url('/resources/images/gallery/slide-3.jpg')};
+    background:linear-gradient(to right,$darkest-black, rgba(0, 0, 0, 0.5)), #{url('../resources/images/gallery/slide-3.jpg')};
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vw;
