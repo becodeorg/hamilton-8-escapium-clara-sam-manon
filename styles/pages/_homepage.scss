@@ -180,6 +180,9 @@ main{
     button{
         @include transparentButton($nav);
         margin: 10vw 0;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
@@ -291,7 +294,7 @@ main{
         }
         .exit{
             @extend .homepage_blog_article_image;
-            background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('./resources/images/gallery/room-7.jpg')};
+            background:linear-gradient(to top,$darkest-black, rgba(0, 0, 0, 0.2)), #{url('resources/images/gallery/room-7.jpg')};
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -309,7 +312,7 @@ main{
 
 //FOR WHOM
 .homepage_forwho{
-    background:linear-gradient(to right,$darkest-black, rgba(0, 0, 0, 0.5)), #{url('../resources/images/gallery/slide-3.jpg')};
+    background:linear-gradient(to right,$darkest-black, rgba(0, 0, 0, 0.5)), #{url('./resources/images/gallery/slide-3.jpg')};
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vw;
