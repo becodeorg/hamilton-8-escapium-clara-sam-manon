@@ -83,7 +83,7 @@
                             }
     }
 
-@media (max-width: 520px) {
+@media only screen and (max-width: 520px) {
 .testimonials{
     padding: 60px;  
         hr{
@@ -133,7 +133,7 @@
 
                                 }
 }
-@media (max-width:1020px){
+@media only screen and (max-width:1020px){
 .testimonials{
     padding: 60px;  
         hr{

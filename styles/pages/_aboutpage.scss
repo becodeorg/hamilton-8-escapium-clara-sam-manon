@@ -218,10 +218,29 @@ body{
                         border-radius: 50%;
                         padding: 18%;
                     }
+                    h3{
+                        text-align: left;
+                        color: #222222;
+                        font-size: 28px;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                        &:hover{
+                            cursor: pointer;
+                            color: $red;
+                        } 
+                    }
                         .accordion-title{
                             margin-left: 3%;
                             margin-top: 18px;
                         }
+                        .accordion-content{
+                            font-family: 'Hind', sans-serif;
+                            font-size: 16px;
+                            color: $font;
+                            text-align: left;
+                            margin-left: 9%;
+                        }
+                        
                             button {
                             border: none;
                             background-color: $white;
@@ -240,178 +259,10 @@ body{
                                 color: $red;
                             }
                         }
-                                & p{
-                                    font-family: 'Hind', sans-serif;
-                                    font-size: 16px;
-                                    color: $font;
-                                    text-align: left;
-                                    margin-left: 8.8%;
-                                }
             }
         }
-
-//MOBILE
-@media (max-width:520px){
-    .header{
-        padding: 30px ;
-            & h1{
-                font-size: 25px;
-            }
-            .point{
-                font-size: 30px;
-        }
-                .home{
-                    font-size: 12px;
-                    margin: -10;
-                }
-        }
-.rules{
-    padding:60px;
-
-    & hr{
-        border: 1px solid $font;
-        width: 32px;
-        margin: 3% 45%;
-}
-        h2{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 32px;
-            color: $white;
-            text-align: center;
-    }
-            .bar{
-                transform: rotate(30deg)translateY(32px)translateX(140px);
-                height: 120px;     
-            }
-            .container {  
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 5%;
-                & article{
-                    text-align: center;
-                    width: 380px;
-                }
-                & img{
-                    width: 80px;
-                    margin-bottom: 5%;
-                }
-                    & h3{
-                        font-size: 21px;
-                        margin: 10% 0;
-                    }
-            }  
-        }
-.video{
-        padding: 60px;
-        & img{
-            width: 40px;
-            margin: 0;
-        }
-}
-.certificates{
-    padding: 60px;
-
-    & hr{
-        border: 1px solid $font;
-        width: 32px;
-        margin: 3% 45%;
-}
-        h2{
-            @include h2Style;
-            font-size: 32px;
-        }
-            .certif{
-                gap: 20px;
-            }
-    }
-.team{
-    background-color: $dark-black;
-    padding: 60px;
-
-        & hr{
-            border: 1px solid $font;
-            width: 32px;
-            margin: 3% 45%;
-        }
-            
-            & h2{
-                @include h2Style;
-                font-size: 32px;
-            }
-                        & h3{
-                            font-size: 30px;
-                            text-align: center;
-                        }
-                            & p{
-                                font-size: 14px;
-                                text-align: center;
-                            }
-            }
-        }
-.faq{
-    background-color: $white;
-    padding: 60px;
-    margin: 0 15%;
-
-    hr{
-        border: 1px solid $font;
-        width: 32px;
-        margin: 3% 45%;
-    }
-    
-         h2{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 32px;
-            color: $dark-black;
-            text-align: center;
-            
-        }
-                 p.contact{
-                    font-family: 'Hind', sans-serif;
-                    font-size: 20px;
-                    color: $font;
-                    text-align: center;
-                    margin: 50px 0
-                }
-                    .icon img{
-                        width: 68px;
-                        background-color: #e6e0e081;
-                        border-radius: 50%;
-                        padding: 18%;
-                    }
-                        .accordion-title{
-                            margin-left: 3%;
-                            margin-top: 18px;
-                        }
-                            button {
-                            border: none;
-                            background-color: $white;
-                            position: relative;
-                            display: flex;
-                            flex-wrap: wrap;
-                            width: 100%;
-                            text-align: left;
-                            color: $dark-black;
-                            font-size: 28px;
-                            font-family: 'Montserrat', sans-serif;
-                            font-weight: 700;
-                            cursor: pointer;
-
-                            &:hover{
-                                color: $red;
-                            }
-                        }
-                                & p{
-                                    font-family: 'Hind', sans-serif;
-                                    font-size: 16px;
-                                    color: $font;
-                                    text-align: left;
-                                    margin-left: 8.8%;
-                                }
-}
-//MOBILE
-@media (max-width:1020px){
+//TABLET
+@media only screen and (max-width:1020px){
     .header{
         padding: 60px ;
             & h1{
@@ -523,14 +374,18 @@ body{
                     text-align: center;
                     margin: 50px 0
                 }
-                    .icon img{
-                        width: 38px;
-                        padding: 10;
-                        max-width: 0;
-                    }
                         .accordion-title{
                             margin-left: 3%;
                             margin-top: 2px;
+                        }
+                        .accordion-content{
+                            overflow: hidden;
+                            font-family: 'Hind', sans-serif;
+                            font-size: 16px;
+                            color: $font;
+                            text-align: left;
+                            margin-left: 3%;
+                            margin-top: 10px;
                         }
                             button {
                             border: none;
@@ -550,11 +405,168 @@ body{
                                 color: $red;
                             }
                         }
-                                & p{
-                                    font-family: 'Hind', sans-serif;
-                                    font-size: 16px;
-                                    color: $font;
-                                    text-align: left;
-                                    margin-left: 8.8%;
-                                }
+}
+
+//MOBILE
+@media only screen and (max-width: 520px) {
+    .header{
+        padding: 30px ;
+            & h1{
+                font-size: 25px;
+            }
+            .point{
+                font-size: 30px;
+        }
+                .home{
+                    font-size: 12px;
+                    margin: -10;
+                }
+        }
+.rules{
+    padding:60px;
+
+    & hr{
+        border: 1px solid $font;
+        width: 32px;
+        margin: 3% 45%;
+}
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            color: $white;
+            text-align: center;
+    }
+            .bar{
+                transform: rotate(30deg)translateY(32px)translateX(140px);
+                height: 120px;     
+            }
+            .container {  
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 5%;
+                & article{
+                    text-align: center;
+                    width: 380px;
+                }
+                & img{
+                    width: 80px;
+                    margin-bottom: 5%;
+                }
+                    & h3{
+                        font-size: 21px;
+                        margin: 10% 0;
+                    }
+            }  
+        }
+.video{
+        padding: 60px;
+        & img{
+            width: 40px;
+            margin: 0;
+        }
+}
+.certificates{
+    padding: 60px;
+
+    & hr{
+        border: 1px solid $font;
+        width: 32px;
+        margin: 3% 45%;
+}
+        h2{
+            @include h2Style;
+            font-size: 32px;
+        }
+            .certif{
+                gap: 20px;
+            }
+    }
+.team{
+    background-color: $dark-black;
+    padding: 60px;
+
+        & hr{
+            border: 1px solid $font;
+            width: 32px;
+            margin: 3% 45%;
+        }
+            img{
+                margin:0;
+            };
+            & h2{
+                @include h2Style;
+                font-size: 32px;
+            }
+                        & h3{
+                            font-size: 30px;
+                            text-align: center;
+                        }
+                            & p{
+                                font-size: 14px;
+                                text-align: center;
+                            }
+            }
+        }
+.faq{
+    background-color: $white;
+    padding: 60px;
+    margin: 0 15%;
+
+    hr{
+        border: 1px solid $font;
+        width: 32px;
+        margin: 3% 45%;
+    }
+    
+         h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            color: $dark-black;
+            text-align: center;
+            
+        }
+                 p.contact{
+                    font-family: 'Hind', sans-serif;
+                    font-size: 20px;
+                    color: $font;
+                    text-align: center;
+                    margin: 50px 0
+                }
+                    .icon img{
+                        width: 68px;
+                        background-color: #e6e0e081;
+                        border-radius: 50%;
+                        padding: 18%;
+                    }
+                        .accordion-title{
+                            margin-left: 3%;
+                            margin-top: 18px;
+                        }
+                        .accordion-content{
+                            overflow: hidden;
+                            font-family: 'Hind', sans-serif;
+                            font-size: 16px;
+                            color: $font;
+                            text-align: left;
+                            margin-left: 3%;
+                        }
+                            button {
+                            border: none;
+                            background-color: $white;
+                            position: relative;
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            text-align: left;
+                            color: $dark-black;
+                            font-size: 28px;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            cursor: pointer;
+
+                            &:hover{
+                                color: $red;
+                            }
+                        }
 }
