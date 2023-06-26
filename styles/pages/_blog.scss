@@ -1,0 +1,48 @@
+.blogspage {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    &__image {
+        background-image: url(../../resources/images/gallery/slide-1.jpg);
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-size: cover;
+        background-position: top;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__title {
+            color: white;
+
+            span {
+                color: red;
+            }
+        }
+
+        &__secLine {
+            color: gray;
+                .homespan {
+                    color: white;
+                }
+
+                .blogspan {
+                    color: gray;
+                }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        &__firstCol {
+            width: 50vw;
+        }
+
+        &__secondCol {
+            width: 25vw;
+        }
+    }
+}
