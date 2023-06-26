@@ -1096,6 +1096,11 @@ main .homepage_banner div p {
   text-transform: uppercase;
   color: white;
   letter-spacing: 3px;
+  margin: 0;
+}
+main .homepage_banner div p:hover {
+  color: #F60B0E;
+  cursor: pointer;
 }
 
 .homepage_rooms {
@@ -1118,6 +1123,11 @@ main .homepage_banner div p {
 .homepage_rooms_container .homepage_rooms_container_magicImporium img, .homepage_rooms_container .homepage_rooms_container_burlesque img, .homepage_rooms_container .homepage_rooms_container_cure img {
   width: 90%;
   opacity: 0.5;
+}
+.homepage_rooms_container .homepage_rooms_container_magicImporium img:hover, .homepage_rooms_container .homepage_rooms_container_burlesque img:hover, .homepage_rooms_container .homepage_rooms_container_cure img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  overflow: hidden;
 }
 .homepage_rooms_container .homepage_rooms_container_magicImporium section, .homepage_rooms_container .homepage_rooms_container_burlesque section, .homepage_rooms_container .homepage_rooms_container_cure section {
   width: 90%;
@@ -1471,6 +1481,9 @@ main .homepage_banner div p {
   }
 }
 @media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 120px;
+  }
   .homepage_rooms {
     padding: 0;
   }
